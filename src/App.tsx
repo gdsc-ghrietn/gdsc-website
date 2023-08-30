@@ -1,6 +1,9 @@
 import './App.css'
+import {inject} from '@vercel/analytics'
 
 function App() {
+
+inject()
 
   return (
     <>
