@@ -35,7 +35,7 @@ function App() {
   )
 }
 
-export const Group = ({ className }) => {
+  export function Group({ className }: { className?: string }) {
   return (
     <div className={`group ${className}`}>
       <img
