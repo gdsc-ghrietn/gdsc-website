@@ -1,15 +1,14 @@
 import { Analytics } from '@vercel/analytics/react'
 import './App.css'
-
+import Homepage from './components/Homepage/Homepage'
 function App() {
-
   return (
     <>
-    <div>
-        <h1>GDSC-GHRIETN</h1>
-    </div>
+      <div className="App">
+        <Homepage/>
+      </div>
     <Analytics/>
-    </>
+    </>  
   )
 }
 
