@@ -67,11 +67,11 @@ nav a:hover {
     color: grey;
 }
 .college-name{
-    padding-left: 70px;
+    padding-left: 66px;
     width:max-content;
     align-items: center;
     justify-content: center;
-    font-size: 1.1rem;
+    font-size: 1.7rem;
     font-family:"Noto Sans",  sans-serif;
     font-weight: bold;
     color: #666c72;
