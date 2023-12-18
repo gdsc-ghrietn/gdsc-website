@@ -6,7 +6,7 @@ import About from '../About/About'
 import Team from '../Team/Team'
 import ContactUs from '../Contact Us/ContactUs'
 
-function Homepage() {
+const Homepage: React.FC = () => {
 
   return (
       <div className="homepage">

@@ -48,10 +48,10 @@
     border: 1px solid #333;
 }
 
-/* Responsive styles */
+
 @media only screen and (max-width: 480px) {
     #about-section {
-        padding: 40px 0; /* Adjusted padding for smaller screens */
+        padding: 40px 0; 
     }
 
     #about-section .about-content {
@@ -59,18 +59,17 @@
     }
 
     #about-section .about-content h1 {
-        font-size: 28px; /* Further reduced font size for smaller screens */
+        font-size: 28px; 
         margin-bottom: 15px;
     }
 
     #about-section .about-content p {
-        font-size: 14px; /* Further reduced font size for smaller screens */
-        line-height: 22px; /* Further reduced line height for smaller screens */
-        margin-bottom: 15px;
+        font-size: 14px; 
+        line-height: 22px;
     }
 
     #about-section .about-content .btn {
-        font-size: 14px; /* Further reduced font size for smaller screens */
-        padding: 8px 15px; /* Further reduced padding for smaller screens */
-    }
+        font-size: 14px; 
+        padding: 8px 15px;
+    } 
 }

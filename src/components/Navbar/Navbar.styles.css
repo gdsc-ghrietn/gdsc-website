@@ -17,8 +17,6 @@
     background-color: black;
 }
 
-
-
 nav { 
     display: flex;
     background-color: #fff;
@@ -89,9 +87,7 @@ img{
 @media only screen and (max-width: 768px)
 {  
     .menu-icon {
-        display: block;
-        
-        
+        display: block;        
     }
     
     img  {
@@ -104,9 +100,7 @@ img{
         font-size: 0.5rem;
         padding-left: 25px;
         margin-top: 0.02rem;
-    }
-
-    
+    } 
     nav {
         flex-direction:row;
         text-align: center;
@@ -124,7 +118,6 @@ img{
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         z-index: 9900;
     }
-
     
     nav ul.show {
         display: flex;
