@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@0;1&display=swap');
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    color: #2c3e50;
+    /* background-color: ; */
+    border-radius: 4px;
+    margin-right: 10px;
+    padding: 0px 20px;
+    height: 40px; 
+    border: 1px solid black;
+    font-size: 1.5rem;
+   transition: color 0.3s;
+}
+
+.menu-icon:hover {
+    color: white;
+    background-color: black;
+}
+
+nav { 
+    display: flex;
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 0px 10px 1;
+    width: 100%;
+    position:fixed;
+    height: max-content;
+    top:0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 15px;
+}
+
+nav a {
+    padding: 15px;
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-family: 'Pixel', sans-serif;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #bdc3c7;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.5rem; 
+    font-size: 1rem;
+    font-family: 'Pixel', sans-serif;
+    color: grey;
+}
+.college-name{
+    padding-left: 56px;
+    width:max-content;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-family:"Noto Sans",  sans-serif;
+    font-weight: bold;
+    color: #666c72;
+    margin-top: -0.2rem;
+    z-index: 1;
+}
+
+img{
+    height:25px;
+}
+
+
+@media only screen and (max-width: 768px)
+{  
+    .menu-icon {
+        display: block;        
+    }
+    
+    img  {
+        display: flex;
+        flex-direction: row;
+        height: 15px;
+    
+    }
+    .college-name{
+        font-size: 0.7rem;
+        padding-left: 34px;
+        margin-top: 0.02rem;
+    } 
+    nav {
+        flex-direction:row;
+        text-align: center;
+
+    }
+    
+    nav ul{
+        display: none;
+        flex-direction: column;
+        top: 50px;
+        right: 0;
+        padding: 20px;
+        width: 100%;
+        background-color: #fff; 
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 9900;
+    }
+    
+    nav ul.show {
+        display: flex;
+        position: absolute;
+    }
+    
+    nav li {
+        display:one;
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+    nav a {
+        padding: 10px;
+    }
+}
+
