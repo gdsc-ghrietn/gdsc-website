@@ -27,6 +27,11 @@ const ContactUs: React.FC =()=>{
     return(
         <div id="contact-us-section">
             <ToastContainer />
+           <div className="contact-us-header">
+                <h1>Contact Us</h1>
+                <p>Feel free to contact us for any queries</p>
+            </div>
+            <div className='divider'></div>
             <form ref={form} onSubmit={sendEmail}>
             <label>Name</label>
             <input type="text" name="user_name" />
