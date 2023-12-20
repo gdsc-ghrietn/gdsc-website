@@ -14,13 +14,13 @@ const ContactUs: React.FC =()=>{
        form.current && emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
           .then((result) => {
               console.log(result.text);
-                toast.success('Message sent successfully',{autoClose: 1000});
+                toast.success('Message sent successfully',{autoClose: 2000});
             if (form.current) {
                 (form.current as HTMLFormElement).reset();
             }
           }, (error) => {
               console.log(error.text);
-                toast.error('Message not sent',{autoClose: 1000});
+                toast.error('Message not sent',{autoClose: 2000});
             });
       };
 
