@@ -41,7 +41,7 @@ const ContactUs: React.FC =()=>{
                     <label>Subject</label>
                     <input type='text' name='subject' placeholder='Query'/>
                     <label>Message</label>
-                    <textarea name="message" placeholder='Tell your message' />
+                    <input type='text' name="message" placeholder='Tell your message' />
                     <input type="submit" value="Send" />
                     </form>
                 </div>
