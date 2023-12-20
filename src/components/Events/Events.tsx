@@ -38,6 +38,7 @@ const Events: React.FC = () => {
 
     return (
             <div id="event-section">
+            {/*
             {events.map((event) => (
                         <div key={event.id}>
                         <h1>{event.title}</h1>
@@ -57,6 +58,7 @@ const Events: React.FC = () => {
                         </div>
                         )
                     )}
+            */}
     </div>
         );
 }
