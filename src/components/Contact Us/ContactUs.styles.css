@@ -11,7 +11,7 @@
     color: #fff;
     background-attachment: fixed;
     background-color: #000;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,url("./src/assets/snazzy-image.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,url("../../assets/snazzy-image.png");
     background-color: #000;
     background-size: cover;
     background-repeat: no-repeat;
