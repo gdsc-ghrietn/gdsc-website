@@ -27,22 +27,24 @@ const ContactUs: React.FC =()=>{
     return(
         <div id="contact-us-section">
             <ToastContainer />
-           <div className="contact-us-header">
-                <h1>Contact Us</h1>
-                <p>Feel free to contact us for any queries</p>
-            </div>
-            <div className='divider'></div>
-            <form ref={form} onSubmit={sendEmail}>
-            <label>Name</label>
-            <input type="text" name="user_name" />
-            <label>Email</label>
-            <input type="email" name="user_email" />
-            <label>Subject</label>
-            <input type='text' name='subject' />
-            <label>Message</label>
-            <textarea name="message" />
-            <input type="submit" value="Send" />
-            </form>
+            <div className='contact-us-container'>
+                <div className="contact-us-header">
+                        <h1>Contact Us</h1>
+                        <p>Feel free to contact us for any queries</p>
+                    </div>
+                    <div className='divider'></div>
+                    <form ref={form} onSubmit={sendEmail}>
+                    <label>Name</label>
+                    <input type="text" name="user_name" placeholder='Your full name' />
+                    <label>Email</label>
+                    <input type="email" name="user_email" placeholder='name@gmail.com' />
+                    <label>Subject</label>
+                    <input type='text' name='subject' placeholder='Query'/>
+                    <label>Message</label>
+                    <textarea name="message" placeholder='Tell your message' />
+                    <input type="submit" value="Send" />
+                    </form>
+                </div>
         </div>
     );
 }
