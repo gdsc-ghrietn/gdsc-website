@@ -63,14 +63,13 @@ label {
   margin-bottom: 8px;
 }
 
-/* Arrange Name and Email in a row */
+
 label[for="user_name"],
 label[for="user_email"] {
   display: inline-block;
   width: 50%;
 }
 
-/* Subject and Message fields */
 label[for="subject"],
 label[for="message"] {
   width: 10%;
