@@ -25,11 +25,11 @@ const Events: React.FC = () => {
         }
     }
 
-    function stripHtml(html: string) {
-        const tmpElement = document.createElement('div');
-        tmpElement.innerHTML = html;
-        return tmpElement.innerText || '';
-    }
+    // function stripHtml(html: string) {
+    //     const tmpElement = document.createElement('div');
+    //     tmpElement.innerHTML = html;
+    //     return tmpElement.innerText || '';
+    // }
 
     useEffect(() => {
             getEvents();
