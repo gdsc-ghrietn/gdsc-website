@@ -1,17 +1,134 @@
-#event-section{
+/* Adjust the styles as needed */
+
+#event-section {
+    position: relative;
     width: 100%;
-    height:550px;
+    height: 550px;
+    background: #f2f2f2;
+    padding: 20px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  
+  .arrow-button {
+    position: absolute;
+    top: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+  }
+  
+  .left {
+    left: 10px;
+  }
+  
+  .right {
+    right: 10px;
+  }
+  
+  .carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .carousel {
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
 
-    background-color: #f5f5f5;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
-    color: #333;
-}
-div#event-section h1{
-    font-size: 3rem;
-    margin-bottom: 2rem;
-}
+  }
+  
+  .carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px; /* Add padding as needed */
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: red;
+
+  }
+  
+  .event-image {
+    width: 50%;
+    height: 50%;
+    display: block;
+  }
+  
+  .event-details {
+    padding: 10px;
+  }
+  
+  .expanded-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white; /* Adjust background color as needed */
+    z-index: 2;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+  }
+
+  /* Adjust the styles as needed */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+  }
+  
+  .modal {
+    background: white;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 50%;
+    height: 500px;
+    overflow-y: auto;
+    position: relative;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    background: blue;
+    border: none;
+    outline: none;
+    z-index: 4;
+  }
+  
+  /* Additional styling for close button */
+  .close-button:hover {
+    color: red;
+  }
+  
