@@ -54,8 +54,7 @@ const Events: React.FC = () => {
     }
   };
   function formatDate(dateString: string) {
-    const options = { day: 'numeric', month: 'long', year: 'numeric' as const };
-    const formattedDate = new Date(dateString).toLocaleDateString(undefined, options);
+    const formattedDate = new Date(dateString).toLocaleDateString(undefined);
     return formattedDate;
   }
 
