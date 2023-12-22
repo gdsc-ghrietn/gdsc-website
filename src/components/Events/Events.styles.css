@@ -149,6 +149,15 @@
     margin: 5px;
     display: inline-block;
   }
+  .registerlink{
+    font: 500 16px/1.5em 'Poppins', sans-serif;
+    color:rgb(0,79,255);
+    border-radius: 5px;
+    border: 2px solid rgb(0,79,255);
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+  }
   .expanded-details {
     position: absolute;
     top: 0;

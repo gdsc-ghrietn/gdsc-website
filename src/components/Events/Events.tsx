@@ -123,7 +123,7 @@ const Events: React.FC = () => {
                         <p className="tags">{formatTime(expandedEvent.end_date.toString())}</p>
                         <br/>
                         <p>Register :</p>
-                        <a href={expandedEvent.url} target="_blank" rel="noreferrer"><p className="tags">Click Here</p></a> 
+                        <a href={expandedEvent.url} target="_blank" rel="noreferrer"><p className="registerlink">Click Here</p></a> 
             </div>
           </div>
         </div>
