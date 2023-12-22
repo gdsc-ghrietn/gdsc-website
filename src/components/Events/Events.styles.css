@@ -1,30 +1,44 @@
-/* Adjust the styles as needed */
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 #event-section {
     position: relative;
     width: 100%;
-    height: 550px;
-    background: #f2f2f2;
+    height: 650px;
     padding: 20px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     justify-content: center;
+    background-color:rgba(0, 79, 255);
+    background-repeat: no-repeat;
   }
-  
+ .heading{
+    font: 800 40px/1.5em 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  } 
   .arrow-button {
     position: absolute;
     top: 50%;
-    font-size: 24px;
+    transform: translateY(-50%);
+    background: none;
+    font-size: 50px;
     cursor: pointer;
-    background: transparent;
     border: none;
-    outline: none;
+    z-index: 4;
+    family-font: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    color: #52CC99;
+
   }
   
   .left {
     left: 10px;
+
   }
   
   .right {
@@ -34,12 +48,14 @@
   .carousel-container {
     position: relative;
     overflow: hidden;
-    width: 50%;
+    width: 25%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background: rgba(255, 255, 255,1);
+    border-radius: 16px;
   }
   
   .carousel {
@@ -49,32 +65,87 @@
     height: 100%;
     display: flex;
     align-items: center;
+    background: rgba(255, 255, 255, 0.0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20.8px);
+    -webkit-backdrop-filter: blur(20.8px);
     
 
   }
   
   .carousel-item {
     min-width: 100%;
+    height: 100%;
+    margin-top: 20px;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     box-sizing: border-box;
     padding: 0 10px; /* Add padding as needed */
     cursor: pointer;
-    position: relative;
+    transition: transform 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: red;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.0);
+    border-radius: 5px;
 
   }
   
   .event-image {
-    width: 50%;
-    height: 50%;
-    display: block;
+    margin-top: 20px;
+    box-sizing: border-box;
+    border-radius: 5%;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.0);
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
   }
   
   .event-details {
     padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font: 500 16px/1.5em 'Poppins', sans-serif;
+
+  }
+  .date{
+    font: 500 16px/1.5em 'Poppins', sans-serif;
+    color: rgb(255,255,255);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 79, 255, 0.7);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+  }
+  .title{
+    font: 800 20px/1.5em 'Poppins', sans-serif;
+    color: rgb(0,79,255);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .tags{
+    font: 500 16px/1.5em 'Poppins', sans-serif;
+    background-color:  rgb(0,79,255);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
   }
   
   .expanded-details {
@@ -83,7 +154,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: white; /* Adjust background color as needed */
+  
     z-index: 2;
     padding: 20px;
     box-sizing: border-box;
@@ -102,7 +173,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 3;
+    z-index: 5;
   }
   
   .modal {
@@ -110,21 +181,55 @@
     padding: 20px;
     box-sizing: border-box;
     width: 50%;
-    height: 500px;
+    height:700px;
     overflow-y: auto;
-    position: relative;
+    position:absolute;
+    border-radius: 16px;
   }
-  
+  .modal h2{
+    font: 800 40px/1.5em 'Poppins', sans-serif;
+    color: rgb(0,79,255);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .modal p{
+    font: 500 16px/1.5em 'Poppins', sans-serif;
+    color: rgb(0,79,255);
+    text-align: center;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .modal .title{
+    font: 800 20px/1.5em 'Poppins', sans-serif;
+    color: rgb(0,79,255);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .modal .tags{
+    font: 500 16px/1.5em 'Poppins', sans-serif;
+    background-color:  rgb(0,79,255);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+  }
   .close-button {
-    position: absolute;
+
     top: 10px;
     right: 10px;
-    font-size: 24px;
     cursor: pointer;
-    background: blue;
+    background: none;
+    color: #000;
+    family-font: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
     border: none;
-    outline: none;
-    z-index: 4;
+    position: absolute;
+    z-index: 6;
   }
   
   /* Additional styling for close button */
@@ -132,3 +237,43 @@
     color: red;
   }
   
+  @media (max-width: 768px) {
+    #event-section {
+      padding: 20px;
+  }
+  .arrow-button {
+    font-size: 30px;
+    top: 67%;
+  }
+  .carousel-container {
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+  }
+  .carousel {
+    width: 100%;
+    height: 100%;
+  }
+  .carousel-item {
+    min-width: 100%;
+    height: 100%;
+    margin-top: 10px;
+  }
+  .event-image {
+    width: 100%;
+    height: 100%;
+  }
+  .event-details {
+    width: 100%;
+    height: 100%;
+  }
+  .expanded-details {
+    width: 100%;
+    height: 100%;
+  }
+  .modal {
+    width: 100%;
+    height: 80%;
+  }
+ 
+  }

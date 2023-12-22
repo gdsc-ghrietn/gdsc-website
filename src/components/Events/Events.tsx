@@ -1,12 +1,11 @@
 import "./Events.styles.css";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { Event, EventFromList } from "../../models/Event";
-
+import { Event, EventFromList, Speaker } from '../../models/Event';
 const Events: React.FC = () => {
   const [events, setEvents] = useState<Event[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [expandedEvent, setExpandedEvent] = useState<Event | null>(null);
+  const [expandedEvent, setExpandedEvent] = useState<Event| null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const eventBaseUrl = 'https://gdsc.community.dev/api/event/';
 
@@ -54,8 +53,13 @@ const Events: React.FC = () => {
     }
   };
   function formatDate(dateString: string) {
-    const formattedDate = new Date(dateString).toLocaleDateString(undefined);
+    const formattedDate = new Date(dateString).toUTCString().slice(0, 16);
     return formattedDate;
+  }
+  function formatTime(dateString: string) {
+    const formattedTime = new Date(dateString).toLocaleTimeString();
+    const time = formattedTime.split(":");
+    return time[0] + ":" + time[1] + " " + time[2].split(" ")[1];
   }
 
   useEffect(() => {
@@ -64,11 +68,12 @@ const Events: React.FC = () => {
 
   return (
     <div id="event-section">
+      <h1 className="heading">Events</h1>
       <button
         className="arrow-button left"
         onClick={() => handleArrowClick("left")}
       >
-        &lt;
+      <h1> &lt;</h1> 
       </button>
       <div className="carousel-container">
         <div className="carousel" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
@@ -84,10 +89,10 @@ const Events: React.FC = () => {
                 width={300}
               />
               <div className="event-details">
-                <h6>{event.title}</h6>
-                {/* Add date and time as needed */
-                <p>{formatDate(event.start_date.toString())}</p>               }
-                <p>{stripHtml(event.description_short)}</p>
+                {<p className="tags">{formatDate(event.start_date.toString())}</p>               }
+                  <p className="tags">{formatTime(event.start_date.toString())}</p>
+                  <h4 className="title">{event.title}</h4>
+                  <p>{event.tags.map((tag) => <span className="tags">#{tag} </span>)}</p>
               </div>
             </div>
           ))}
@@ -97,7 +102,7 @@ const Events: React.FC = () => {
         className="arrow-button right"
         onClick={() => handleArrowClick("right")}
       >
-        &gt;
+        <h1>&gt;</h1>
       </button>
       {isModalOpen && expandedEvent && (
         <div className="modal-overlay">
@@ -105,27 +110,25 @@ const Events: React.FC = () => {
             <button className="close-button" onClick={handleModalClose}>
               &times;
             </button>
-            <h1>{expandedEvent.title}</h1>
-            <img
-              src={expandedEvent.picture.url || "https://res.cloudinary.com/startup-grind/image/fetch/c_fill,w_500,h_500,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/https://res.cloudinary.com/startup-grind/image/upload/c_fill%2Cdpr_2.0%2Cf_auto%2Cg_center%2Cq_auto:good/v1/gcs/platform-data-dsc/event_banners/gdev-eccosystems-bevy-chapters-thumbnail_fMd5BWp.png"}
-              alt={expandedEvent.title}
-              width={300}
-            />
             <div className="expanded-details">
-                         <h1>{expandedEvent.title}</h1>
-                        <img src={expandedEvent.picture.url} width={300}/>
-                        <p>{stripHtml(expandedEvent.description)}</p>
+                        <h6 className="title">{expandedEvent.title}</h6>
                         <p>{expandedEvent.description_short}</p>
-                        <p>{expandedEvent.audience_type}</p>
-                        <p>{expandedEvent.start_date.toString()}</p>
-                        <p>{expandedEvent.end_date.toString()}</p>
-                        <p>{expandedEvent.tags.join(', ')}</p>
-                        <p>{expandedEvent.url}</p>
-                        <p>{expandedEvent.venue_name}</p>
-                        <p>{expandedEvent.venue_address}</p>
-                        <p>{expandedEvent.venue_city}</p>
-                        <p>{expandedEvent.venue_state}</p>
-                        <p>{expandedEvent.venue_country}</p>
+                        <p className="description">{stripHtml(expandedEvent.description)}</p>
+                        <p>Speakers:</p>
+                        <br/>
+                        <p>Tags:</p>
+                        <p>{expandedEvent.tags.map((tag) => <span className="tags">{tag} </span>)}</p>
+                        <br/>
+                        <p>Event Type:</p>
+                        <p className="tags"> {expandedEvent.audience_type}</p>
+                        <br/>
+                        <p>Event Timing:</p>
+                        <p className="tags">{formatTime(expandedEvent.start_date.toString())}</p> <p>to</p>
+                        <p className="tags">{formatTime(expandedEvent.end_date.toString())}</p>
+                        <br/>
+                        <p>Register :</p>
+                        <a href={expandedEvent.url} target="_blank" rel="noreferrer"><p className="tags">Click Here</p></a> 
+                        
               {/* Add more details as needed */}
             </div>
           </div>
