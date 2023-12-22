@@ -1,7 +1,7 @@
 import "./Events.styles.css";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { Event, EventFromList, Speaker } from '../../models/Event';
+import { Event, EventFromList} from '../../models/Event';
 const Events: React.FC = () => {
   const [events, setEvents] = useState<Event[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -13,15 +13,12 @@ const Events: React.FC = () => {
     try {
       const eventsListRes = await axios.get(eventBaseUrl + '?chapter=3432');
       const eventsList: EventFromList[] = eventsListRes.data.results;
-
       const eventDetailsPromises = eventsList.map(async (event: EventFromList) => {
         const eventRes = await axios.get(eventBaseUrl + event.id);
         return eventRes.data as Event;
       });
-
       const eventDetails = await Promise.all(eventDetailsPromises);
       setEvents(eventDetails);
-
     } catch (error) {
       console.error(error);
     }
@@ -128,8 +125,6 @@ const Events: React.FC = () => {
                         <br/>
                         <p>Register :</p>
                         <a href={expandedEvent.url} target="_blank" rel="noreferrer"><p className="tags">Click Here</p></a> 
-                        
-              {/* Add more details as needed */}
             </div>
           </div>
         </div>
