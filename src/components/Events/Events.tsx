@@ -111,7 +111,6 @@ const Events: React.FC = () => {
                         <h6 className="title">{expandedEvent.title}</h6>
                         <p>{expandedEvent.description_short}</p>
                         <p className="description">{stripHtml(expandedEvent.description)}</p>
-                        <p>Speakers:</p>
                         <br/>
                         <p>Tags:</p>
                         <p>{expandedEvent.tags.map((tag) => <span className="tags">{tag} </span>)}</p>
