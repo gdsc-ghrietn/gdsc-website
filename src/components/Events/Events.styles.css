@@ -2,7 +2,7 @@
 #event-section {
     position: relative;
     width: 100%;
-    height: 650px;
+    height: 750px;
     padding: 20px;
     box-sizing: border-box;
     display: flex;
@@ -48,33 +48,35 @@
   .carousel-container {
     position: relative;
     overflow: hidden;
-    width: 25%;
+    width: 90%;
     height: 100%;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: rgba(255, 255, 255,1);
-    border-radius: 16px;
+    background:none;
+    margin-bottom: 0;
+  
   }
   
   .carousel {
-    position: relative;
+    position:absolute;
     transition: transform 0.3s ease-in-out;
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    background: rgba(255, 255, 255, 0.0);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(20.8px);
-    -webkit-backdrop-filter: blur(20.8px);
+    background:none;
+    justify-content: space-between;
+    margin-bottom: 20px;
   }  
   .carousel-item {
-    min-width: 100%;
-    height: 100%;
-    margin-top: 20px;;
+    width: 400px;
+    height: 600px;
+    margin-top: 30px;
+    margin-left: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -89,18 +91,18 @@
     justify-content: center;
     border-radius: 10px;
     border: 2px solid rgba(255, 255, 255, 0.0);
-    border-radius: 5px;
-
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 1);
   }
   
   .event-image {
     margin-top: 20px;
     box-sizing: border-box;
-    border-radius: 5%;
-    width: 100%;
-    height: 100%;
-    border: 2px solid rgba(255, 255, 255, 0.0);
-    border-radius: 5px;
+    object-fit: scale-down;
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid rgba(255, 255, 255, 1);
     transition: transform 0.3s ease-in-out;
   }
   
@@ -114,6 +116,9 @@
     align-items: center;
     justify-content: center;
     font: 500 16px/1.5em 'Poppins', sans-serif;
+    color: rgb(0,79,255);
+    border-radius: 16px;
+    margin-bottom: 20px;
 
   }
   .date{
@@ -250,6 +255,7 @@
     min-width: 100%;
     height: 100%;
     margin-top: 10px;
+    margin-left: 0px;
   }
   .event-image {
     width: 100%;
