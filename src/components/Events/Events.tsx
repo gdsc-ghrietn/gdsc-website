@@ -88,7 +88,6 @@ const Events: React.FC = () => {
                 {<p className="tags">{formatDate(event.start_date.toString())}</p>}
                   <p className="tags">{formatTime(event.start_date.toString())}</p>
                   <h4 className="title">{event.title}</h4>
-
               </div>
             </div>
           ))}
@@ -109,7 +108,7 @@ const Events: React.FC = () => {
             <div className="expanded-details">
                         <h6 className="title">{expandedEvent.title}</h6>
                         <p>{expandedEvent.description_short}</p>
-                        <p className="description">{stripHtml(expandedEvent.description)}</p>
+                        <p className="description" style={{alignContent:"center"}}>{stripHtml(expandedEvent.description)}</p>
                         <br/>
                         {expandedEvent.speakers?.map((id) => (
                             <div style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center",alignContent:"center"}}>
@@ -127,14 +126,18 @@ const Events: React.FC = () => {
                           ))}
                         <p>Tags:</p>
                         <p>{expandedEvent.tags.map((tag) => <span className="tags">{tag} </span>)}</p>
-                        <br/>
-                        <p>Event Type:</p>
-                        <p className="tags"> {expandedEvent.audience_type}</p>
-                        <br/>
-                        <p>Event Timing:</p>
-                        <p className="tags">{formatTime(expandedEvent.start_date.toString())}</p> <p>to</p>
-                        <p className="tags">{formatTime(expandedEvent.end_date.toString())}</p>
-                        <br/>
+                      
+                        <div className="event-typetime">
+                          <div>
+                          <p>Event Type:</p>
+                          <p className="tags"> {expandedEvent.audience_type}</p>
+                          </div>
+                          <div style={{marginRight:"10px"}}>               
+                            <p>Event Timing:</p>
+                            <p className="tags">{formatTime(expandedEvent.start_date.toString())}</p> <p>to</p>
+                            <p className="tags">{formatTime(expandedEvent.end_date.toString())}</p>
+                          </div>
+                        </div>
                         <p>Register :</p>
                         <a href={expandedEvent.url} target="_blank" rel="noreferrer"><p className="registerlink">Click Here</p></a> 
             </div>
