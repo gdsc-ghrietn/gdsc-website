@@ -191,6 +191,8 @@
     height:700px;
     overflow-y: auto;
     position:absolute;
+    display: flex;
+    flex-direction: column;
     border-radius: 16px;
   }
   .modal h2{
