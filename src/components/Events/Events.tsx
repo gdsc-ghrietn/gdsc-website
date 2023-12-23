@@ -132,7 +132,7 @@ const Events: React.FC = () => {
                           <p>Event Type:</p>
                           <p className="tags"> {expandedEvent.audience_type}</p>
                           </div>
-                          <div style={{marginRight:"10px"}}>               
+                          <div style={{marginRight:window.innerWidth<=768?`200px`:`none`, display:"flex",justifyContent:"center",alignItems:"center"}}>               
                             <p>Event Timing:</p>
                             <p className="tags">{formatTime(expandedEvent.start_date.toString())}</p> <p>to</p>
                             <p className="tags">{formatTime(expandedEvent.end_date.toString())}</p>

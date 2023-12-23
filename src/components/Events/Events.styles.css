@@ -166,6 +166,10 @@
     margin: 5px;
     display: inline-block;
   }
+  .registerlink:hover{
+    background-color: rgb(0,79,255);
+    color: white;
+  }
   .expanded-details {
     position: absolute;
     top: 0;
@@ -182,8 +186,6 @@
     color: rgb(0,79,255);
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
-    margin-bottom: 20px;
   }
 
 .modal-overlay {
@@ -223,8 +225,7 @@
     color: rgb(0,79,255);
     text-align: center;
     display: inline-block;
-    margin-top: 20px;
-    margin-bottom: 20px;
+   
   }
   .modal .title{
     font: 800 20px/1.5em 'Poppins', sans-serif;
@@ -239,6 +240,7 @@
     color: white;
     border-radius: 5px;
     padding: 5px;
+    margin-top: 1px;
     margin: 5px;
     display: inline-block;
   }
