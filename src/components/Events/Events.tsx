@@ -8,7 +8,6 @@ const Events: React.FC = () => {
   const [expandedEvent, setExpandedEvent] = useState<Event| null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const eventBaseUrl = 'https://gdsc.community.dev/api/event/';
-
   async function getEvents() {
     try {
       const eventsListRes = await axios.get(eventBaseUrl + '?chapter=3432');
@@ -45,7 +44,7 @@ const Events: React.FC = () => {
       );
     } else {
       setCurrentIndex((prevIndex) =>
-        prevIndex === events.length - 1 ? 0 : prevIndex + 1
+      prevIndex === events.length - 1 ? 0 : prevIndex + 1
       );
     }
   };
@@ -54,7 +53,7 @@ const Events: React.FC = () => {
     return formattedDate;
   }
   function formatTime(dateString: string) {
-    const formattedTime = new Date(dateString).toLocaleTimeString();
+    const formattedTime = new Date(dateString).toLocaleTimeString("en-US", { timeStyle: "medium" });
     const time = formattedTime.split(":");
     return time[0] + ":" + time[1] + " " + time[2].split(" ")[1];
   }
@@ -73,7 +72,7 @@ const Events: React.FC = () => {
       <h1> &lt;</h1> 
       </button>
       <div className="carousel-container">
-        <div className="carousel" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+        <div className="carousel" style={{  transform: window.innerWidth <= 768 ? `translateX(-${currentIndex * 100}%)` : `translateX(-${currentIndex * (100 / Math.min(events.length, 4))}%)`  }}>
           {events.map((event) => (
             <div
               key={event.id}
@@ -86,7 +85,7 @@ const Events: React.FC = () => {
                 width={300}
               />
               <div className="event-details">
-                {<p className="tags">{formatDate(event.start_date.toString())}</p>               }
+                {<p className="tags">{formatDate(event.start_date.toString())}</p>}
                   <p className="tags">{formatTime(event.start_date.toString())}</p>
                   <h4 className="title">{event.title}</h4>
                   <p>{event.tags.map((tag) => <span className="tags">#{tag} </span>)}</p>
