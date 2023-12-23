@@ -88,7 +88,7 @@ const Events: React.FC = () => {
                 {<p className="tags">{formatDate(event.start_date.toString())}</p>}
                   <p className="tags">{formatTime(event.start_date.toString())}</p>
                   <h4 className="title">{event.title}</h4>
-                  <p>{event.tags.map((tag) => <span className="tags">#{tag} </span>)}</p>
+
               </div>
             </div>
           ))}
