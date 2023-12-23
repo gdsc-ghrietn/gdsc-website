@@ -111,6 +111,20 @@ const Events: React.FC = () => {
                         <p>{expandedEvent.description_short}</p>
                         <p className="description">{stripHtml(expandedEvent.description)}</p>
                         <br/>
+                        {expandedEvent.speakers?.map((id) => (
+                            <div style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center",alignContent:"center"}}>
+                              <p>Speaker : </p>
+                              <img className="event-image"
+                                src={id.picture?.url || "https://res.cloudinary.com/startup-grind/image/fetch/c_fill,w_500,h_500,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/https://res.cloudinary.com/startup-grind/image/upload/c_fill%2Cdpr_2.0%2Cf_auto%2Cg_center%2Cq_auto:good/v1/gcs/platform-data-dsc/event_banners/gdev-eccosystems-bevy-chapters-thumbnail_fMd5BWp.png"}
+                                alt={id.first_name}  style={{width:"100px",height:"100px",borderRadius:"50%", margin:"auto"
+                              }}
+                              />
+                              <p>Speaker Name: {id.first_name+" "+id.last_name}</p>
+                              <p>Speaker Bio:</p>
+                              {id.title && <p className="tags">{id.title}</p>}
+                              {id.bio && <p className="tags">{stripHtml(id.bio)}</p>}
+                            </div>
+                          ))}
                         <p>Tags:</p>
                         <p>{expandedEvent.tags.map((tag) => <span className="tags">{tag} </span>)}</p>
                         <br/>
