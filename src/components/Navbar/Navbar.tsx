@@ -3,10 +3,8 @@ import { useState } from "react";
 
 const Navbar: React.FC = () => {
     const [showMenu, setShowMenu] = useState(false);
-    const menuIcon = document.getElementsByClassName('menu-icon')[0] as HTMLElement;
     const toggleMenu = () => {
         setShowMenu(!showMenu);
-        menuIcon.classList.toggle('change');
     };
 
     return (
@@ -19,7 +17,7 @@ const Navbar: React.FC = () => {
                     <div className="college-name">GHRIET NAGPUR</div>
                 </div>
             </a> 
-            <div className="menu-icon" onClick={toggleMenu}>
+            <div className={`menu-icon ${showMenu ? 'change' : ''}`} onClick={toggleMenu}>
             <div className="bar1"></div>
             <div className="bar2"></div>
             <div className="bar3"></div>
