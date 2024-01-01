@@ -93,10 +93,6 @@
     padding: 0 10px;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     border-radius: 10px;
     border: 2px solid rgba(255, 255, 255, 0.0);
     border-radius: 16px;

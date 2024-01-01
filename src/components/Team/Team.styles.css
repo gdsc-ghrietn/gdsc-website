@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    cursor: not-allowed;
     background-color: rgb(253, 184, 51);
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
@@ -16,18 +16,6 @@ div#team-section h1{
 
     color: #333;
 }
-
-
-div#team-section div#team{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
 
 .team-member:hover{
     transform: scale(1.1);
@@ -41,6 +29,7 @@ div#team-section div#team{
     flex-wrap: wrap;
     padding:0;
     margin:0;
+    cursor:not-allowed;
 }
 
 .teamcarousel-item{
@@ -53,7 +42,7 @@ div#team-section div#team{
     align-items: center;
     justify-content: center;
     transition: all 0.5s ease-in-out;
-    cursor: pointer;
+    cursor: not-allowed;
 }
 
 .team-member{
@@ -77,8 +66,7 @@ div#team-section div#team{
     border-radius: 50%;
     border: 2px solid black;
     width: 75%;
-    height: 100%;
-   
+    height: 100%; 
     transition: transform 0.3s ease-in-out;
 }
 
@@ -99,8 +87,7 @@ div#team-section div#team{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-    
+        justify-content: center; 
         background-color: rgb(253, 184, 51);
         font-family: 'Roboto', sans-serif;
         font-size: 1.5rem;
@@ -108,9 +95,6 @@ div#team-section div#team{
     }
     .team-carousel{
         width: 80%;
-
-
-
     }
     .teamcarousel-item{
         padding: 0;
@@ -145,8 +129,7 @@ div#team-section div#team{
         border-radius: 50%;
         border: 2px solid black;
         width: 80%;
-        height: 50%;
-       
+        height: 50%; 
         transition: transform 0.3s ease-in-out;
     }
 }
