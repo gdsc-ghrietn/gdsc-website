@@ -17,8 +17,10 @@ const Navbar: React.FC = () => {
                     <div className="college-name">GHRIET NAGPUR</div>
                 </div>
             </a> 
-            <div className="menu-icon" onClick={toggleMenu}>
-                menu
+            <div className={`menu-icon ${showMenu ? 'change' : ''}`} onClick={toggleMenu}>
+            <div className="bar1"></div>
+            <div className="bar2"></div>
+            <div className="bar3"></div>
             </div>
             <ul className={showMenu ? 'show' : ''}>
                 <li><a href="/">Home</a></li>
