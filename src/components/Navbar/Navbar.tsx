@@ -5,8 +5,8 @@ const Navbar: React.FC = () => {
     const [showMenu, setShowMenu] = useState(false);
     const menuIcon = document.getElementsByClassName('menu-icon')[0] as HTMLElement;
     const toggleMenu = () => {
-        setShowMenu(!showMenu);
         menuIcon.classList.toggle('change');
+        setShowMenu(!showMenu);
     };
 
     return (
