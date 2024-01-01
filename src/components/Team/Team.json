@@ -1,0 +1,140 @@
+[
+    {
+      "id": 2,
+      "name": "ARYAN",
+      "role": "GDSC LEAD",
+      "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+    },
+    {
+      "id": 4,
+      "name": "HIMANSHU",
+      "role": "MGMT LEAD",
+      "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+    },
+    {
+      "id": 5,
+      "name": "MANSI",
+      "role": "ML&AD LEAD",
+      "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+    },
+    {
+      "id": 6,
+      "name": "KAJAL",
+      "role": "PR LEAD",
+      "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+    },
+    {
+      "id": 7,
+      "name": "LOKESH",
+      "role": "AI LEAD",
+      "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+    },
+    {
+      "id": 8,
+      "name": "GUNJAN",
+      "role": "CONTENT TEAM",
+      "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+    },
+    {
+      "id": 10,
+      "name": "ANUJ",
+      "role": "TECH LEAD",
+      "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+    },
+    {
+      "id": 11,
+      "name": "VIDIT",
+      "role": "TECH TEAM",
+      "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+    },
+    {
+      "id": 12,
+      "name": "KHUSHBOO",
+      "role": "TECH TEAM",
+      "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+    },
+    {
+      "id": 13,
+      "name": "PUNARV",
+      "role": "DESIGN TEAM",
+      "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+    },
+    {
+      "id": 14,
+      "name": "ANUSHKA",
+      "role": "DESIGN TEAM",
+      "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+    },
+    {
+      "id": 15,
+      "name": "BHAGYASHREE",
+      "role": "PR TEAM",
+      "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+    },
+    {
+      "id": 16,
+      "name": "AYUSH S",
+      "role": "PR TEAM",
+      "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+    },
+    {
+      "id": 18,
+      "name": "DEV",
+      "role": "PR TEAM",
+      "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+    },
+    {
+      "id": 19,
+      "name": "HIMANSHI",
+      "role": "PR TEAM",
+      "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+    },
+    {
+      "id": 20,
+      "name": "AYUSH K",
+      "role": "PR TEAM",
+      "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+    },
+    {
+      "id": 21,
+      "name": "ANGAD",
+      "role": "MGMT TEAM",
+      "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+    },
+    {
+      "id": 22,
+      "name": "PALAK",
+      "role": "MGMT TEAM",
+      "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+    },
+    {
+      "id": 23,
+      "name": "ATHARVA",
+      "role": "MGMT TEAM",
+      "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+    },
+    {
+      "id": 24,
+      "name": "SHAHANAWAZ",
+      "role": "MGMT TEAM",
+      "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+    },
+    {
+      "id": 25,
+      "name": "SAHIL",
+      "role": "WEB D LEAD",
+      "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+    },
+    {
+      "id": 26,
+      "name": "SHRAVANI",
+      "role": "CONTENT LEAD",
+      "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+    },
+    {
+      "id": 27,
+      "name": "Vaibhav Talkhande",
+      "role": "Web Developer",
+      "image_url": "https://avatars.githubusercontent.com/u/49303222?s=400&u=c359afff6474e78ea07f7ce9cd4d2c3f1466c030&v=4"
+    }
+  ]
