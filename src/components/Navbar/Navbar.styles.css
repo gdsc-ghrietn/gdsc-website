@@ -127,7 +127,7 @@ img{
         flex-direction: column;
         top: 50px;
         right: 0;
-        padding: 20px;
+        padding: 20px 0;
         width: 100%;
         background-color: #fff; 
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
