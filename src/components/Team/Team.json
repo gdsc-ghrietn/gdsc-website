@@ -1,61 +1,61 @@
 [
   {
     "id": 1,
-    "name": "ARYAN TOMAR",
+    "name": "Aryan Tomar",
     "role": "GDSC LEAD",
     "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
   },
   {
     "id": 2,
-    "name": "ANUJ KARODDEO",
+    "name": "Anuj Karoddeo",
     "role": "TECH LEAD",
     "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
   },
   {
     "id": 3,
-    "name": "LOKESH BAGHMARE",
+    "name": "Lokesh Baghmare",
     "role": "AI LEAD",
     "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
   },
   {
     "id": 4,
-    "name": "MANSI PATIL",
+    "name": "Mansi Patil",
     "role": "ML&AD LEAD",
     "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
   },
   {
     "id": 5,
-    "name": "SAHIL YEOLE",
+    "name": "Sahil Yeole",
     "role": "WEB D LEAD",
     "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
   },
   {
     "id": 6,
-    "name": "HIMANSHU TADSE",
+    "name": "Himanshu Tadse",
     "role": "MGMT LEAD",
     "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
   },
   {
     "id": 7,
-    "name": "SHRAVANI GHAYWAT",
+    "name": "Shravani Ghaywat",
     "role": "CONTENT LEAD",
     "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
   },
   {
     "id": 8,
-    "name": "KAJAL MALVIYA",
+    "name": "Kajal Malviya",
     "role": "PR LEAD",
     "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
   },
   {
     "id": 9,
-    "name": "VIDIT SINGH",
+    "name": "Vidit Singh",
     "role": "TECH TEAM",
     "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
   },
   {
     "id": 10,
-    "name": "KHUSHBOO NINAWE",
+    "name": "Khushboo Ninawe",
     "role": "TECH TEAM",
     "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
   },
@@ -67,73 +67,73 @@
   },
   {
     "id": 12,
-    "name": "PUNARV PATIDAR",
+    "name": "Punarv Patidar",
     "role": "DESIGN TEAM",
     "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
   },
   {
     "id": 13,
-    "name": "ANUSHKA KHURGE",
+    "name": "Anushka Khurge",
     "role": "DESIGN TEAM",
     "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
   },
   {
     "id": 14,
-    "name": "GUNJAN GAWANDE",
+    "name": "Gunjan Gawande",
     "role": "CONTENT TEAM",
     "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
   },
   {
     "id": 15,
-    "name": "BHAGYASHREE TITARMARE",
+    "name": "Bhagyashree Titarmare",
     "role": "PR TEAM",
     "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
   },
   {
     "id": 16,
-    "name": "AYUSH SONAWANE",
+    "name": "Ayush Sonawane",
     "role": "PR TEAM",
     "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
   },
   {
     "id": 18,
-    "name": "DEV HALADKAR",
+    "name": "Dev Haladkar",
     "role": "PR TEAM",
     "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
   },
   {
     "id": 19,
-    "name": "HIMANSHI PANTAWANE",
+    "name": "Himanshi Pantawane",
     "role": "PR TEAM",
     "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
   },
   {
     "id": 20,
-    "name": "AYUSH KAMBLE",
+    "name": "Ayush Kamble",
     "role": "PR TEAM",
     "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
   },
   {
     "id": 21,
-    "name": "ANGAD SONARE",
+    "name": "Angad Sonare",
     "role": "MGMT TEAM",
     "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
   },
   {
     "id": 22,
-    "name": "PALAK JAISWAL",
+    "name": "Palak Jaiswal",
     "role": "MGMT TEAM",
     "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
   },
   {
     "id": 23,
-    "name": "ATHARVA NIKHARE",
+    "name": "Atharva Nikhare",
     "role": "MGMT TEAM",
     "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
   },
   {
     "id": 24,
-    "name": "SHAHANAWAZ ANSARI",
+    "name": "Shahanawaz Ansari",
     "role": "MGMT TEAM",
     "image_url": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
   }
