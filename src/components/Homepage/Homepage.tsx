@@ -17,8 +17,10 @@ const Homepage: React.FC = () => {
         <About/>
         <Events/>
         <Team/>
-        <ContactUs/>
-        <Footer/>
+        <div className='parallax'>
+          <ContactUs/>
+          <Footer/>
+        </div>
       </div>
   )
 }
