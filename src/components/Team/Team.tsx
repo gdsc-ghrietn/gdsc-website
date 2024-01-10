@@ -48,9 +48,9 @@ const TeamCarousel: React.FC = () => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          slidesPerRow: 2,
+          slidesToShow: 2,
+          slidesToScroll:2,
+          slidesPerRow: 1,
         },
       },
     ],
