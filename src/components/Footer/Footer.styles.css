@@ -39,6 +39,19 @@
     text-align: left;
     word-wrap: break-word;
 }
+.address{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: normal;
+    margin:0 0 0  120px;
+    padding: 0 10px;
+    width: 50%;
+    text-align: left;
+    word-wrap: break-word;
+}
 .social-media{
     display: flex;
     flex-direction: column;
@@ -58,12 +71,10 @@
     margin: 0 10px;
     padding: 0 10px;
     gap: 20px;
-
 }
 
 @media screen and (max-width: 768px){
-    #footer-section{
-        
+    #footer-section{ 
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -87,10 +98,13 @@
         margin: 0 10px;
         padding: 0 20px;
         width: 100%;
-        font-size: 15px;
+        font-size: 1px;
         padding-bottom: 10px;
         text-align: center;
         word-wrap: break-;
+    }
+    .address{
+        font-size: 10px;
     }
     .social-media{
         display: flex;

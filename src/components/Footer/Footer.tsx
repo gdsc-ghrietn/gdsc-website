@@ -5,7 +5,8 @@ const Footer:React.FC=()=>{
         <div id="footer-section">
                 <div className="information">
                         <div>Google Developer Student Clubs<br/>GHRIET NAGPUR<br/>
-                        Shradha Park, B-37/39, Hingna Rd, Midc, Nagpur, Maharashtra 440028</div>
+                        </div>
+                        <p className="address">Shradha Park, B-37/39, Hingna Rd, Midc, Nagpur, Maharashtra 440028</p>
                 </div>
                     <div className="social-media">
                         <h2>Follow Us On</h2>
