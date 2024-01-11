@@ -74,55 +74,35 @@
 }
 
 @media screen and (max-width: 768px){
-    #footer-section{ 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .information{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 0 10px;
-        padding: 0 50px; 
-    }
 
+    #footer-section{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        width:100%;
+    }
     .information div{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 0 10px;
-        padding: 0 20px;
-        width: 100%;
-        font-size: 1px;
-        padding-bottom: 10px;
-        text-align: center;
-        word-wrap: break-;
+        font-size:10px;
+        word-wrap:break-word;
+        text-align:center;
+        width:100%;   
     }
     .address{
-        font-size: 10px;
+        text-align:center;
+        margin:0;
+        font-size:10px;
     }
     .social-media{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 20px;
-        text-align: center;
+        font-size:10px;
+        text-align:center;
+        padding-top:10px;
+        margin:0;
+        margin-left:20px;
     }
-    .social-media h2{
-        text-align: center;
-        padding-left: 20px;
-    }
-    .social-media-icon img{
-        height: 30px;
-        width: 30px;
-        align-items: center;
-        justify-content: center;
-        padding-left: 20px;
+    .social-media-icons img{
+        height:30px;
+        width:30ppx;
     }
 }
