@@ -60,6 +60,7 @@ div#team-section h1{
     box-shadow: 10px 10px  0 rgba(0,0,250,1);
     transition: all 0.5s ease-in-out;
     cursor: pointer;
+    text-align:center;
 }
 .team-member img{
     box-sizing: border-box;
