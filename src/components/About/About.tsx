@@ -1,4 +1,5 @@
-import "./About.styles.css";
+import "./About.right.styles.css";
+import "./About.left.styles.css";
 import GdscLogo from "../../assets/google-developers-seeklogo.com.svg";
 
 // import Aos from "aos";
@@ -100,21 +101,12 @@ const About: React.FC = () => {
       {/* //Right-Section */}
       <div className="right-section">
         <div className="gdsc-content">
-          <div
-            className="gdsc-label"
-            data-aos="fade-down"
-            // data-aos-duration="1000"
-          >
+          <div className="gdsc-label">
             <img src={GdscLogo} alt="GDSC-LOGO" />
             <h4>Google Devloper Student Clubs</h4>
-            <p>GHRIETN</p>
+            <p>GHRIET NAGPUR</p>
           </div>
-          <div
-            className="dev-slogan"
-            data-aos="fade-down"
-            // data-aos-duration="2000"
-            // data-aos-easing="ease-in-out"
-          >
+          <div className="dev-slogan">
             <h2>
               A developers' community by <br /> students, for students.
             </h2>
