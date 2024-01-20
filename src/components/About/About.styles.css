@@ -1,75 +1,633 @@
-#about-section {
-    width: 100%;
-    height: 550px;
-    padding: 50px 0;
-    display: flex;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.about-section {
+  margin-top: 60px;
+  padding: 0;
+  /* color: aliceblue; */
+  height: 92vh;
+  background-color: #fff;
+  display: flex;
+  position: relative;
+  box-sizing: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.left-section {
+  /* border: 2px solid black; */
+  /* background-image: url("../../assets/community.png"); */
+  margin-top: 35px;
+  width: 65%;
+  background-repeat: no-repeat;
+  /* padding-right: 60%; */
+  /* padding-left: 50px; */
+  /* border: 2px solid black; */
+}
+
+.right-section {
+  position: relative;
+  /* left: 0%; */
+  margin-top: 10%;
+  margin-left: 3rem;
+}
+
+.right-section img {
+  justify-content: center;
+  text-align: center;
+  /* margin-top: 14rem; */
+  height: 3rem;
+  padding: 0;
+}
+
+.gdsc-content {
+  text-align: center;
+}
+
+.gdsc-label {
+  line-height: 0;
+}
+
+.gdsc-content h4 {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.gdsc-content p {
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+.dev-slogan {
+  margin-top: 4rem;
+  font-size: 1rem;
+  line-height: 31px;
+}
+
+.join-gdsc {
+  margin-top: 3rem;
+  font-size: 17px;
+  font-weight: 600;
+  word-spacing: 1px;
+}
+
+.join-gdsc span {
+  color: red;
+}
+
+button {
+  margin-top: 15px;
+  padding: 13px 20px;
+  background-color: #1a73e8;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.four-eclipes {
+  /* Ellipse 2 */
+
+  position: absolute;
+  width: 113px;
+  height: 113px;
+  left: 221.77px;
+  top: 368.01px;
+  background: linear-gradient(0deg, #ff0000, #ff0000), #ff0000;
+  transform: rotate(-179.61deg);
+
+  /* Ellipse 27 */
+
+  position: absolute;
+  width: 113px;
+  height: 113px;
+  left: 223px;
+  top: 255px;
+
+  background: #00b21c;
+
+  /* Ellipse 28 */
+
+  position: absolute;
+  width: 113px;
+  height: 113px;
+  left: 109px;
+  top: 345px;
+
+  background: #0083fb;
+
+  /* Ellipse 29 */
+
+  position: absolute;
+  width: 113px;
+  height: 113px;
+  left: 229px;
+  top: 345px;
+
+  background: #ffd602;
+}
+
+.first {
+  width: 500px;
+  height: 450px;
+}
+
+.Second {
+  height: 400px;
+}
+
+.cross {
+  position: relative;
+}
+
+/* CROSS */
+.cross {
+  position: absolute;
+  left: 30rem;
+  top: 0;
+}
+
+.rectangle-left {
+  position: absolute;
+  width: 25px;
+  height: 80px;
+  left: 2rem; /* Adjust the left value if needed */
+  top: 8rem;
+  background: #ffb800;
+  border-radius: 40px;
+  transform: rotate(39.19deg);
+}
+
+.reactangle-right {
+  position: absolute;
+  width: 25px;
+  height: 80px;
+  left: 2rem; /* Adjust the left value if needed */
+  top: 8rem;
+  background: #ffb800;
+  border-radius: 40px;
+  transform: rotate(128.79deg);
+}
+/* CROSS ENDS */
+
+/* REACTANGLE_STRIP */
+.rectangle-strip {
+  position: relative;
+}
+
+.rectangle-strip-top {
+  position: absolute;
+  width: 70px;
+  height: 140px;
+  left: 319.9px;
+  top: 33px;
+  background: #bbf99e;
+  /* border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%; */
+}
+
+.rectangle-strip-bottom {
+  position: absolute;
+  top: 10.8rem;
+  left: 20rem;
+  width: 69.6px;
+  height: 35px;
+  border-radius: 100px 100px 0 0;
+  background: #bbf99e;
+  overflow: hidden;
+  rotate: -180deg;
+}
+/* REACTANGLE_STRIP  END*/
+
+/* circle */
+.circles {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  left: 290px;
+  top: 300px;
+  background: #00ff47;
+  border: 16px solid #b0fdc6;
+  border-radius: 50%;
+}
+
+/* four-eclipes */
+.half-circle-container {
+  position: relative;
+  top: 5rem;
+  display: flex;
+  left: 5rem;
+  align-items: center;
+  height: 50px;
+}
+
+.half-circle {
+  width: 70px;
+  height: 35px;
+  border-radius: 100px 100px 0 0;
+  background-color: #3498db; /* Replace with your desired background color */
+  overflow: hidden;
+}
+
+.red {
+  background-color: #ff0000;
+}
+
+.green {
+  background-color: #00b21c;
+}
+
+.blue {
+  background-color: #0083fb;
+}
+
+.yellow {
+  background-color: #ffd602;
+}
+
+/* four-circles */
+.four-circles {
+  position: relative;
+  top: -26rem;
+  left: -15rem;
+}
+
+.first-circle {
+  position: absolute;
+  width: 88px;
+  height: 88px;
+  left: 810px;
+  top: 610px;
+  border-radius: 50%;
+  background: #febcbc;
+}
+
+.second-circle {
+  position: absolute;
+  width: 185px;
+  height: 185px;
+  left: 673px;
+  top: 502px;
+  border-radius: 50%;
+  background: #a8d5ff;
+}
+
+.third-circle {
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  left: 800px;
+  top: 500px;
+  border-radius: 50%;
+  background: #0065fd;
+}
+
+.fourth-circle {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  left: 670px;
+  top: 640px;
+  border-radius: 50%;
+  background: #ff0000;
+}
+/* FOUR CIRCLE END*/
+
+/* BOTTOM CIRCLES */
+.half-down {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  left: 45rem;
+  top: 36rem;
+  border-radius: 50%;
+  background: #00a3ff;
+  border: 50px solid #92d7fe;
+}
+
+/* BOTTOM-CIRCLE ENDS */
+
+/* TWO-BOTTOM-STRIP */
+.right-strip {
+  position: absolute;
+  width: 80px;
+  height: 150px;
+  left: 1rem;
+  top: 30.9rem;
+  border-radius: 80px 80px 0 0;
+  background: #50e42b;
+  border: 40px solid #cbffc9;
+  border-bottom: 0;
+}
+
+.left-strip {
+  position: absolute;
+  width: 80px;
+  height: 150px;
+  left: 9.5rem;
+  top: 36.3rem;
+  border-radius: 80px 80px 0 0;
+  background: #fcb54c;
+}
+/* TWO-BOTTOM-STRIP ENDS*/
+
+/* MIDDLE-CROSS */
+.middle-cross {
+  position: relative;
+  left: 18rem;
+  top: -8rem;
+}
+.left-line {
+  position: absolute;
+  width: 18px;
+  height: 65px;
+  left: 25rem;
+  top: 27rem;
+
+  background: #ffb800;
+  border-radius: 40px;
+}
+
+.right-line {
+  position: absolute;
+  width: 18px;
+  height: 65px;
+  left: 25rem;
+  top: 27rem;
+
+  background: #ffb800;
+  border-radius: 40px;
+  transform: matrix(0.01, 1, -1, 0.01, 0, 0);
+}
+/* MIDDLE-CROSS ENDS*/
+
+.first-design {
+  position: absolute;
+  width: 56px;
+  height: 51px;
+  left: 25rem;
+  top: 29rem;
+  border-radius: 0 90px 90px 0;
+  background: #06aa3e;
+}
+
+.second-design {
+  position: absolute;
+  width: 56px;
+  height: 51px;
+  left: 21.5rem;
+  top: 25.8rem;
+  border-radius: 50% 50% 0px 50%;
+  background: #ff0808;
+}
+
+.third-design {
+  position: absolute;
+  width: 56px;
+  height: 51px;
+  left: 21.5rem;
+  top: 32.2rem;
+  border-radius: 90px 0px 0px 90px;
+  background: #278fef;
+}
+
+.fourth-design {
+  position: absolute;
+  width: 56px;
+  height: 51px;
+  left: 25rem;
+  top: 35.4rem;
+  border-radius: 0 50% 50% 50%;
+  background: #fcb54c;
+}
+
+.black-half {
+  position: absolute;
+  width: 25.58px;
+  height: 15.58px;
+  left: 26rem;
+  top: 33.2rem;
+  background: #000000;
+  border-radius: 80px 80px 0% 0%;
+  transform: rotate(90deg);
+}
+
+.cross-ver {
+  position: absolute;
+  width: 8px;
+  height: 32px;
+  left: 23.1rem;
+  top: 29.5rem;
+  background: #000;
+  border-radius: 24px;
+}
+
+.cross-hor {
+  position: absolute;
+  width: 8px;
+  height: 32px;
+  left: 23.1rem;
+  top: 29.5rem;
+  background: #000;
+  border-radius: 24px;
+  transform: rotate(90deg);
+}
+
+.first-line {
+  /* position: relative; */
+}
+
+.first-dot {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  left: 4.1rem;
+  top: 19.5rem;
+  background: #000;
+  border-radius: 50%;
+}
+
+.second-dot {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  left: 6.2rem;
+  top: 19.5rem;
+  background: #000;
+  border-radius: 50%;
+}
+
+.third-dot {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  left: 8.3rem;
+  top: 19.5rem;
+  background: #000;
+  border-radius: 50%;
+}
+
+.second-line {
+  position: relative;
+  top: -6.5rem;
+}
+
+.third-line {
+  position: relative;
+  top: -4.5rem;
+}
+
+.four-line {
+  position: relative;
+  top: -2.5rem;
+}
+
+.fifth-line {
+  position: relative;
+  top: -0.5rem;
+}
+
+.sixth-line {
+  position: relative;
+  top: 1.5rem;
+}
+
+@media screen and (max-width: 850px) {
+  .about-section {
+    max-width: 100%;
+    height: 85vh;
+    /* display: flex; */
+    box-sizing: border-box; /* Fix the typo here */
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #333;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
-    color: #fff;
-}
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    /* Remove 'foxit' if it's not part of your styling */
+  }
 
-#about-section .about-content {
+  .right-section {
+    position: relative;
+    width: 100%;
+    text-align: center;
     margin: 0 auto;
-    width: 90%;
-    max-width: 600px; 
-}
+    top: 10%;
+    /* padding: 2rem 2rem; */
+  }
 
-#about-section .about-content h1 {
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
+  .right-section img {
+    margin: auto;
+  }
 
-#about-section .about-content p {
-    font-size: 16px;
-    line-height: 26px;
-    margin-bottom: 20px;
-}
+  .bottom-circles {
+    /* margin: 10px; */
+    position: relative;
+    top: -25rem;
+    right: 25rem;
+  }
 
-#about-section .about-content .btn {
-    font-size: 16px;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border-radius: 5px;
-    text-decoration: none;
-    display: inline-block; 
-}
+  .cross {
+    left: 1rem;
+    top: -7rem;
+    /* display: none; */
+  }
 
-#about-section .about-content .btn:hover,
-#about-section .about-content .btn:active,
-#about-section .about-content .btn:focus {
-    background-color: #fff;
-    color: #333;
-    border: 1px solid #333;
-}
+  .reactangle-strip {
+    position: relative;
+    top: -5rem;
+    left: -2rem;
+  }
 
+  .rectangle-strip-top {
+    width: 3rem;
+    height: 6rem;
+  }
 
-@media only screen and (max-width: 480px) {
-    #about-section {
-        padding: 40px 0; 
-    }
+  .rectangle-strip-bottom {
+    width: 3rem;
+    height: 1.5rem;
+    top: 8rem;
+  }
 
-    #about-section .about-content {
-        width: 100%;
-    }
+  .bottom-circles {
+    /* display: none; */
+    top: 1rem;
+    left: -27rem;
+  }
 
-    #about-section .about-content h1 {
-        font-size: 28px; 
-        margin-bottom: 15px;
-    }
+  .four-circles {
+    display: none;
+    position: relative;
+  }
 
-    #about-section .about-content p {
-        font-size: 14px; 
-        line-height: 22px;
-    }
+  .main-design {
+    display: none;
+    position: relative;
+    left: -10rem;
+    top: 10rem;
+  }
 
-    #about-section .about-content .btn {
-        font-size: 14px; 
-        padding: 8px 15px;
-    } 
+  .four-eclipe {
+    position: relative;
+    display: none;
+  }
+
+  .two-bottom-strip {
+    /* display: none; */
+    position: relative;
+  }
+
+  .right-strip {
+    position: absolute;
+    width: 62px;
+    margin-top: 8rem;
+    border: 35px solid #cbffc9;
+    height: 15rem;
+  }
+
+  .left-strip {
+    width: 62px;
+    left: 8rem;
+    top: 44rem;
+  }
+
+  .circles {
+    top: 32rem;
+    left: 1rem;
+    width: 20px;
+    height: 20px;
+    border: 14px solid #b0fdc6;
+  }
+
+  .rectangle-left {
+    width: 15px;
+    height: 60px;
+  }
+
+  .reactangle-right {
+    width: 15px;
+    height: 60px;
+  }
+
+  .middle-cross {
+    width: 15px;
+    left: -5rem;
+    top: 2rem;
+    display: flex;
+  }
+
+  .left-line {
+    height: 60px;
+    width: 16px;
+    background: #ffb800;
+  }
+
+  .right-line {
+    height: 60px;
+    width: 16px;
+    background: #ffb800;
+  }
+
+  .dotes {
+    display: none;
+  }
 }
