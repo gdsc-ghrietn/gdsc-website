@@ -1,108 +1,221 @@
-#footer-section{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+#footer-section {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 250px;
+  background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5));
+  backdrop-filter: blur(10px);
+  color: white;
+  font-size: 20px;
+  /* margin-top: 30px; */
+  width: 100%;
+  padding-bottom: 80px;
+  box-shadow: 0 0 0 0.2px white;
+  /* padding-top: 15px; */
+  margin-top: 4rem;
+}
+
+.Google-Map {
+  /* width: 100%; */
+  text-align: center;
+  justify-content: start;
+  margin-top: 2.5rem;
+  margin-left: 12rem;
+  border-radius: 10px;
+}
+
+.Google-Map h2 {
+  margin-top: 10px;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin-right: 7rem;
+  width: 60%;
+  justify-content: start;
+}
+
+iframe {
+  border: 2px solid white;
+  margin-top: 10px;
+}
+
+.information {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: nowrap;
+  /* margin-left: 2rem; 
+  */
+  padding-left: 40px;
+}
+
+.GdscLabel img {
+  height: 35px;
+  margin-bottom: 8px;
+}
+
+.GdscLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  /* padding: 0 10px; */
+  width: 100%;
+  text-align: center;
+  word-wrap: break-word;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 20px 0 0 0;
+  /* padding: 20 30px; */
+  width: 50%;
+  text-align: center;
+  word-wrap: break-word;
+}
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  width: 50%;
+  /* padding-top: 20px; */
+  margin-top: 4rem;
+  margin-right: 6rem;
+}
+
+.social-media h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin-right: 7.9rem;
+}
+
+.social-media-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  padding: 0 10px;
+  gap: 20px;
+}
+
+.social-media-icons span a {
+  color: #f8f4ec;
+  font-size: 2rem;
+  padding: 10px 10px 10px 10px;
+}
+
+.instagram:hover {
+  color: #d93175;
+  transition: 0.5s;
+}
+
+.linkedin:hover {
+  color: #0057d8;
+  transition: 0.5s;
+}
+
+.discord:hover {
+  color: #4f64f5;
+  transition: 0.5s;
+}
+
+.facebook:hover {
+  color: #395593;
+  transition: 0.5s;
+}
+
+.x-twitter:hover {
+  color: #000;
+  background: #fff;
+  transition: 0.5s;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 1300px) {
+  #footer-section {
     display: flex;
-    flex-direction:row;
-    align-items: center;
+    flex-direction: column-reverse;
     justify-content: center;
-    justify-content: space-between;
-    margin:0;
-    padding: 0;
-    padding-top: 40px;
-    height: 200px;
-    background:linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5));
-    backdrop-filter: blur(10px);
-    color: white;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 0 2px white;
+    /* border-top: 1px solid white; */
+    overflow-x: hidden;
+    height: 60vh;
+    /* max-height: 550px; */
+  }
+
+  iframe {
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+    margin-right: 12rem;
+    margin-bottom: 3rem;
+  }
+
+  .information {
+    margin: 2rem 2rem;
+  }
+  .information .GdscLabel {
+    font-size: 1rem;
+    word-wrap: break-word;
+    text-align: center;
+    width: 100%;
+    /* width: 300px; */
+  }
+  .address {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.8rem;
+    /* width: 240px; */
+    width: 100%;
+  }
+  .social-media {
+    font-size: 10px;
+    text-align: center;
+    /* padding-top: 10px; */
+    margin-left: 0 auto;
+    width: 100%;
+    display: flexbox;
+  }
+
+  .social-media {
+    padding-top: 5rem;
+  }
+
+  .social-media-icons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .social-media h2 {
+    margin: 0 auto;
+    font-size: 18px;
+  }
+
+  .social-media-icons span a {
     font-size: 20px;
-    font-weight: bold;
-    margin-top: 20px;
-    width: 100%;
-    height: min-content;
-    border:none;
-    padding-bottom: 50px;
-}
-.information{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 10px;
-    padding: 0 50px;
-    width: 50%;
-}
-.information div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 10px;
-    padding: 0 10px;
-    width: 100%;
-    text-align: left;
-    word-wrap: break-word;
-}
-.address{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
-    font-weight: normal;
-    margin:0 0 0  120px;
-    padding: 0 10px;
-    width: 50%;
-    text-align: left;
-    word-wrap: break-word;
-}
-.social-media{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    margin: 0 10px;
-    padding-right: 20px;
-    background-color: rgba(0, 0, 0, 0.0);
-    width: 50%;
-}
-.social-media-icons{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 0 10px;
-    padding: 0 10px;
-    gap: 20px;
-}
-
-@media screen and (max-width: 768px){
-
-    #footer-section{
-        display:flex;
-        flex-direction:column;
-        justify-content:center;
-        align-items:center;
-        text-align:center;
-        width:100%;
-    }
-    .information div{
-        font-size:10px;
-        word-wrap:break-word;
-        text-align:center;
-        width:100%;   
-    }
-    .address{
-        text-align:center;
-        margin:0;
-        font-size:10px;
-    }
-    .social-media{
-        font-size:10px;
-        text-align:center;
-        padding-top:10px;
-        margin:0;
-        margin-left:20px;
-    }
-    .social-media-icons img{
-        height:30px;
-        width:30ppx;
-    }
+    padding: 2px;
+  }
 }
