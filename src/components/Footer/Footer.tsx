@@ -13,10 +13,9 @@ const Footer: React.FC = () => {
   return (
     <div id="footer-section">
       <div className="Google-Map">
-        <h2>Our College</h2>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.466243279665!2d79.00171792141964!3d21.12491990991707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4eab12bd10cef%3A0xf6e67c2f0a066c27!2sG.%20H.%20Raisoni%20Institute%20of%20Engineering%20and%20Technology%20(Autonomous)!5e0!3m2!1sen!2sin!4v1705843369091!5m2!1sen!2sin"
-          width="240"
+          width="350"
           height="180"
           loading="lazy"
         ></iframe>

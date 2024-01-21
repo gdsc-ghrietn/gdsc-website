@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 250px;
+  height: 190px;
   background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5));
   backdrop-filter: blur(10px);
   color: white;
@@ -22,8 +22,8 @@
   /* width: 100%; */
   text-align: center;
   justify-content: start;
-  margin-top: 2.5rem;
-  margin-left: 12rem;
+  margin-top: 3.8rem;
+  margin-left: 10rem;
   border-radius: 10px;
 }
 
@@ -39,7 +39,9 @@
 
 iframe {
   border: 2px solid white;
-  margin-top: 10px;
+  position: relative;
+  bottom: 1rem;
+  right: 1rem;
 }
 
 .information {
@@ -49,10 +51,8 @@ iframe {
   align-items: center;
   justify-content: center;
   width: 100%;
-  flex-wrap: nowrap;
-  /* margin-left: 2rem; 
-  */
-  padding-left: 40px;
+  margin-bottom: 1rem;
+  left: 1rem;
 }
 
 .GdscLabel img {
@@ -65,7 +65,7 @@ iframe {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 80px;
+  margin-top: 90px;
   /* padding: 0 10px; */
   width: 100%;
   text-align: center;
@@ -86,17 +86,17 @@ iframe {
   word-wrap: break-word;
 }
 .social-media {
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 20px;
   margin: 0px;
   background-color: rgba(0, 0, 0, 0);
   width: 50%;
   /* padding-top: 20px; */
-  margin-top: 4rem;
-  margin-right: 6rem;
+  margin-top: 5rem;
+  margin-right: 12rem;
+  left: 1rem;
 }
 
 .social-media h2 {
@@ -104,7 +104,8 @@ iframe {
   font-weight: 400;
   letter-spacing: 0.5px;
   text-align: center;
-  margin-right: 7.9rem;
+  margin-right: 6.2rem;
+  font-size: 30px;
 }
 
 .social-media-icons {
@@ -119,8 +120,8 @@ iframe {
 
 .social-media-icons span a {
   color: #f8f4ec;
-  font-size: 2rem;
-  padding: 10px 10px 10px 10px;
+  font-size: 1.9rem;
+  padding: 8px;
 }
 
 .instagram:hover {
@@ -161,20 +162,37 @@ iframe {
     box-shadow: 0 0 2px white;
     /* border-top: 1px solid white; */
     overflow-x: hidden;
-    height: 60vh;
+    height: 550px;
     /* max-height: 550px; */
+    margin-top: 2rem;
   }
 
   iframe {
     text-align: center;
-    margin: 0 auto;
+    position: relative;
+    /* margin-top: 0; */
+    margin-right: 8rem;
     justify-content: center;
-    margin-right: 12rem;
-    margin-bottom: 3rem;
+    /* margin-right: 12rem; */
+    /* margin-bottom: 3rem; */
+    width: 280px;
+    top: 1rem;
+    /* max-width: 100%; */
+    margin-bottom: -30px;
   }
 
   .information {
-    margin: 2rem 2rem;
+    /* margin: 2rem 2rem; */
+    position: relative;
+    top: 2rem;
+    margin-top: 3rem;
+    margin-right: 2rem;
+    /* margin: 0 auto; */
+    /* padding: 10px; */
+    width: 100%;
+    word-wrap: break-word;
+    display: flex;
+    flex-wrap: wrap;
   }
   .information .GdscLabel {
     font-size: 1rem;
@@ -182,36 +200,42 @@ iframe {
     text-align: center;
     width: 100%;
     /* width: 300px; */
+    margin: 0 auto;
   }
   .address {
     text-align: center;
-    margin-top: 10px;
-    font-size: 0.8rem;
+    /* margin-top: 10px; */
     /* width: 240px; */
-    width: 100%;
+    width: 80%;
+    word-wrap: break-word;
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
   }
   .social-media {
     font-size: 10px;
-    text-align: center;
+    /* text-align: center; */
     /* padding-top: 10px; */
-    margin-left: 0 auto;
+    margin: 0 auto;
     width: 100%;
-    display: flexbox;
-  }
-
-  .social-media {
-    padding-top: 5rem;
+    justify-content: center;
+    text-align: center;
+    left: -1rem;
+    top: 2rem;
+    /* display: flexbox; */
   }
 
   .social-media-icons {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    /* margin: 0 auto; */
   }
 
   .social-media h2 {
+    position: relative;
     margin: 0 auto;
     font-size: 18px;
+    left: 10px;
   }
 
   .social-media-icons span a {
