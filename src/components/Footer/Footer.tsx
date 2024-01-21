@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
           </span>
 
           <span className="social-media-icon">
-            <a href="https://twitter.com/dscghriet" target="_blank">
+            <a href="https://twitter.com/gdsc_ghrietn" target="_blank">
               <FontAwesomeIcon icon={faXTwitter} className="x-twitter" />
             </a>
           </span>
