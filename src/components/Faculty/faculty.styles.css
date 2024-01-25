@@ -1,102 +1,104 @@
-#team-section{
+#faculty-section{
     width: 100%;
     height:100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-content:center;
+    gap:10%;
     cursor: default;
-    background-color: rgb(253, 184, 51);
+    background-color: rgb(253, 14, 51);
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
     color: #333;
 }
-div#team-section h1{
-    font-size: 3rem;
-    color: #333;
-}
 
-.team-member:hover{
+div#faculty-section h1{
+    font-size: 3rem;
+    color:#333;
+}
+.faculty-advisor:hover{
     transform: scale(1.1);
 }
-.team-carousel{
-    width: 90%;
-    height: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    flex-wrap: wrap;
+.faculty-carousel{
+    width: 80%;
+    height: 50%;
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    flex-direction:row;
+    justify-content:center;
+    align-content:center;  
     padding:0;
-    margin:0;
+    margin-left:10vw;
     cursor:default;
 }
 
-.teamcarousel-item{
-    padding: 0;
+.facultycarousel-item{
+    padding: 20px;
     margin: 0;
-    width:10px;
-    height: 20%; 
+    width:100%; 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.5s ease-in-out;
     cursor: default;
+    word-break:break-word;
 }
 
-.team-member{
-    width: 250px;
-    height: 300px;
+.faculty-advisor{
+    width: 15vw;
+    height: 355px;
     border: 2px solid black;
-    margin: 1rem;
+    margin: 0.5rem;
     padding: .5rem;
     display: flex;
     font-size: 1rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap:20px;
     background-color: #fff;
     box-shadow: 10px 10px  0 rgba(0,0,250,1);
     transition: all 0.5s ease-in-out;
     cursor: pointer;
     text-align:center;
 }
-.team-member img{
+.image-container{
+    height:60%;
+    width:80%;
+}
+.faculty-advisor img{
     box-sizing: border-box;
+    object-cover:scale-down;
     margin-bottom: 1rem;
     border-radius: 50%;
     border: 2px solid black;
-    width: 75%;
-    height: 60%; 
+    width: 100%;
+    height: 100%; 
     transition: transform 0.3s ease-in-out;
 }
-.team-data{
-    height:30%;
+.faculty-data{
+    height:40%;
 }
+
 @media only screen and (max-width: 768px){
-    div#team-section h1{
+    div#faculty-section h1{
         margin-top: 0rem;
         font-size: 3rem;
         color: #333;
         padding: 0;
     }
-    #team-section{
+    #faculty-section{
         width: 100%;
-        height:90vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center; 
-        background-color: rgb(253, 184, 51);
-        font-family: 'Roboto', sans-serif;
-        font-size: 1.5rem;
-        color: #333;
+        height:100vh;
     }
-    .team-carousel{
+    .faculty-carousel{
         width: 80%;
+        grid-template-columns:repeat(2, 1fr);
     }
-    .teamcarousel-item{
-        padding: 0;
+    .facultycarousel-item{
+        padding: 10px;
         margin: 0;
         width:100%;
         height: 100%;
@@ -108,7 +110,7 @@ div#team-section h1{
         transition: all 0.5s ease-in-out;
         cursor: default;
     }
-    .team-member{
+    .faculty-advisor{
         width: 70%;
         height: 200px;
         border: 2px solid black;
@@ -122,13 +124,14 @@ div#team-section h1{
         background-color: #fff;
         box-shadow: 10px 10px  0 rgba(0,0,250,1);
     }
-    .team-member img{
-        box-sizing: border-box;
-        margin-bottom: .5rem;
-        border-radius: 50%;
-        border: 2px solid black;
-        width: 80%;
-        height: 50%; 
-        transition: transform 0.3s ease-in-out;
+    .faculty-advisor img{
+        
     }
+    .image-container{
+
+    }
+    .faculty-data{
+
+    }
+
 }

@@ -68,8 +68,10 @@ const TeamCarousel: React.FC = () => {
                     src={teamMember.image_url}
                     alt={teamMember.name}
                 />
+                <div className='team-data' >
                 <h2 className="team-member-name">{teamMember.name}</h2>
                 <h3 className="team-member-role">{teamMember.role}</h3>
+                </div>
                 </div>
             </div>
             ))}
