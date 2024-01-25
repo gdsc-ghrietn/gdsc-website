@@ -3,9 +3,9 @@ import Navbar from '../Navbar/Navbar'
 import Events from '../Events/Events'
 import Footer from '../Footer/Footer'
 import About from '../About/About'
-import Team from '../Team/Team'
+import TeamCarousel from '../Team/Team'
 import ContactUs from '../Contact Us/ContactUs'
-
+import Faculty from '../Faculty/Faculty'
 const Homepage: React.FC = () => {
 
   return (
@@ -16,7 +16,8 @@ const Homepage: React.FC = () => {
   
         <About/>
         <Events/>
-        <Team/>
+        <Faculty/>
+        <TeamCarousel/>
         <div className='parallax'>
           <ContactUs/>
           <Footer/>
