@@ -47,8 +47,8 @@ div#faculty-section h1{
 }
 
 .faculty-advisor{
-    width: 15vw;
-    height: 355px;
+    width: 80%;
+    height: 95%;
     border: 2px solid black;
     margin: 0.5rem;
     padding: .5rem;
