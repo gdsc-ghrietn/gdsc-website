@@ -25,32 +25,25 @@ const TeamCarousel: React.FC = () => {
     rows: 2,
     slidesPerRow: 1,
     adaptiveHeight: true,
-    variableWidth: false,
     responsive: [
+
       {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow:4,
-          slidesToScroll: 4,
-          rows: 2,
-          slidesPerRow: 1,
-        },
-      },
-      {
-        breakpoint: 600,
+        breakpoint: 1150,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
           rows: 2,
-          slidesPerRow: 1,
+          slidesPerRow: 2,
         },
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll:2,
+          slidesToShow: 1,
+          slidesToScroll:1,
           slidesPerRow: 1,
+          rows:1,
+          dots:false,
         },
       },
     ],

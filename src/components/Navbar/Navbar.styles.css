@@ -35,19 +35,28 @@
   }
 
 nav { 
-    display: flex;
+    display:flex;
     background-color: #fff;
+    width: 100%; 
     justify-content: space-between;
     align-items: center;
     font-size: 1rem;
     font-family: 'Roboto', sans-serif;
     padding: 10px 0px 10px 1;
-    width: 100%;
     position:fixed;
     height: max-content;
     top:0;
-    z-index: 1000;
+    z-index: 1;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+nav-info{
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    float:left;
 }
 
 nav ul {
