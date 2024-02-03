@@ -31,8 +31,7 @@ div#team-section h1{
 }
 
 .teamcarousel-item{
-    background-color: #fff
-    margin: 0rem;
+    margin: 10px;
     border-radius: 20px; 
     display: flex;
     flex-direction: column;
@@ -55,7 +54,7 @@ div#team-section h1{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  //  box-shadow: 10px 10px  0 rgb(20 102 139);
+    box-shadow: 10px 10px  0 rgb(20 102 139);
     transition: all 0.5s ease-in-out;
     cursor: pointer;
     text-align:center;
