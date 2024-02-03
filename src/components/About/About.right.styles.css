@@ -5,8 +5,8 @@
   padding: 0;
   /* color: aliceblue; */
   height: 100vh;
-  background-color: #000;
-  color: #fff;
+  background-color: white;
+  color: black;
   display: flex;
   position: relative;
   box-sizing: 0;
@@ -83,7 +83,7 @@ button {
 }
 
 button:hover {
-  background-color: #000;
+  background-color: #282858;
   transition: 0.3s;
 }
 

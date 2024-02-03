@@ -10,7 +10,7 @@
     justify-content: space-between;
     align-items: center;
     justify-content: center;
-    background-color:#000;
+    background-color:#282858;
     background-repeat: no-repeat;
   }
  .heading{
@@ -19,7 +19,7 @@
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    text-shadow: 4px 5px 1px rgba(0, 0, 250, 1);
+    text-shadow: 4px 5px 1px rgb(20 102 139);
   } 
   .arrow-button {
     position: absolute;
@@ -62,7 +62,7 @@
   }
   .description{
     font: 500 16px/1.5em 'Poppins', sans-serif;
-    color: rgb(0,79,255);
+    color: rgb(20 102 139);
     text-align: center;
     margin-top: 20px;
     width: 100%;
@@ -121,7 +121,7 @@
     align-items: center;
     justify-content: center;
     font: 500 16px/1.5em 'Poppins', sans-serif;
-    color: rgb(0,79,255);
+    color: rgb(20 102 139);
     border-radius: 16px;
     margin-bottom: 20px;
 
@@ -140,14 +140,14 @@
   }
   .title{
     font: 800 20px/1.5em 'Poppins', sans-serif;
-    color: rgb(0,79,255);
+    color: rgb(20 102 139);
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
   }
   .tags{
     font: 500 16px/1.5em 'Poppins', sans-serif;
-    background-color:  rgb(0,79,255);
+    background-color:  rgb(20 102 139);
     color: white;
     border-radius: 5px;
     padding: 5px;
@@ -156,15 +156,15 @@
   }
   .registerlink{
     font: 500 16px/1.5em 'Poppins', sans-serif;
-    color:rgb(0,79,255);
+    color:rgb(20 102 139);
     border-radius: 5px;
-    border: 2px solid rgb(0,79,255);
+    border: 2px solid rgb(20 102 139);
     padding: 5px;
     margin: 5px;
     display: inline-block;
   }
   .registerlink:hover{
-    background-color: rgb(0,79,255);
+    background-color: rgb(20 102 139);
     color: white;
   }
   .expanded-details {
@@ -180,7 +180,7 @@
   }
   .event-typetime{
     font: 500 16px/1.5em 'Poppins', sans-serif;
-    color: rgb(0,79,255);
+    color: rgb(20 102 139);
     display: flex;
     justify-content: space-between;
   }
@@ -213,28 +213,28 @@
   }
   .modal h2{
     font: 800 40px/1.5em 'Poppins', sans-serif;
-    color: rgb(0,79,255);
+    color: rgb(20 102 139);
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
   }
   .modal p{
     font: 500 16px/1.5em 'Poppins', sans-serif;
-    color: rgb(0,79,255);
+    color: rgb(20 102 139);
     text-align: center;
     display: inline-block;
    
   }
   .modal .title{
     font: 800 20px/1.5em 'Poppins', sans-serif;
-    color: rgb(0,79,255);
+    color: rgb(20 102 139);
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
   }
   .modal .tags{
     font: 500 16px/1.5em 'Poppins', sans-serif;
-    background-color:  rgb(0,79,255);
+    background-color:  rgb(20 102 139);
     color: white;
     border-radius: 5px;
     padding: 5px;
@@ -247,7 +247,7 @@
     right: 10px;
     cursor: pointer;
     background: none;
-    color: #000;
+    color: #282858;
     family-font: 'Poppins', sans-serif;
     font-weight: 800;
     font-size: 30px;

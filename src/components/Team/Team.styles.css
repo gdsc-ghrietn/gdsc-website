@@ -7,7 +7,7 @@
     justify-content: center;
     cursor: default;
     flex-wrap: wrap;
-    background-color: black;
+    background-color: #282858;
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
     color: #333;
@@ -55,7 +55,7 @@ div#team-section h1{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  //  box-shadow: 10px 10px  0 rgba(0,0,250,1);
+  //  box-shadow: 10px 10px  0 rgb(20 102 139);
     transition: all 0.5s ease-in-out;
     cursor: pointer;
     text-align:center;
