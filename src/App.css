@@ -8,6 +8,7 @@ p
 }
 /* Global styles */
 body {
-  box-sizing: border-box; 
+  box-sizing: border-box;
+  background-color: #000 
 }
 
