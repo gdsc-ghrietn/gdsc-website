@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
             <div className="bar2"></div>
             <div className="bar3"></div>
             </div>
-            <ul className={showMenu ? 'show' : ''}>
+            <ul className={showMenu ? 'show' : 'nav-info'}>
                 <li><a href="/">Home</a></li>
                 <li><a href="#event-section">Events</a></li>
                 <li><a href="#team-section">Team</a></li>
