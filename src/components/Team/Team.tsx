@@ -16,36 +16,66 @@ const TeamCarousel: React.FC = () => {
   const teamMembers: TeamMember[] = teamMembersData;
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
-    speed: 500,
-    slidesToShow:4,
+    slidesToShow: 4,
     slidesToScroll: 4,
-    initialSlide: 0,
     rows: 2,
     slidesPerRow: 1,
+    speed: 500,
+    initialSlide: 0,
     adaptiveHeight: true,
     responsive: [
+      {
+        breakpoint: 1920,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          rows: 2,
+          slidesPerRow: 1,
+        },
+      },
 
       {
-        breakpoint: 1150,
+        breakpoint: 1250,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
+          slidesToShow: 3,
+          slidesToScroll: 3,
           rows: 2,
-          slidesPerRow: 2,
+          slidesPerRow: 1,
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 1024,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll:1,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          rows: 2,
           slidesPerRow: 1,
-          rows:1,
-          dots:false,
         },
       },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          rows: 2,
+          slidesPerRow: 1,
+          dots: false,
+        },
+      },
+ 
+       {
+         breakpoint: 650,
+         settings: {
+           slidesToShow: 1,
+           slidesToScroll:1,
+           slidesPerRow: 1,
+           rows:1,
+           dots:false,
+         },
+       },
+      
     ],
   };
 

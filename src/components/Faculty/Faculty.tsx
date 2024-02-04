@@ -1,6 +1,7 @@
 import React from 'react';
 import FacultyData from './Faculty.json';
 import './faculty.styles.css';
+import { width } from '@fortawesome/free-brands-svg-icons/fa42Group';
 
 interface Faculty {
   id: number;
@@ -34,6 +35,7 @@ const Faculty: React.FC = () => {
             </div>
             ))}
         </div>
+        <hr style={{width: "80%", marginTop: "20px",borderRadius:"10px",border:"4px solid  #fff"}}/>
     </div>
   );
 };
