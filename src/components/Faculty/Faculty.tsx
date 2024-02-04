@@ -1,7 +1,6 @@
 import React from 'react';
 import FacultyData from './Faculty.json';
 import './faculty.styles.css';
-import { width } from '@fortawesome/free-brands-svg-icons/fa42Group';
 
 interface Faculty {
   id: number;
