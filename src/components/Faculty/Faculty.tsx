@@ -34,6 +34,7 @@ const Faculty: React.FC = () => {
             </div>
             ))}
         </div>
+        <hr style={{width: "80%", marginTop: "20px",borderRadius:"10px",border:"4px solid  #fff"}}/>
     </div>
   );
 };
