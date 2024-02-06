@@ -6,6 +6,7 @@ import About from '../About/About'
 import TeamCarousel from '../Team/Team'
 import ContactUs from '../Contact Us/ContactUs'
 import Faculty from '../Faculty/Faculty'
+
 const Homepage: React.FC = () => {
 
   return (
