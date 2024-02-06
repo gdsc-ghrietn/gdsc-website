@@ -6,7 +6,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import { useEffect, useState } from "react";
 import { Event, EventFromList} from '../../models/Event';
 
-const Events1: React.FC = () => {
+const Events: React.FC = () => {
   const [events, setEvents] = useState<Event[]>([]);
   const [expandedEvent, setExpandedEvent] = useState<Event| null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -173,8 +173,9 @@ const Events1: React.FC = () => {
           </div>
         </div>
       )}
+      <hr style={{ width: "80%", marginTop: "20px", borderRadius: "10px", border: "4px solid #fff", opacity: "0.5" }} />
     </div>
   );
 }
 
-export default Events1;
+export default Events;
