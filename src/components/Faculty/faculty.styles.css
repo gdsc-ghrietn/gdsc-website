@@ -23,6 +23,7 @@ div#faculty-section h1{
 } 
 .faculty-advisor:hover{ 
     transform: scale(1.1); 
+    box-shadow: 10px 10px  21px rgb(20 102 139);
 } 
 .faculty-carousel{ 
     height: 50%; 
