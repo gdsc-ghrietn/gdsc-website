@@ -111,8 +111,8 @@ const Events: React.FC = () => {
       <h1 className="heading">Events</h1>
       <Slider  {...settings} className="event-caraousel">
           {events.map((event) => (
-                        <div key={event.id} className='carousel-item' onClick={() => handleEventClick(event)}>
-                        <div className="eventcard">
+                        <div key={event.id} className='carousel-item' >
+                        <div className="eventcard" onClick={() => handleEventClick(event)}>
                         <img
                             className="event-image"
                             src={event.picture.url || "https://res.cloudinary.com/startup-grind/image/fetch/c_fill,w_500,h_500,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/https://res.cloudinary.com/startup-grind/image/upload/c_fill%2Cdpr_2.0%2Cf_auto%2Cg_center%2Cq_auto:good/v1/gcs/platform-data-dsc/event_banners/gdev-eccosystems-bevy-chapters-thumbnail_fMd5BWp.png"}
