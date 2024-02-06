@@ -8,7 +8,6 @@ import { Event, EventFromList} from '../../models/Event';
 
 const Events1: React.FC = () => {
   const [events, setEvents] = useState<Event[]>([]);
-
   const [expandedEvent, setExpandedEvent] = useState<Event| null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const eventBaseUrl = 'https://gdsc.community.dev/api/event/';
@@ -110,7 +109,6 @@ const Events1: React.FC = () => {
   return (
     <div id="event-section">
       <h1 className="heading">Events</h1>
-
       <Slider  {...settings} className="event-caraousel">
           {events.map((event) => (
                         <div key={event.id} className='carousel-item' onClick={() => handleEventClick(event)}>
