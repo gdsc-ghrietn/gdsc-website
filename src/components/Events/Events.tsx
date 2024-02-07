@@ -109,7 +109,7 @@ const Events: React.FC = () => {
   return (
     <div id="event-section">
       <h1 className="heading">Events</h1>
-      <Slider  {...settings} className="event-caraousel">
+      <Slider  {...settings} className="event-carousel">
           {events.map((event) => (
                         <div key={event.id} className='carousel-item' >
                         <div className="eventcard" onClick={() => handleEventClick(event)}>
