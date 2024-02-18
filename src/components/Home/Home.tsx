@@ -23,7 +23,7 @@ const Home = () => {
           <div className="text-white font-game1 text-[23px] mb-4">
             A DEVELOPERS' COMMUNITY BY THE STUDENTS, FOR THE STUDENTS.
           </div>
-          <button className="bg-white text-black text-md px-5 mt-1 border-[3px] border-black rounded-3xl font-extrabold py-4 font-game2">
+          <button className="bg-white text-black px-5 mt-1 border-[3px] border-black rounded-3xl font-extrabold py-3 font-game2 hover:cursor-pointer hover:transform hover:scale-105 transition-all duration-300">
             PRESS TO JOIN
           </button>
         </div>
