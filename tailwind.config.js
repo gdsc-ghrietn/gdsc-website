@@ -12,6 +12,10 @@ export default {
             fontWeight: {
                 'extraextrabold': '900',
             },
+            fontFamily: {
+                'game1': ['VT323', 'monospace'],
+                'game2': ['"Press Start 2P"', 'monospace'],
+            }
         },
     },
     plugins: [],

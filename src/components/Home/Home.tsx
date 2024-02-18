@@ -24,11 +24,12 @@ const Home = () => {
                 </div>
                 <div className=" h-[30%] w-full flex flex-col justify-end items-center pb-20
                     ">
-                    <div className="text-white font-[VT323] text-2xl  mb-5
+                    <div className="text-white font-game1 text-[28px]  mb-4
                         ">
-                        A developers' community by the students, for the students.
+                        A DEVELOPERS' COMMUNITY BY THE STUDENTS, FOR THE STUDENTS.
                     </div>
-                    <button className="bg-white text-black font-sans text-xl px-5 mt-3 border-[4px] border-black rounded-2xl font-extrabold py-3
+                    <button className="bg-white text-black text-lg px-5 mt-3 border-[3px] border-black rounded-3xl font-extrabold py-4
+                        font-game2
                         ">
                         PRESS TO JOIN
                     </button>
