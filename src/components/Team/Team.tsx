@@ -1,9 +1,9 @@
-import React from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import teamMembersData from './Team.json';
-import './Team.styles.css';
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import teamMembersData from "./Team.json";
+import "./Team.styles.css";
 
 interface TeamMember {
   id: number;
@@ -64,41 +64,65 @@ const TeamCarousel: React.FC = () => {
           dots: false,
         },
       },
- 
-       {
-         breakpoint: 650,
-         settings: {
-           slidesToShow: 1,
-           slidesToScroll:1,
-           slidesPerRow: 1,
-           rows:1,
-           dots:false,
-         },
-       },
-      
+
+      {
+        breakpoint: 650,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          slidesPerRow: 1,
+          rows: 1,
+          dots: false,
+        },
+      },
     ],
   };
 
+  const [importedImage, setimportedImage] = React.useState<Map<number, string>>(
+    new Map()
+  );
+
+  async function handleImageImport(teamMember: TeamMember) {
+    if (!teamMember.image_url) {
+      try {
+        let fname = teamMember.name.split(" ")[0].toLowerCase();
+        const image = await import(`../../assets/team-images/${fname}.jpg`);
+        setimportedImage(
+          (prev) => new Map(prev.set(teamMember.id, image.default))
+        );
+      } catch (err) {
+        console.log(err);
+      }
+    }
+  }
+
   return (
     <div id="team-section">
-        <h1 className="heading">Team</h1>
-        <Slider {...settings} className="team-carousel">
-            {teamMembers.map((teamMember) => (
-            <div key={teamMember.id} className='teamcarousel-item'>
-                <div className="team-member">
+      <h1 className="heading">Team</h1>
+      <Slider {...settings} className="team-carousel">
+        {teamMembers.map((teamMember) => {
+          handleImageImport(teamMember);
+          return (
+            <div key={teamMember.id} className="teamcarousel-item">
+              <div className="team-member">
                 <img
-                    className="team-member-image"
-                    src={teamMember.image_url}
-                    alt={teamMember.name}
+                  className="team-member-image"
+                  src={
+                    !teamMember.image_url
+                      ? importedImage.get(teamMember.id)
+                      : teamMember.image_url
+                  }
+                  alt={teamMember.name}
                 />
-                <div className='team-data' >
-                <h2 className="team-member-name">{teamMember.name}</h2>
-                <h3 className="team-member-role">{teamMember.role}</h3>
+                <div className="team-data">
+                  <h2 className="team-member-name">{teamMember.name}</h2>
+                  <h3 className="team-member-role">{teamMember.role}</h3>
                 </div>
-                </div>
+              </div>
             </div>
-            ))}
-        </Slider>
+          );
+        })}
+      </Slider>
     </div>
   );
 };
