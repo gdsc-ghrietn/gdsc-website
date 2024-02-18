@@ -8,5 +8,6 @@ body{
     font-weight: 300;
     margin: 0;
     padding: 0;
-    border-box: box-sizing;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(15,6,40,1) 46%, rgba(2,20,37,1) 100%);
 }
