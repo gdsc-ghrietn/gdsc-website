@@ -7,13 +7,13 @@ const Home = () => {
         <div className="w-full h-full bg-black bg-opacity-10 flex justify-center items-center flex-col">
           <img src={gdsclogo} alt="GDSC Logo" width={200} height={200} />
           <div
-            className="text-center font-[inter] font-extraextrabold text-[70px] text-[#3885BD] italic mb-2"
+            className="text-center font-[inter] font-extraextrabold text-[65px] text-[#3885BD] italic mb-2"
             style={{ WebkitTextStroke: "2px white" }}
           >
             Google Developer Students Club
           </div>
           <div
-            className="text-center font-[inter] font-extraextrabold text-[32px] text-white italic mb-[55px] tracking-tight"
+            className="text-center font-[inter] font-extraextrabold text-[30px] text-white italic mb-[50px] tracking-tight"
             style={{ WebkitTextStroke: "1.6px #360447" }}
           >
             G.H. Raisoni Institute of Engineering and Technology <br /> Nagpur
