@@ -1,0 +1,140 @@
+[
+  {
+    "id": 1,
+    "name": "Aryan Tomar",
+    "role": "GDSC LEAD",
+    "image_url": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_250,h_250,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/avatars/aryan_tomar_5qLfssF.png"
+  },
+  {
+    "id": 2,
+    "name": "Anuj Karoddeo",
+    "role": "TECH LEAD",
+    "image_url": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_250,h_250,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/avatars/anuj_karoddeo_eJIzHm0.png"
+  },
+  {
+    "id": 3,
+    "name": "Lokesh Baghmare",
+    "role": "AI LEAD",
+    "image_url": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_250,h_250,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/avatars/lokesh_bagmare_Vpp5Za9.png"
+  },
+  {
+    "id": 4,
+    "name": "Mansi Patil",
+    "role": "ML&AD LEAD",
+    "image_url": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_250,h_250,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/avatars/mansi_patil_xGr0OfZ.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Sahil Yeole",
+    "role": "WEB D LEAD",
+    "image_url": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_250,h_250,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/avatars/sahil_yeole_Xwa9q1H.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Himanshu Tadse",
+    "role": "MGMT LEAD",
+    "image_url": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_250,h_250,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/avatars/himanshu_tadse_9iDaUdQ.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Shravani Ghaywat",
+    "role": "CONTENT LEAD",
+    "image_url": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_250,h_250,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/avatars/shravani_ghaywat_ZXcSv6S.jpeg"
+  },
+  {
+    "id": 8,
+    "name": "Kajal Malviya",
+    "role": "PR LEAD",
+    "image_url": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_250,h_250,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-dsc/avatars/kajal_malviya_t65LAYh.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Vidit Singh",
+    "role": "TECH TEAM",
+    "image_url": ""
+  },
+  {
+    "id": 10,
+    "name": "Khushboo Ninawe",
+    "role": "TECH TEAM",
+    "image_url": ""
+  },
+  {
+    "id": 11,
+    "name": "Vaibhav Talkhande",
+    "role": "Web Dev Team",
+    "image_url": "https://media.licdn.com/dms/image/D4D03AQGu9wdd2GpL6w/profile-displayphoto-shrink_800_800/0/1697809493670?e=1711584000&v=beta&t=uGcw95bxaqg0nBnWwMPSwWBBOCQrL1KUlmCa9PTA9MM"
+  },
+  {
+    "id": 12,
+    "name": "Punarv Patidar",
+    "role": "DESIGN TEAM",
+    "image_url": ""
+  },
+  {
+    "id": 13,
+    "name": "Anushka Khurge",
+    "role": "DESIGN TEAM",
+    "image_url": ""
+  },
+  {
+    "id": 14,
+    "name": "Gunjan Gawande",
+    "role": "CONTENT TEAM",
+    "image_url": "https://media.licdn.com/dms/image/D5603AQFV8pExLSl6aQ/profile-displayphoto-shrink_800_800/0/1704992753926?e=1711584000&v=beta&t=JG97xy739KR_gSpY3qmeCRpoADABQfjw97sSRXUoTbE"
+  },
+  {
+    "id": 15,
+    "name": "Bhagyashree Titarmare",
+    "role": "PR TEAM",
+    "image_url": "https://media.licdn.com/dms/image/D5603AQHVQa_HnlxG0g/profile-displayphoto-shrink_800_800/0/1699922808682?e=1711584000&v=beta&t=LpMBHF56OBzOKoVDn4FBNXW-n5SL5vbtx2eMn1F4sxM"
+  },
+  {
+    "id": 16,
+    "name": "Ayush Sonawane",
+    "role": "PR TEAM",
+    "image_url": ""
+  },
+  {
+    "id": 18,
+    "name": "Dev Haladkar",
+    "role": "PR TEAM",
+    "image_url": ""
+  },
+  {
+    "id": 19,
+    "name": "Himanshi Pantawane",
+    "role": "PR TEAM",
+    "image_url": ""
+  },
+  {
+    "id": 20,
+    "name": "Ayush Kamble",
+    "role": "PR TEAM",
+    "image_url": ""
+  },
+  {
+    "id": 21,
+    "name": "Angad Sonare",
+    "role": "MGMT TEAM",
+    "image_url": ""
+  },
+  {
+    "id": 22,
+    "name": "Palak Jaiswal",
+    "role": "MGMT TEAM",
+    "image_url": ""
+  },
+  {
+    "id": 23,
+    "name": "Atharva Nikhare",
+    "role": "MGMT TEAM",
+    "image_url": ""
+  },
+  {
+    "id": 24,
+    "name": "Shahanawaz Ansari",
+    "role": "MGMT TEAM",
+    "image_url": "https://media.licdn.com/dms/image/D4D03AQFZp93abbmPPw/profile-displayphoto-shrink_800_800/0/1703534577860?e=1711584000&v=beta&t=IcGg80O4W9XV7Bg0QoqEHSouh5dK1w1XEb5LuU9vz2Y"
+  }
+]

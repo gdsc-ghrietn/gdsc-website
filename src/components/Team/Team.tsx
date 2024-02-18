@@ -1,4 +1,3 @@
-
 const Team = () => {
     return (
         <div className="w-full h-screen flex justify-center items-top pt-24 border-4 border-white">
