@@ -1,4 +1,5 @@
 # gdsc-website
+Hello from the GDSC GHRIETN Web Dev Team :)
 
 ## Run
 ```
