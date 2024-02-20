@@ -1,3 +1,5 @@
+import Footer from "../Footer/Footer";
+
 const Contact = () => {
   return (
     <div className="w-full h-screen flex justify-top pt-24 flex-col items-center">
@@ -40,15 +42,13 @@ const Contact = () => {
               Message
             </div>
             <textarea className="w-[80%] py-2 px-4 h-24 rounded-3xl border-[3px] border-blue-400 focus:border-blue-500 text-lg font-game1" />
-            <button
-              className="w-[30%] h-28 rounded-3xl border-2 border-black bg-white text-black font-bold mt-6 font-game2 hover:scale-105 transition-all duration-300"
-            >
+            <button className="w-[30%] h-28 rounded-3xl border-2 border-black bg-white text-black font-bold mt-6 font-game2 hover:scale-105 transition-all duration-300">
               SUBMIT
             </button>
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center bg-black w-full h-full"></div>
+      <Footer />
     </div>
   );
 };
