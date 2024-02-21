@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { Analytics } from "@vercel/analytics/react";
 import "./App.css";
