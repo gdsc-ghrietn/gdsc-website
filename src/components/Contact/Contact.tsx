@@ -43,7 +43,7 @@ const Contact = () => {
               ></iframe>
             </div>
           </div>
-          <div className="flex flex-col  sm:m-0 sm:justify-start items-center sm:w-[60%] w-full ">
+          <div className="flex flex-col  sm:m-0 sm:justify-start items-center sm:w-[60%] w-full sm:h-[83%]">
             <form
               className="flex flex-col justify-center items-center bg-violet-600 opacity-2 w-full h-full  rounded-xl px-4 py-4"
               ref={form}
@@ -95,7 +95,7 @@ const Contact = () => {
               <button
                 type="submit"
                 value="Send"
-                className="w-[80%] sm:w-[50%] h-10 text-lg p-0.5  rounded-3xl border-2 border-black bg-white text-black font-bold mt-6 font-game2 hover:scale-105 transition-all duration-300 "
+                className="w-[80%] sm:w-[50%] h-10 sm:h-12 text-lg p-0.5  rounded-3xl border-2 border-black bg-white text-black font-bold mt-6 font-game2 hover:scale-105 transition-all duration-300 "
               >
                 SUBMIT
               </button>
