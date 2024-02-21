@@ -10,22 +10,22 @@ import {
 
 const Footer = () => {
   return (
-    <div className="flex flex-col lg:flex-row xl:flex-row justify-around bg-black h-full w-full  font-game1 tracking-wide text-sm xl:text-xl lg:text-xl sm:mx-auto">
-      <div className="flex flex-col lg:flex-row xl:flex-row justify-center items-center mx-auto gap-4 m-2 sm:m-2 ">
-        <img src={logo} alt="" className="h-8" />
-        <h1 className=" text-white text-center lg:text-left xl:text-left">
+    <div className="flex flex-row justify-around bg-black h-full w-full  font-game1 tracking-wide text-[10px] sm:text-sm sm:mx-auto md:text-lg gap-1">
+      <div className="flex flex-col sm:flex-row justify-center items-center mx-auto sm:gap-4 gap-2 m-2 sm:m-2 w-[40%]">
+        <img src={logo} alt="" className="sm:h-8 h-4" />
+        <h1 className=" text-white sm:text-left text-center sm:ml-0 ml-2">
           GOOGLE DEVELOPER STUDENTS CLUB <br /> GHRIET NAGPUR
         </h1>
       </div>
-      <div className="flex flex-col m-2 mx-auto justify-center text-center sm:m-2">
+      <div className="flex flex-col m-2 mx-auto justify-center text-center sm:m-2 w-[40%]">
         <h1 className="text-white text-center leading-tight">
           SHRADHA PARK, B-37/39, HINGNA RD, MIDC, <br /> NAGPUR, MAHARASHTRA
           440028
         </h1>
       </div>
-      <div className="flex flex-col m-2 mx-auto text-white justify-center text-center sm:m-2 leading-normal">
+      <div className="flex flex-col m-2 mx-auto text-white justify-center text-center sm:m-2 leading-normal w-[40%]">
         <h1>FOLLOW US ON</h1>
-        <div className="flex  gap-7 mx-auto ">
+        <div className="flex mx-auto justify-between items-center w-1/2 mt-2">
           <a
             href="https://www.instagram.com/gdsc_ghrietn"
             target="_blank"
