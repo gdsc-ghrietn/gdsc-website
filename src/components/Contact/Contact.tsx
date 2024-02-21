@@ -2,6 +2,7 @@ import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Footer from "../Footer/Footer";
 
 const Contact = () => {
   const form = useRef(null);
@@ -102,7 +103,9 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        <div className="flex flex-col justify-center w-full items-center bg-black h-[5rem]"></div>
+        <div className="flex flex-col justify-center w-full items-center bg-black sm:h-[5rem]">
+          <Footer />
+        </div>
       </div>
     </div>
   );
