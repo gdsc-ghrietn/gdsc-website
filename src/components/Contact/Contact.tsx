@@ -44,7 +44,7 @@ const Contact = () => {
               ></iframe>
             </div>
           </div>
-          <div className="flex flex-col  sm:m-0 sm:justify-start items-center sm:w-[60%] w-full sm:h-[83%]">
+          <div className="flex flex-col  sm:m-0 sm:justify-start items-center sm:w-[60%] w-full">
             <form
               className="flex flex-col justify-center items-center bg-violet-600 opacity-2 w-full h-full  rounded-xl px-4 py-4"
               ref={form}
