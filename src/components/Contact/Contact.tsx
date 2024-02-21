@@ -1,9 +1,8 @@
-
-import Footer from "../Footer/Footer";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Footer from "../Footer/Footer";
 
 const Contact = () => {
   const form = useRef(null);
@@ -44,31 +43,6 @@ const Contact = () => {
                 className="w-full h-full  m-0  border-0 rounded-xl"
               ></iframe>
             </div>
-            <input
-              type="text"
-              className="w-[80%] px-4 h-10 rounded-3xl border-[3px] border-blue-400 focus:border-blue-500 text-lg font-game1"
-            />
-            <div className="text-3xl font-bold text-white font-game1 mb-2 mt-2">
-              Email
-            </div>
-            <input
-              type="text"
-              className="w-[80%] px-4 h-10 rounded-3xl border-[3px] border-blue-400 focus:border-blue-500 text-lg font-game1"
-            />
-            <div className="text-3xl font-bold text-white font-game1 mb-2 mt-2">
-              Subject
-            </div>
-            <input
-              type="text"
-              className="w-[80%] px-4 h-10 rounded-3xl border-[3px] border-blue-400 focus:border-blue-500 text-lg font-game1"
-            />
-            <div className="text-3xl font-bold text-white font-game1 mb-2 mt-2">
-              Message
-            </div>
-            <textarea className="w-[80%] py-2 px-4 h-24 rounded-3xl border-[3px] border-blue-400 focus:border-blue-500 text-lg font-game1" />
-            <button className="w-[30%] h-28 rounded-3xl border-2 border-black bg-white text-black font-bold mt-6 font-game2 hover:scale-105 transition-all duration-300">
-              SUBMIT
-            </button>
           </div>
           <div className="flex flex-col  sm:m-0 sm:justify-start items-center sm:w-[60%] w-full sm:h-[83%]">
             <form
@@ -129,7 +103,7 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        <div className="flex flex-col justify-center w-full items-center bg-black h-[5rem]">
+        <div className="flex flex-col justify-center w-full items-center bg-black sm:h-[5rem]">
           <Footer />
         </div>
       </div>
