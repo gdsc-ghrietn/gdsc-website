@@ -60,7 +60,7 @@ const Contact = () => {
                 <input
                   type="text"
                   name="user_name"
-                  className="sm:w-[80%] w-[70%] px-4 rounded-xl border-[3px] border-blue-400 focus:bg-indigo-500 focus:ring-2 focus:ring-green-500 focus:shadow-lg focus:shadow-indigo-500/50 sm:text-3xl text-2xl font-game1" required minLength={3}
+                  className="sm:w-[80%] w-[70%] px-4 rounded-xl border-[3px] border-blue-400  focus:ring-2 focus:ring-green-500 focus:shadow-lg focus:shadow-indigo-500/50 sm:text-3xl text-2xl font-game1" required minLength={3}
                 />
               </div>
               <div className="sm:flex-col flex justify-between items-center w-full ">
@@ -70,7 +70,7 @@ const Contact = () => {
                 <input
                   type="email"
                   name="user_email"
-                  className="sm:w-[80%] w-[70%] px-4 rounded-xl border-[3px] border-blue-400 focus:bg-indigo-500 focus:ring-green-500 focus:ring-2 text-lg font-game1 "
+                  className="sm:w-[80%] w-[70%] px-4 rounded-xl border-[3px] border-blue-400  focus:ring-green-500 focus:ring-2 text-lg font-game1 "
                 />
               </div>
               <div className="sm:flex-col flex justify-between items-center w-full ">
@@ -80,7 +80,7 @@ const Contact = () => {
                 <input
                   type="text"
                   name="subject"
-                  className="sm:w-[80%] w-[70%] px-4  rounded-xl border-[3px] border-blue-400 focus:bg-indigo-500 focus:ring-2 focus:ring-green-500 focus:shadow-lg focus:shadow-indigo-500/50 text-lg font-game1" required minLength={3}
+                  className="sm:w-[80%] w-[70%] px-4  rounded-xl border-[3px] border-blue-400  focus:ring-2 focus:ring-green-500 focus:shadow-lg focus:shadow-indigo-500/50 text-lg font-game1" required minLength={3}
                 />
               </div>
               <div className="sm:flex-col flex justify-between items-center w-full ">
@@ -90,13 +90,13 @@ const Contact = () => {
                 <input
                   type="text"
                   name="message"
-                  className="sm:w-[80%] w-[70%] py-2 px-4  rounded-xl border-[3px] border-blue-400 focus:ring-2 focus:ring-green-500 focus:bg-indigo-500 focus:shadow-lg focus:shadow-indigo-500/50 text-lg font-game1" required minLength={3}
+                  className="sm:w-[80%] w-[70%] py-2 px-4  rounded-xl border-[3px] border-blue-400 focus:ring-2 focus:ring-green-500  focus:shadow-lg focus:shadow-indigo-500/50 text-lg font-game1" required minLength={3}
                 />
               </div>
               <button
                 type="submit"
                 value="Send"
-                className="w-[60%] sm:w-[50%] h-8 sm:h-12 sm:text-lg text-sm sm:p-0.5  rounded-3xl border-2 border-black bg-white text-black font-bold sm:mt-6 mt-4 font-game2 hover:scale-105 transition-all duration-300 "
+                className="w-[60%] sm:w-[50%] h-8 sm:h-12 sm:text-lg text-sm sm:p-0.5  rounded-3xl border-2 border-black bg-white text-black font-bold sm:mt-6 mt-4 font-game2 hover:scale-105 transition-all duration-300 ease-in-out hover:bg-black hover:text-white"
               >
                 SUBMIT
               </button>
