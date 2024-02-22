@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { Analytics } from "@vercel/analytics/react";
 import "./App.css";
@@ -8,74 +7,89 @@ import About from "./components/About/About";
 import Events from "./components/Events/Events";
 import Team from "./components/Team/Team";
 import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <>
-      <div className='App'>
-        <Navbar />
+      <div className='App '>
+        <div className='max-h-screen'>
+          <div className='sticky  h-full z-50 drop-shadow-xl   flex justify-center '>
+            <Navbar />
+          </div>
 
-        <motion.div
-          style={{
-            height: "100vh",
-            overflowY: "auto",
-            scrollSnapType: "y mandatory",
-            scrollBehavior: "smooth",
-          }}
-          transition={{ ease: "easeInOut" }}
-        >
           <motion.div
-            animate={{
+            style={{
               height: "100vh",
-              scrollSnapAlign: "start",
-              scrollSnapStop: "always",
+              overflowY: "auto",
+              scrollSnapType: "y proximity",
+              scrollBehavior: "smooth",
             }}
-            id='home'
+            transition={{ ease: "easeInOut" }}
+            className='top-0 fixed'
           >
-            <Home />
+            <motion.div
+              animate={{
+                height: "100vh",
+                scrollSnapAlign: "start",
+                scrollSnapStop: "always",
+              }}
+              id='Home'
+            >
+              <Home />
+            </motion.div>
+            <motion.div
+              animate={{
+                height: "100vh",
+                scrollSnapAlign: "start",
+                scrollSnapStop: "always",
+              }}
+              id='About'
+            >
+              <About />
+            </motion.div>
+            <motion.div
+              animate={{
+                height: "100vh",
+                scrollSnapAlign: "start",
+                scrollSnapStop: "always",
+              }}
+              id='Events'
+            >
+              <Events />
+            </motion.div>
+            <motion.div
+              animate={{
+                height: "100vh",
+                scrollSnapAlign: "start",
+                scrollSnapStop: "always",
+              }}
+              id='Team'
+            >
+              <Team />
+            </motion.div>
+
+            <motion.div
+              animate={{
+                height: "100vh",
+                scrollSnapAlign: "end",
+                scrollSnapStop: "always",
+              }}
+              className='flex flex-col justify-between'
+              id='Contact'
+            >
+              <div style={{ maxHeight: "90vh" }}>
+                <Contact />
+              </div>
+
+              <div style={{ height: "10vh" }}>
+                <Footer />
+              </div>
+            </motion.div>
           </motion.div>
-          <motion.div
-            animate={{
-              height: "100vh",
-              scrollSnapAlign: "start",
-              scrollSnapStop: "always",
-            }}
-            id='about'
-          >
-            <About />
-          </motion.div>
-          <motion.div
-            animate={{
-              height: "100vh",
-              scrollSnapAlign: "start",
-              scrollSnapStop: "always",
-            }}
-            id='events'
-          >
-            <Events />
-          </motion.div>
-          <motion.div
-            animate={{
-              height: "100vh",
-              scrollSnapAlign: "start",
-              scrollSnapStop: "always",
-            }}
-            id='team'
-          >
-            <Team />
-          </motion.div>
-          <motion.div
-            animate={{
-              height: "100vh",
-              scrollSnapAlign: "start",
-              scrollSnapStop: "always",
-            }}
-            id='contact'
-          >
-            <Contact />
-          </motion.div>
-        </motion.div>
+        </div>
       </div>
+
       <Analytics />
     </>
   );

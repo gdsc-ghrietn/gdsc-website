@@ -103,9 +103,9 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        <div className="flex flex-col justify-center w-full items-center bg-black sm:h-[5rem]">
+        {/* <div className="flex flex-col justify-center w-full items-center bg-black sm:h-[5rem]">
           <Footer />
-        </div>
+        </div> */}
       </div>
     </div>
   );
