@@ -13,22 +13,6 @@ const Navbar = () => {
     "relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center";
 
   return (
-    // <div className="w-full flex justify-center items-center fixed top-0 z-10">
-    //     <div className="w-[97%] h-[45px] bg-black mt-4 rounded-[40px] flex justify-between items-center px-6 bg-opacity-80 text-white text-opacity-90 font-game1 text-[22px] py-4 backdrop-blur-sm">
-    //         <div className="flex">
-    //             <img src={gdsclogo} alt="GDSC Logo" width={50} height={10} />
-    //             <div className="ml-4 hover:cursor-pointer">GDSC GHRIETN</div>
-    //         </div>
-    //         <div className="flex">
-    //             <div className="hover:cursor-pointer">HOME</div>
-    //             <div className="ml-6 hover:cursor-pointer">ABOUT</div>
-    //             <div className="ml-6 hover:cursor-pointer">EVENTS</div>
-    //             <div className="ml-6 hover:cursor-pointer">TEAM</div>
-    //             <div className="ml-6 hover:cursor-pointer">CONTACT</div>
-    //         </div>
-    //     </div>
-    // </div>
-
     <nav
       style={{ backdropFilter: "blur(50px)" }}
       className='lg:w-[97%] lg:rounded-full lg:mt-2 mt-0 rounded-none w-screen h-16 flex flex-row lg:justify-between lg:px-10
@@ -48,31 +32,19 @@ const Navbar = () => {
             `}
       >
         <ul className='flex flex-col items-center gap-6 lg:flex-row backdrop-blur-xl '>
-          <a href='#Home' className=''>
+          <a href='#Home' className={`${NavLink} `}>
             <li className='lg:text-lg text-sm'>Home</li>
           </a>
-          <a
-            href='#About'
-            className={`${NavLink} `}
-          >
+          <a href='#About' className={`${NavLink} `}>
             <li className='lg:text-lg text-sm'>About</li>
           </a>
-          <a
-            href='#Events'
-            className="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
-          >
+          <a href='#Events' className={`${NavLink} `}>
             <li className='lg:text-lg text-sm '>Events</li>
           </a>
-          <a
-            href='#Team'
-            className="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
-          >
+          <a href='#Team' className={`${NavLink} `}>
             <li className='lg:text-lg text-sm'>Team</li>
           </a>
-          <a
-            href='#Contact'
-            className="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
-          >
+          <a href='#Contact' className={`${NavLink} `}>
             <li className='lg:text-lg text-sm'>Contact</li>
           </a>
         </ul>
