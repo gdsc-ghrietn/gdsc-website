@@ -1,6 +1,10 @@
 import { motion } from "framer-motion";
 import { cn } from "../../../utils/cn";
 export const BackgroundBeams = ({ className }: { className?: string }) => {
+  let StrokeWidth:string="1"
+  if(window.innerWidth < 480){
+    StrokeWidth="8"
+  }
     const paths = [
       "M-380 -189C-380 -189 -312 216 152 343C616 470 684 875 684 875",
       "M-373 -197C-373 -197 -305 208 159 335C623 462 691 867 691 867",
@@ -80,8 +84,8 @@ export const BackgroundBeams = ({ className }: { className?: string }) => {
               key={index}
               d={path}
               stroke={`url(#linearGradient-${index})`}
-              strokeOpacity="0.4"
-              strokeWidth="0.5"
+              strokeOpacity="0.5"
+              strokeWidth= {StrokeWidth}
             ></motion.path>
           ))}
           <defs>
