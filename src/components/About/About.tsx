@@ -2,7 +2,7 @@ import { BackgroundBeams } from '../ui/background-beams';
 
 const About = () => {
     return (
-        <div className="relative w-full min-h-screen md:h-screen flex flex-col justify-evenly content-between uppercase ">
+        <div className="relative bg-black w-full min-h-screen md:h-screen flex flex-col justify-evenly content-between uppercase ">
             <div className="z-10 text-xl lg:text-2xl font-normal text-white font-game2 flex items-center justify-center">
                 About Us
             </div>
