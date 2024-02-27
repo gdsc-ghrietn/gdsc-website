@@ -6,7 +6,6 @@ import About from './components/About/About'
 import Events from './components/Events/Events'
 import Team from './components/Team/Team'
 import Contact from './components/Contact/Contact'
-
 function App() {
     return (
         <>
