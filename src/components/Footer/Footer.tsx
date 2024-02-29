@@ -11,7 +11,7 @@ import {
 const Footer = () => {
   return (
     <div className="flex flex-row justify-around bg-black h-full w-full  font-game1 tracking-wide text-[10px] sm:text-sm sm:mx-auto md:text-lg gap-1">
-      <div className="flex flex-col sm:flex-row justify-center items-center mx-auto sm:gap-4 gap-2 m-2 sm:m-2 w-[40%]">
+      <div className="flex flex-col sm:flex-row justify-center items-center mx-auto sm:gap-4 gap-2 m-2 sm:m-2 w-[45%]">
         <img src={logo} alt="" className="sm:h-8 h-4" />
         <h1 className=" text-white sm:text-left text-center sm:ml-0 ml-2">
           GOOGLE DEVELOPER STUDENTS CLUB <br /> GHRIET NAGPUR
@@ -25,7 +25,7 @@ const Footer = () => {
       </div>
       <div className="flex flex-col m-2 mx-auto text-white justify-center text-center sm:m-2 leading-normal w-[40%]">
         <h1>FOLLOW US ON</h1>
-        <div className="flex mx-auto justify-between items-center w-1/2 mt-2">
+        <div className="flex mx-auto justify-between items-center sm:w-1/2 w-3/4 mt-2 ">
           <a
             href="https://www.instagram.com/gdsc_ghrietn"
             target="_blank"
