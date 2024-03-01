@@ -24,14 +24,15 @@ const Navbar = ({
     setIsDropdownOpen(!isDropdownOpen);
   };
 
-  const NavLink = "relative text-sm w-fit ";
+  const NavLink =
+    "relative text-sm w-fit cursor-pointer transition-all duration-500";
 
-  const ActiveLink = "text-[#e07e3b]";
+  const ActiveLink = "text-white";
 
   return (
     <nav
       className='lg:w-[97%] lg:rounded-full lg:mt-2 mt-0 rounded-none w-screen h-12 flex flex-row lg:justify-between lg:px-10
-      font-game2 bg-black opacity-85 text-white items-centersm:px-3 sm:px-4 md:px-4 px-4 backdrop-blur-sm select-none'
+      font-game2 bg-black opacity-85 text-white items-centersm:px-3 sm:px-4 md:px-4 px-4 backdrop-blur-sm select-none '
     >
       <div className=' w-full flex flex-row align-middle justify-start items-center'>
         <img src={gdsclogo} alt='GDSC Logo' className='w-16 h-10' />
@@ -49,7 +50,7 @@ const Navbar = ({
         <ul className='flex flex-col items-center gap-6 lg:flex-row backdrop-blur-xl '>
           <li
             className={`${NavLink} ${
-              currentSection === "sectionHome" ? ActiveLink : "text-slate-500"
+              currentSection === "sectionHome" ? ActiveLink : "text-slate-700"
             }`}
             onClick={() => {
               sectionScroller(HomeRef);
@@ -59,7 +60,7 @@ const Navbar = ({
           </li>
           <li
             className={`${NavLink} ${
-              currentSection === "sectionAbout" ? ActiveLink : "text-slate-500"
+              currentSection === "sectionAbout" ? ActiveLink : "text-slate-700"
             }`}
             onClick={() => sectionScroller(AboutRef)}
           >
@@ -67,7 +68,7 @@ const Navbar = ({
           </li>
           <li
             className={`${NavLink} ${
-              currentSection === "sectionEvents" ? ActiveLink : "text-slate-500"
+              currentSection === "sectionEvents" ? ActiveLink : "text-slate-700"
             }`}
             onClick={() => {
               sectionScroller(EventsRef);
@@ -77,7 +78,7 @@ const Navbar = ({
           </li>
           <li
             className={`${NavLink} ${
-              currentSection === "sectionTeam" ? ActiveLink : "text-slate-500"
+              currentSection === "sectionTeam" ? ActiveLink : "text-slate-700"
             }`}
             onClick={() => {
               sectionScroller(TeamRef);
@@ -89,7 +90,7 @@ const Navbar = ({
             className={`${NavLink} ${
               currentSection === "sectionContact"
                 ? ActiveLink
-                : "text-slate-500"
+                : "text-slate-700"
             }`}
             onClick={() => {
               sectionScroller(ContactRef);
