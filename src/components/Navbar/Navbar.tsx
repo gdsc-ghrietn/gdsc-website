@@ -2,51 +2,101 @@ import { useState } from "react";
 import gdsclogo from "../../assets/gdsc_logo.png";
 import { Divide as Hamburger } from "hamburger-react";
 
-const Navbar = () => {
+const Navbar = ({
+  HomeRef,
+  AboutRef,
+  EventsRef,
+  TeamRef,
+  ContactRef,
+  currentSection,
+  setCurrentSection,
+}) => {
+  const [currSection, setCurrSection] = useState("sectionHome");
+
+  const sectionScroller = (SectionRef) => {
+    SectionRef.current.scrollIntoView({ behavior: "smooth" });
+    setCurrSection(SectionRef.current.id);
+  };
+
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
 
-  const NavLink =
-    "relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center";
+  const NavLink = "relative text-sm w-fit ";
+
+  const ActiveLink = "text-[#e07e3b]";
 
   return (
     <nav
-      style={{ backdropFilter: "blur(50px)" }}
-      className='lg:w-[97%] lg:rounded-full lg:mt-2 mt-0 rounded-none w-screen h-16 flex flex-row lg:justify-between lg:px-10
-      font-game2 bg-black opacity-85 text-white items-centersm:px-3'
+      className='lg:w-[97%] lg:rounded-full lg:mt-2 mt-0 rounded-none w-screen h-12 flex flex-row lg:justify-between lg:px-10
+      font-game2 bg-black opacity-85 text-white items-centersm:px-3 sm:px-4 md:px-4 px-4 backdrop-blur-sm select-none'
     >
-      <div className='-z-0 w-full flex flex-row align-middle justify-start items-center'>
-        <img src={gdsclogo} alt='GDSC Logo' className='w-20 h-14' />
-        <div className='ml-4 hover:cursor-pointer text-xs lg:text-2xl'>
+      <div className=' w-full flex flex-row align-middle justify-start items-center'>
+        <img src={gdsclogo} alt='GDSC Logo' className='w-16 h-10' />
+        <div className='ml-4 hover:cursor-pointer text-xs  lg:text-base md:text-base'>
           GDSC GHRIETN
         </div>
       </div>
       <div
-        className={`dropdown-menu absolute ${
-          isDropdownOpen ? " top-16 opacity-100 " : "opacity-0 top-16"
+        className={`dropdown-menu absolute  ${
+          isDropdownOpen ? " top-12 opacity-100 " : "opacity-0 top-16"
         } left-0 bg-black z-10 w-full flex flex-col gap-7 items-center py-2
             lg:static lg:flex-row lg:justify-end lg:bg-transparent lg:opacity-100 transition-all duration-500
             `}
       >
         <ul className='flex flex-col items-center gap-6 lg:flex-row backdrop-blur-xl '>
-          <a href='#Home' className={`${NavLink} `}>
-            <li className='lg:text-lg text-sm'>Home</li>
-          </a>
-          <a href='#About' className={`${NavLink} `}>
-            <li className='lg:text-lg text-sm'>About</li>
-          </a>
-          <a href='#Events' className={`${NavLink} `}>
-            <li className='lg:text-lg text-sm '>Events</li>
-          </a>
-          <a href='#Team' className={`${NavLink} `}>
-            <li className='lg:text-lg text-sm'>Team</li>
-          </a>
-          <a href='#Contact' className={`${NavLink} `}>
-            <li className='lg:text-lg text-sm'>Contact</li>
-          </a>
+          <li
+            className={`${NavLink} ${
+              currentSection === "sectionHome" ? ActiveLink : "text-slate-500"
+            }`}
+            onClick={() => {
+              sectionScroller(HomeRef);
+            }}
+          >
+            Home
+          </li>
+          <li
+            className={`${NavLink} ${
+              currentSection === "sectionAbout" ? ActiveLink : "text-slate-500"
+            }`}
+            onClick={() => sectionScroller(AboutRef)}
+          >
+            About
+          </li>
+          <li
+            className={`${NavLink} ${
+              currentSection === "sectionEvents" ? ActiveLink : "text-slate-500"
+            }`}
+            onClick={() => {
+              sectionScroller(EventsRef);
+            }}
+          >
+            Events
+          </li>
+          <li
+            className={`${NavLink} ${
+              currentSection === "sectionTeam" ? ActiveLink : "text-slate-500"
+            }`}
+            onClick={() => {
+              sectionScroller(TeamRef);
+            }}
+          >
+            Team
+          </li>
+          <li
+            className={`${NavLink} ${
+              currentSection === "sectionContact"
+                ? ActiveLink
+                : "text-slate-500"
+            }`}
+            onClick={() => {
+              sectionScroller(ContactRef);
+            }}
+          >
+            Contact
+          </li>
         </ul>
       </div>
 

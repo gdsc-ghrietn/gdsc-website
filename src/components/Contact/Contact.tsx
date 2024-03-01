@@ -2,6 +2,7 @@ import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Footer from "../Footer/Footer";
 
 const Contact = () => {
   const form = useRef(null);
@@ -27,12 +28,12 @@ const Contact = () => {
       );
   };
   return (
-    <div className='w-full h-screen flex justify-between pt-24 flex-col items-center'>
+    <div className='w-full max-h-screen min-h-screen flex justify-between pt-24 flex-col items-center'>
       <ToastContainer />
       <div className='text-6xl font-bold text-white font-game1 mb-5 '>
         Contact Us
       </div>
-      <div className='w-full h-screen flex justify-between sm:pt-12 flex-col items-center mb-16'>
+      <div className='w-full h-screen flex justify-between sm:pt-12 flex-col items-center'>
         <div className='flex-col-reverse  flex sm:flex-row justify-around items-center h-full w-full px-6  mb-3 max-w-[1920px]'>
           <div className='flex  justify-center items-center sm:w-[50%] w-[100%] h-[30%] sm:h-[50%] '>
             <div className='flex justify-center items-center bg-black  h-full border-none sm:rounded-3xl w-[100%] sm:w-[80%] p-0 text-white'>
@@ -49,10 +50,7 @@ const Contact = () => {
               ref={form}
               onSubmit={sendEmail}
             >
-              <div
-                style={{ fontSize: "clamp(1.5rem, 2vw, 4rem)" }}
-                className=' font-bold text-white font-game1 mb-3 text-center'
-              >
+              <div className='sm:text-4xl text-2xl font-bold text-white font-game1 mb-3 text-center'>
                 Feel free to ask us for any queries
               </div>
               <div className='sm:flex-col flex justify-between items-center w-full'>
@@ -111,9 +109,9 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        {/* <div className="flex flex-col justify-center w-full items-center bg-black sm:h-[5rem]">
+        <div className='flex  flex-col justify-center w-full items-center bg-black sm:h-[5rem]'>
           <Footer />
-        </div> */}
+        </div>
       </div>
     </div>
   );

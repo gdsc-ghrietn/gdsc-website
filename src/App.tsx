@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { Analytics } from "@vercel/analytics/react";
 import "./App.css";
 import Home from "./components/Home/Home";
@@ -7,86 +6,104 @@ import About from "./components/About/About";
 import Events from "./components/Events/Events";
 import Team from "./components/Team/Team";
 import Contact from "./components/Contact/Contact";
-import Footer from "./components/Footer/Footer";
+import { useEffect, useState, useRef } from "react";
 
 function App() {
+  const [currentSection, setCurrentSection] = useState(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setCurrentSection(entry.target.id);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    ); // Change threshold as per requirement
+
+    // Get all sections
+    const sections = document.querySelectorAll("section");
+
+    // Observe each section
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+
+    console.log(currentSection);
+
+    // Cleanup function
+    return () => {
+      sections.forEach((section) => {
+        observer.unobserve(section);
+      });
+    };
+  }, [currentSection]);
+
+  const HomeRef = useRef(null);
+  const AboutRef = useRef(null);
+  const EventsRef = useRef(null);
+  const TeamRef = useRef(null);
+  const ContactRef = useRef(null);
+
   return (
     <>
-      <div className='App '>
-        <div className='max-h-screen'>
-          <div className='sticky  h-full z-50 drop-shadow-xl   flex justify-center '>
-            <Navbar />
-          </div>
+      <div className='App'>
+        <div
+          className='absolute overflow-auto overflow-x-hidden min-w-screen  h-full w-screen  top-0 left-0  overflow: auto;'
+          id='containerElement'
+        >
+          <nav className='fixed w-screen flex justify-center   items-center top-0 z-50 lg:pt-4'>
+            <Navbar
+              HomeRef={HomeRef}
+              AboutRef={AboutRef}
+              EventsRef={EventsRef}
+              TeamRef={TeamRef}
+              ContactRef={ContactRef}
+              currentSection={currentSection}
+              setCurrentSection={setCurrentSection}
+            />
+          </nav>
 
-          <motion.div
-            style={{
-              height: "100vh",
-              overflowY: "auto",
-              scrollSnapType: "y proximity",
-              scrollBehavior: "smooth",
-            }}
-            transition={{ ease: "easeInOut" }}
-            className='top-0 fixed'
-          >
-            <motion.div
-              animate={{
-                height: "100vh",
-                scrollSnapAlign: "start",
-                scrollSnapStop: "always",
-              }}
-              id='Home'
+          <div className='  top-0  flex flex-col'>
+            <section
+              id='sectionHome'
+              ref={HomeRef}
+              className='relative h-screen min-h-screen'
             >
               <Home />
-            </motion.div>
-            <motion.div
-              animate={{
-                height: "100vh",
-                scrollSnapAlign: "start",
-                scrollSnapStop: "always",
-              }}
-              id='About'
+            </section>
+            <section
+              ref={AboutRef}
+              id='sectionAbout'
+              className=' w-screen  h-screen min-h-screen'
+              style={{ position: "relative" }}
             >
               <About />
-            </motion.div>
-            <motion.div
-              animate={{
-                height: "100vh",
-                scrollSnapAlign: "start",
-                scrollSnapStop: "always",
-              }}
-              id='Events'
+            </section>
+            <section
+              ref={EventsRef}
+              className=' w-screen relative h-screen min-h-screen'
+              id='sectionEvents'
             >
               <Events />
-            </motion.div>
-            <motion.div
-              animate={{
-                height: "100vh",
-                scrollSnapAlign: "start",
-                scrollSnapStop: "always",
-              }}
-              id='Team'
+            </section>
+            <section
+              ref={TeamRef}
+              className='w-screen relative h-screen min-h-screen'
+              id='sectionTeam'
             >
               <Team />
-            </motion.div>
-
-            <motion.div
-              animate={{
-                height: "100vh",
-                scrollSnapAlign: "end",
-                scrollSnapStop: "always",
-              }}
-              className='flex flex-col justify-between'
-              id='Contact'
+            </section>
+            <section
+              ref={ContactRef}
+              className='w-screen relative h-screen min-h-screen max-h-screen'
+              id='sectionContact'
             >
-              <div style={{ maxHeight: "90vh" }}>
-                <Contact />
-              </div>
-
-              <div style={{ height: "10vh" }}>
-                <Footer />
-              </div>
-            </motion.div>
-          </motion.div>
+              <Contact />
+            </section>
+          </div>
         </div>
       </div>
 

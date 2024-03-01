@@ -22,13 +22,16 @@
     "hamburger-react": "^2.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-scroll": "^1.9.0",
     "react-slick": "^0.29.0",
     "react-toastify": "^9.1.3",
+    "scroll-snap": "^4.0.5",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
+    "@types/react-scroll": "^1.8.10",
     "@types/react-slick": "^0.23.13",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
