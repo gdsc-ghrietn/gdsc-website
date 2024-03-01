@@ -38,8 +38,9 @@ const Navbar = ({
 
   return (
     <div
-      className='lg:backdrop-blur-sm lg:w-[97%] lg:rounded-full lg:mt-1 mt-0 rounded-none w-screen h-12 flex flex-row align-middle lg:justify-between lg:px-10 sm:bg-black md:bg bg-black
-      font-game2  text-white items-centersm:px-3 sm:px-4 md:px-4 px-4  select-none '
+      className=' lg:w-[97%] lg:rounded-full lg:mt-1 mt-0 rounded-none w-screen h-12 flex flex-row align-middle lg:justify-between lg:px-10 sm:bg-black md:bg 
+      font-game2  text-white items-centersm:px-3 sm:px-4 md:px-4 px-4  select-none lg:bg-[rgb(0,0,0,0.8)] drop-shadow-xl bg-black'
+      style={{ backdropFilter: "blur(4px)" }}
     >
       <div className=' w-full flex flex-row align-middle justify-start items-center'>
         <img src={gdsclogo} alt='GDSC Logo' className='w-16 h-10' />
@@ -48,12 +49,12 @@ const Navbar = ({
         </div>
       </div>
       <div
-        className={`dropdown-menu absolute  ${
-          isDropdownOpen
-            ? " top-12   shadow-2xl shadow-gray-950 backdrop-blur-lg bg-black opacity-100"
-            : "opacity-0 top-16"
-        } left-0  z-10 w-full flex flex-col gap-7 items-center py-2
-            lg:static lg:flex-row lg:justify-end lg:bg-transparent lg:opacity-100  transition-all duration-500
+        className={`dropdown-menu absolute left-0  z-10 w-full flex flex-col gap-7 items-center py-2
+            lg:static lg:flex-row lg:justify-end lg:bg-transparent lg:opacity-100  transition-all duration-500  ${
+              isDropdownOpen
+                ? " top-12    shadow-gray-950  bg-black opacity-100"
+                : "opacity-0 top-16"
+            } 
             `}
       >
         <ul className='flex flex-col items-center gap-6 lg:flex-row  '>
