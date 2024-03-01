@@ -9,7 +9,7 @@ import Contact from "./components/Contact/Contact";
 import { useEffect, useState, useRef } from "react";
 
 function App() {
-  const [currentSection, setCurrentSection] = useState(null);
+  const [currentSection, setCurrentSection] = useState("");
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -54,7 +54,7 @@ function App() {
           className='absolute overflow-auto overflow-x-hidden min-w-screen  h-full w-screen  top-0 left-0  overflow: auto;'
           id='containerElement'
         >
-          <nav className='fixed w-screen flex justify-center   items-center top-0 z-50 lg:pt-4'>
+          <nav className='fixed w-screen flex justify-center   items-center top-0 z-50 lg:pt-2'>
             <Navbar
               HomeRef={HomeRef}
               AboutRef={AboutRef}
@@ -62,7 +62,7 @@ function App() {
               TeamRef={TeamRef}
               ContactRef={ContactRef}
               currentSection={currentSection}
-              setCurrentSection={setCurrentSection}
+              
             />
           </nav>
 

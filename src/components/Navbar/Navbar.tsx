@@ -9,12 +9,19 @@ const Navbar = ({
   TeamRef,
   ContactRef,
   currentSection,
-  setCurrentSection,
+}: {
+  HomeRef: any;
+  AboutRef: any;
+  EventsRef: any;
+  TeamRef: any;
+  ContactRef: any;
+  currentSection: any;
 }) => {
   const [currSection, setCurrSection] = useState("sectionHome");
 
-  const sectionScroller = (SectionRef) => {
+  const sectionScroller = (SectionRef: any) => {
     SectionRef.current.scrollIntoView({ behavior: "smooth" });
+    console.log(currSection);
     setCurrSection(SectionRef.current.id);
   };
 
@@ -30,9 +37,9 @@ const Navbar = ({
   const ActiveLink = "text-white";
 
   return (
-    <nav
-      className='lg:w-[97%] lg:rounded-full lg:mt-2 mt-0 rounded-none w-screen h-12 flex flex-row lg:justify-between lg:px-10
-      font-game2 bg-black opacity-85 text-white items-centersm:px-3 sm:px-4 md:px-4 px-4 backdrop-blur-sm select-none '
+    <div
+      className='lg:backdrop-blur-sm lg:w-[97%] lg:rounded-full lg:mt-1 mt-0 rounded-none w-screen h-12 flex flex-row align-middle lg:justify-between lg:px-10 sm:bg-black md:bg bg-black
+      font-game2  text-white items-centersm:px-3 sm:px-4 md:px-4 px-4  select-none '
     >
       <div className=' w-full flex flex-row align-middle justify-start items-center'>
         <img src={gdsclogo} alt='GDSC Logo' className='w-16 h-10' />
@@ -42,18 +49,21 @@ const Navbar = ({
       </div>
       <div
         className={`dropdown-menu absolute  ${
-          isDropdownOpen ? " top-12 opacity-100 " : "opacity-0 top-16"
-        } left-0 bg-black z-10 w-full flex flex-col gap-7 items-center py-2
-            lg:static lg:flex-row lg:justify-end lg:bg-transparent lg:opacity-100 transition-all duration-500
+          isDropdownOpen
+            ? " top-12   shadow-2xl shadow-gray-950 backdrop-blur-lg bg-black opacity-100"
+            : "opacity-0 top-16"
+        } left-0  z-10 w-full flex flex-col gap-7 items-center py-2
+            lg:static lg:flex-row lg:justify-end lg:bg-transparent lg:opacity-100  transition-all duration-500
             `}
       >
-        <ul className='flex flex-col items-center gap-6 lg:flex-row backdrop-blur-xl '>
+        <ul className='flex flex-col items-center gap-6 lg:flex-row  '>
           <li
             className={`${NavLink} ${
               currentSection === "sectionHome" ? ActiveLink : "text-slate-700"
             }`}
             onClick={() => {
               sectionScroller(HomeRef);
+              toggleDropdown();
             }}
           >
             Home
@@ -62,7 +72,10 @@ const Navbar = ({
             className={`${NavLink} ${
               currentSection === "sectionAbout" ? ActiveLink : "text-slate-700"
             }`}
-            onClick={() => sectionScroller(AboutRef)}
+            onClick={() => {
+              sectionScroller(AboutRef);
+              toggleDropdown();
+            }}
           >
             About
           </li>
@@ -72,6 +85,7 @@ const Navbar = ({
             }`}
             onClick={() => {
               sectionScroller(EventsRef);
+              toggleDropdown();
             }}
           >
             Events
@@ -82,6 +96,7 @@ const Navbar = ({
             }`}
             onClick={() => {
               sectionScroller(TeamRef);
+              toggleDropdown();
             }}
           >
             Team
@@ -94,6 +109,7 @@ const Navbar = ({
             }`}
             onClick={() => {
               sectionScroller(ContactRef);
+              toggleDropdown();
             }}
           >
             Contact
@@ -107,7 +123,7 @@ const Navbar = ({
       >
         <Hamburger toggled={isDropdownOpen} toggle={setIsDropdownOpen} />
       </div>
-    </nav>
+    </div>
   );
 };
 
