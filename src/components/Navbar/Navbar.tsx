@@ -56,7 +56,7 @@ const Navbar = ({
         className={`dropdown-menu absolute left-0  z-50 w-full flex flex-col gap-7 items-center py-2
             lg:static lg:flex-row lg:justify-end lg:bg-transparent lg:opacity-100  transition-all duration-500  ${
               isDropdownOpen
-                ? " top-[2.9rem] backdrop-contrast-200    shadow-gray-950  bg-black opacity-100"
+                ? " top-[2.9rem] shadow-gray-950  bg-black opacity-100"
                 : "opacity-0 top-16"
             } 
             `}
