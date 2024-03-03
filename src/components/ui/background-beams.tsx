@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import { cn } from "../../../utils/cn";
 export const BackgroundBeams = ({ className }: { className?: string }) => {
-  let StrokeWidth:string="1"
+  let StrokeWidth:string="0.5"
   if(window.innerWidth < 480){
-    StrokeWidth="8"
+    StrokeWidth="3"
   }
     const paths = [
       "M-380 -189C-380 -189 -312 216 152 343C616 470 684 875 684 875",
