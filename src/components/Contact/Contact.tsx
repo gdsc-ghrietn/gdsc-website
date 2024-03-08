@@ -60,7 +60,9 @@ const Contact = () => {
                 <input
                   type="text"
                   name="user_name"
-                  className="sm:w-[80%] w-[70%] px-4 rounded-xl border-[3px] border-blue-400  focus:ring-2 focus:ring-green-500 focus:shadow-lg focus:shadow-indigo-500/50 sm:text-3xl text-2xl font-game1" required minLength={3}
+                  className="sm:w-[80%] w-[70%] px-4 rounded-xl border-[3px] border-blue-400  focus:ring-2 focus:ring-green-500 focus:shadow-lg focus:shadow-indigo-500/50 sm:text-3xl text-2xl font-game1"
+                  required
+                  minLength={3}
                 />
               </div>
               <div className="sm:flex-col flex justify-between items-center w-full ">
@@ -80,7 +82,9 @@ const Contact = () => {
                 <input
                   type="text"
                   name="subject"
-                  className="sm:w-[80%] w-[70%] px-4  rounded-xl border-[3px] border-blue-400  focus:ring-2 focus:ring-green-500 focus:shadow-lg focus:shadow-indigo-500/50 text-lg font-game1" required minLength={3}
+                  className="sm:w-[80%] w-[70%] px-4  rounded-xl border-[3px] border-blue-400  focus:ring-2 focus:ring-green-500 focus:shadow-lg focus:shadow-indigo-500/50 text-lg font-game1"
+                  required
+                  minLength={3}
                 />
               </div>
               <div className="sm:flex-col flex justify-between items-center w-full ">
@@ -90,7 +94,9 @@ const Contact = () => {
                 <input
                   type="text"
                   name="message"
-                  className="sm:w-[80%] w-[70%] py-2 px-4  rounded-xl border-[3px] border-blue-400 focus:ring-2 focus:ring-green-500  focus:shadow-lg focus:shadow-indigo-500/50 text-lg font-game1" required minLength={3}
+                  className="sm:w-[80%] w-[70%] py-2 px-4  rounded-xl border-[3px] border-blue-400 focus:ring-2 focus:ring-green-500  focus:shadow-lg focus:shadow-indigo-500/50 text-lg font-game1"
+                  required
+                  minLength={3}
                 />
               </div>
               <button
