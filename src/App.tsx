@@ -47,7 +47,7 @@ function App() {
         className='App overflow-x-hidden
       '
       >
-        <nav className='fixed w-screen flex justify-center   items-center top-0 z-50 lg:pt-2'>
+        <nav className='fixed w-full flex justify-center lg:p-4 p-2   items-center top-0 z-50'>
           <Navbar
             HomeRef={HomeRef}
             AboutRef={AboutRef}

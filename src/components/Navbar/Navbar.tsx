@@ -32,39 +32,37 @@ const Navbar = ({
   };
 
   const NavLink =
-    "relative text-xl  lg:text-3xl md:text-xl w-fit cursor-pointer transition-all duration-500 font-game1";
+    "relative text-xl  lg:text-[22px] md:text-[22px] w-fit cursor-pointer  font-game1";
 
   const ActiveLink = "text-white";
 
   return (
     <div
-      className=' lg:w-[97%] lg:rounded-full lg:mt-1 mt-0 rounded-none w-screen h-12 flex flex-row align-middle lg:justify-between lg:px-10 sm:bg-black md:bg 
-      font-game2  text-white items-centersm:px-3 sm:px-4 md:px-4 px-4  select-none lg:bg-[rgb(0,0,0,0.8)] drop-shadow-xl bg-black'
-      style={{ backdropFilter: "blur(4px)" }}
+      className={`transition-all duration-800 rounded-3xl flex w-full  px-6 text-white lg:rounded-full uppercase ${
+        isDropdownOpen
+          ? "sm:rounded-t-3xl md:rounded-t-3xl rounded-b-none"
+          : "sm:rounded-3xl md:rounded-3xl"
+      }`}
+      style={{ backgroundColor: "rgb(0,0,0,0.9)", backdropFilter: "blur(4px)" }}
     >
-      <div className=' w-full flex flex-row align-middle justify-start items-center'>
-        <img
-          src={gdsclogo}
-          alt='GDSC Logo'
-          className='lg:w-16 lg:h-10 w-14 h-8'
-        />
-        <div className='ml-4 hover:cursor-pointer  font-game1 text-xl  lg:text-3xl md:text-xl'>
+      <div className='w-full flex flex-row align-middle justify-start items-center'>
+        <img src={gdsclogo} alt='GDSC Logo' className='w-14 h-8' />
+        <div className='ml-4 hover:cursor-pointer font-game1 text-xl text-white'>
           GDSC GHRIETN
         </div>
       </div>
       <div
-        className={`dropdown-menu absolute left-0  z-50 w-full flex flex-col gap-7 items-center py-2
-            lg:static lg:flex-row lg:justify-end lg:bg-transparent lg:opacity-100  transition-all duration-500  ${
+        className={`transition-all dropdown-menu absolute left-0 z-40 w-full flex flex-col gap-7 items-center py-2 rounded-b-3xl
+            lg:static lg:flex-row lg:justify-end lg:bg-transparent lg:opacity-100 ${
               isDropdownOpen
-                ? " top-[2.9rem] shadow-gray-950  bg-black opacity-100"
+                ? "top-[2.9rem] shadow-gray-950 w-full bg-black opacity-95 "
                 : "opacity-0 top-16"
-            } 
-            `}
+            }`}
       >
         <ul className='flex flex-col items-center gap-6 lg:flex-row'>
           <li
-            className={`${NavLink} ${
-              currentSection === "sectionHome" ? ActiveLink : "text-slate-700"
+            className={`${NavLink}  ${
+              currentSection === "sectionHome" ? ActiveLink : "text-slate-600"
             }`}
             onClick={() => {
               sectionScroller(HomeRef);
@@ -75,7 +73,7 @@ const Navbar = ({
           </li>
           <li
             className={`${NavLink} ${
-              currentSection === "sectionAbout" ? ActiveLink : "text-slate-700"
+              currentSection === "sectionAbout" ? ActiveLink : "text-slate-600"
             }`}
             onClick={() => {
               sectionScroller(AboutRef);
@@ -86,7 +84,7 @@ const Navbar = ({
           </li>
           <li
             className={`${NavLink} ${
-              currentSection === "sectionEvents" ? ActiveLink : "text-slate-700"
+              currentSection === "sectionEvents" ? ActiveLink : "text-slate-600"
             }`}
             onClick={() => {
               sectionScroller(EventsRef);
@@ -97,7 +95,7 @@ const Navbar = ({
           </li>
           <li
             className={`${NavLink} ${
-              currentSection === "sectionTeam" ? ActiveLink : "text-slate-700"
+              currentSection === "sectionTeam" ? ActiveLink : "text-slate-600"
             }`}
             onClick={() => {
               sectionScroller(TeamRef);
@@ -110,7 +108,7 @@ const Navbar = ({
             className={`${NavLink} ${
               currentSection === "sectionContact"
                 ? ActiveLink
-                : "text-slate-700"
+                : "text-slate-600"
             }`}
             onClick={() => {
               sectionScroller(ContactRef);
@@ -123,10 +121,14 @@ const Navbar = ({
       </div>
 
       <div
-        className='toggle-button flex items-center  lg:hidden transition-opacity duration-500'
+        className='toggle-button flex items-center  lg:hidden transition-opacity duration-800'
         onClick={toggleDropdown}
       >
-        <Hamburger toggled={isDropdownOpen} toggle={setIsDropdownOpen} />
+        <Hamburger
+          size={24}
+          toggled={isDropdownOpen}
+          toggle={setIsDropdownOpen}
+        />
       </div>
     </div>
   );
