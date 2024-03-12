@@ -7,7 +7,9 @@ import Events from "./components/Events/Events";
 import Team from "./components/Team/Team";
 import Contact from "./components/Contact/Contact";
 import { useRef, useState, useEffect } from "react";
-
+import { Route,Routes } from "react-router-dom";
+import TeamPage from "./Pages/Team/TeamPage";
+import React from "react";
 function App() {
   const [currentSection, setCurrentSection] = useState("");
 
@@ -43,6 +45,9 @@ function App() {
 
   return (
     <>
+    <Routes>
+        <Route path="/team" element={<TeamPage />} />
+    </Routes>
       <div
         className='App overflow-x-hidden
       '
