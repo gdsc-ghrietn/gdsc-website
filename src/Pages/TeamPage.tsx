@@ -1,7 +1,7 @@
 
 const TeamPage = () => {
   return (
-    <div className="h-full w-full bg-blue-500">TeamPage</div>
+    <div className="h-screen z-20 w-full bg-blue-500">TeamPage</div>
   )
 }
 
