@@ -34,7 +34,7 @@ const Home = () => {
 
           </div>
         </div>
-        <div className=" h-[30%] w-full flex flex-col justify-end items-center pb-16">
+        <div className=" h-[30%] w-full flex flex-col justify-end items-center pb-16 bg-black bg-opacity-5">
           <div className="text-white font-game1 text-[20px] sm:text-[23px] mb-4 text-center px-2">
             A DEVELOPERS' COMMUNITY BY THE STUDENTS, FOR THE STUDENTS.
           </div>
