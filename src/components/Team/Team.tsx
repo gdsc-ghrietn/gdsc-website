@@ -81,7 +81,7 @@ const TeamCarousel: React.FC = () => {
         ],
     };
 
-    const [importedImage, setimportedImage] = React.useState<Map<number, string>>(
+    const [_, setimportedImage] = React.useState<Map<number, string>>(
         new Map()
     );
 
