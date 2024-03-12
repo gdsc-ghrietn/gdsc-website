@@ -9,7 +9,6 @@ import Contact from "./components/Contact/Contact";
 import { useRef, useState, useEffect } from "react";
 import { Route,Routes } from "react-router-dom";
 import TeamPage from "./Pages/Team/TeamPage";
-import React from "react";
 function App() {
   const [currentSection, setCurrentSection] = useState("");
 
