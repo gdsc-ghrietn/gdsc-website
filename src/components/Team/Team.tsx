@@ -4,8 +4,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import teamMembersData from "./Team.json";
 import TeamMemberCard from "./TeamMemberCard";
+import { Link } from "react-router-dom";
 
-interface TeamMember {
+export interface TeamMember {
     id: number;
     name: string;
     role: string;
@@ -100,12 +101,12 @@ const TeamCarousel: React.FC = () => {
     }
 
     return (
-        <div className="w-screen h-screen pt-14 border-4 border-white">
-            <div className="flex justify-center items-center flex-col">
+        <div className="w-screen h-screen pt-14">
+            <div className="flex h-full items-center flex-col">
                 <div className="text-6xl font-bold text-white font-game1">
                     Meet Our Team
                 </div>
-                <Slider {...settings} className={`w-[65%] ${isMobileWidth && "mt-12"}`}>
+                <Slider {...settings} className={`w-[65%] h-[75%] flex items-center ${isMobileWidth && "mt-12"}`}>
                     {teamMembers.slice(0, 8).map((member) => {
                         handleImageImport(member);
                         return (
@@ -113,6 +114,9 @@ const TeamCarousel: React.FC = () => {
                         );
                     })}
                 </Slider>
+                <Link to="/team">
+                    <button className="text-white underline underline-offset-2 mt-4 mb-8 p-2 text-3xl font-game1 hover:text-cyan-100">See all</button>
+                </Link>
             </div >
         </div >
     );
