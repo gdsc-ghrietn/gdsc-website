@@ -18,8 +18,9 @@ export default {
       'extraextrabold': '900',
     },
     fontFamily: {
-        'game1': ['VT323', 'monospace'],
-        'game2': ['"Press Start 2P"', 'monospace'],
+      'game1': ['VT323', 'monospace'],
+      'game2': ['"Press Start 2P"', 'monospace'],
+      'retro': ['"Vast Shadow"', 'serif']
     }
   },
   plugins: [require("tailwindcss-animate")],
