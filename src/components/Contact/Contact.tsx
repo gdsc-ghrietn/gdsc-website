@@ -2,7 +2,6 @@ import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Footer from "../Footer/Footer";
 
 const Contact = () => {
   const form = useRef(null);
@@ -28,7 +27,7 @@ const Contact = () => {
       );
   };
   return (
-    <div className="w-full h-screen flex justify-between pt-24 flex-col items-center">
+    <div className="w-full h-screen flex justify-between pt-16 flex-col items-center">
       <ToastContainer />
       <div className="text-6xl font-bold text-white font-game1 mb-5 ">
         Contact Us
@@ -110,7 +109,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="flex flex-col justify-center w-full items-center bg-black sm:h-[5rem]">
-          <Footer />
+          
         </div>
       </div>
     </div>
