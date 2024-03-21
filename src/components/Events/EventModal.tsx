@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useRef, useState, useEffect } from "react";
 import { IoMdCloseCircle } from "react-icons/io";
 import { FaCalendarAlt } from "react-icons/fa";
 import { IoIosTime } from "react-icons/io";
@@ -25,13 +23,13 @@ function EventModal(props) {
             </button>
           </form>
           <div
-            className=' flex flex-col   text-slate-900 font-game1  bg-white backdrop-blur-xl  lg:w-[50%] overflow-scroll overflow-x-hidden rounded-3xl'
+            className=' flex flex-col   text-slate-900 font-game1  bg-white backdrop-blur-xl  lg:w-[50%] overflow-scroll overflow-x-hidden lg:rounded-xl rounded-t-xl'
             style={{
               scrollbarWidth: "none",
             }}
           >
-            <div className='w-full text-center text-xl sm:text-2xl text-white  bg-red-600 lg:p-2 p-3 rounded-t-3xl'>
-              <span>{expandedEvent.title}</span>
+            <div className='w-full text-center text-white  bg-red-600 lg:p-2 p-3 rounded-t-xl'>
+              <span className="text-xl lg:text-3xl">{expandedEvent.title}</span>
             </div>
 
             <div className='w-full text-justify p-2 px-4'>
