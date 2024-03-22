@@ -30,7 +30,7 @@ const About = () => {
             <li>Study Jams</li>
           </ul>
         </div>
-        {/* <BackgroundBeams /> */}
+        <BackgroundBeams />
       </div>
     </>
   );
