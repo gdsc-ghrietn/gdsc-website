@@ -36,9 +36,10 @@ const Events = () => {
     }
   }
 
-  const handleEventClick = (event: Event) => {
+  const handleReadMoreClick = (event: Event) => {
     setExpandedEvent(event);
-    document.getElementById("my_modal_5")?.showModal();
+    const modalElement = document.getElementById("my_modal_5") as HTMLDialogElement;
+    modalElement?.showModal();
   };
 
   useEffect(() => {
@@ -143,7 +144,7 @@ const Events = () => {
               <div key={event.id} className='p-4 l'>
                 <EventCard
                   event={event}
-                  handleEventClick={handleEventClick}
+                  handleReadMoreClick={handleReadMoreClick}
                   formatDate={formatDate}
                   formatTime={formatTime}
                 />

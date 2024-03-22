@@ -1,12 +1,12 @@
 import { IoMdCloseCircle } from "react-icons/io";
 import { FaCalendarAlt } from "react-icons/fa";
 import { IoIosTime } from "react-icons/io";
+import { Speaker } from "../../models/Event";
 
-function EventModal(props) {
+function EventModal(props: any) {
   const { expandedEvent, formatDate, formatTime } = props;
 
   const tags = expandedEvent.tags;
-
   function stripHtml(html: string) {
     const tmpElement = document.createElement("div");
     tmpElement.innerHTML = html;
@@ -18,7 +18,7 @@ function EventModal(props) {
       {expandedEvent && (
         <dialog id='my_modal_5' className='modal modal-bottom lg:modal-middle'>
           <form method='dialog' className='top-0  right-0 absolute z-50 '>
-            <button className='text-red-600 m-2 drop-shadow-md shadow-black'>
+            <button className='text-violet-600 m-2 drop-shadow-md shadow-black'>
               <IoMdCloseCircle size={40} />
             </button>
           </form>
@@ -28,8 +28,8 @@ function EventModal(props) {
               scrollbarWidth: "none",
             }}
           >
-            <div className='w-full text-center text-white  bg-red-600 lg:p-2 p-3 rounded-t-xl'>
-              <span className="text-xl lg:text-3xl">{expandedEvent.title}</span>
+            <div className='w-full text-center text-white  bg-violet-600 lg:p-2 p-3 rounded-t-xl'>
+              <span className='text-xl lg:text-3xl'>{expandedEvent.title}</span>
             </div>
 
             <div className='w-full text-justify p-2 px-4'>
@@ -64,13 +64,13 @@ function EventModal(props) {
 
               {expandedEvent.speakers.length > 0 && (
                 <div className='lg:w-[80%]  lg:max-w-80  max-w-60  flex lg:flex-row  flex-row align-middle items-center   p-6 justify-center'>
-                  {expandedEvent.speakers?.map((speaker) => (
+                  {expandedEvent.speakers?.map((speaker: Speaker) => (
                     <div
                       key={speaker.id}
                       className='aspect-square flex flex-col  justify-center  items-center'
                     >
                       <img
-                        src={speaker.picture.url}
+                        src={speaker.picture?.url}
                         alt={speaker.first_name + " " + speaker.last_name}
                         className='w-[60%] lg:w-[70%] aspect-square rounded-full  drop-shadow-2xl  '
                         style={{
@@ -95,7 +95,7 @@ function EventModal(props) {
                           overflow: "hidden",
                         }}
                       >
-                        {stripHtml(speaker.bio)}
+                        {stripHtml(speaker.bio || "")}
                       </span>
                     </div>
                   ))}
@@ -104,11 +104,8 @@ function EventModal(props) {
             </div>
 
             <div className='my-2 flex flex-row justify-center gap-5'>
-              {tags.map((tag) => (
-                <div
-                  key={tag}
-                  className='bg-red-600 text-xl lg:text-2xl text-white px-2 lg:px-3 rounded-xl'
-                >
+              {tags.map((tag: String[]) => (
+                <div className='bg-violet-600 text-xl lg:text-2xl text-white px-2 lg:px-3 rounded-md'>
                   <span>{tag}</span>
                 </div>
               ))}
@@ -117,7 +114,7 @@ function EventModal(props) {
             <div className='w-full flex flex-row justify-evenly items-center px-6 text-base sm:text-xl'>
               <div className='flex gap-1 items-center'>
                 <div>
-                  <FaCalendarAlt color='#dc2626' />
+                  <FaCalendarAlt color='#a855f7' />
                 </div>
                 <div className='text-xl'>
                   {formatDate(expandedEvent.start_date)}
@@ -125,7 +122,7 @@ function EventModal(props) {
               </div>
               <div className='flex gap-1 items-center'>
                 <div>
-                  <IoIosTime color='#dc2626' />
+                  <IoIosTime color='#a855f7' />
                 </div>
                 <div className='text-xl'>
                   {formatTime(expandedEvent.start_date)}
@@ -136,7 +133,7 @@ function EventModal(props) {
             <div className='w-full flex justify-end px-6 m-2'>
               <a
                 href={expandedEvent.url}
-                className='border bg-red-600 text-white shadow-2xl shadow-black px-4 py-2 rounded-xl cursor-pointer '
+                className='border bg-violet-600 text-white shadow-2xl shadow-black px-4 py-2 rounded-xl cursor-pointer '
               >
                 Register Here
               </a>
