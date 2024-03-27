@@ -87,10 +87,12 @@ const TeamCarousel: React.FC = () => {
     );
 
     async function handleImageImport(teamMember: TeamMember) {
-        if (!teamMember.image_url) {
+        const defaultUrl = "https://ohmylens.com/wp-content/uploads/2017/06/dummy-profile-pic.png";
+        if (!teamMember.image_url || teamMember.image_url !== defaultUrl) {
             try {
                 let fname = teamMember.name.split(" ")[0].toLowerCase();
                 const image = await import(`../../assets/team-images/${fname}.jpg`);
+                console.log("image is ", image.default);
                 setimportedImage(
                     (prev) => new Map(prev.set(teamMember.id, image.default))
                 );
@@ -106,7 +108,7 @@ const TeamCarousel: React.FC = () => {
                 <div className="h-[20%] text-6xl font-bold block text-white font-game1">
                     Meet Our Team
                 </div>
-                <Slider {...settings} className={`w-[65%] h-[50%] sm:h-[60%] flex items-center ${isMobileWidth && "mt-12"}`}>
+                <Slider {...settings} className={`w-[65%] max-w-[60rem] h-[50%] sm:h-[60%] flex items-center ${isMobileWidth && "mt-12"}`}>
                     {teamMembers.slice(0, 8).map((member) => {
                         handleImageImport(member);
                         return (
@@ -115,7 +117,7 @@ const TeamCarousel: React.FC = () => {
                     })}
                 </Slider>
                 <div className="w-screen sm:h-[20%] md:h-[20%] mt-2 lg:h-[10%] flex items-center justify-center">
-                    <Link to="/team" className="text-white font-game1 text-3xl underline underline-offset-2 border-white p-2 rounded-md hover:bg-white hover:text-black">View More</Link>
+                    <Link to="/team" className="z-50 text-white font-game1 text-3xl underline underline-offset-2 border-white p-2 rounded-md hover:bg-white hover:text-black mt-3">View More</Link>
                 </div>
             </div >
         </div >
