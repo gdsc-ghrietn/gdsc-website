@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+import daisyui from 'daisyui';
 export default {
+
   content: [
     './index.html',
     './pages/**/*.{ts,tsx}',
@@ -23,5 +25,8 @@ export default {
       'retro': ['"Vast Shadow"', 'serif']
     }
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), daisyui],
+  daisyui: {
+    themes: [],
+  }, 
 };
