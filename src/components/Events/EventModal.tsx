@@ -64,7 +64,7 @@ function EventModal(props: any) {
                   style={{
                     textOverflow: "ellipsis",
                     overflow: "hidden",
-                    lineHeight: "1.5em",
+                    lineHeight: "1.4em",
                   }}
                 >
                   {stripHtml(expandedEvent.description)}
@@ -113,25 +113,25 @@ function EventModal(props: any) {
             </div>
             <div className='my-2 flex flex-row justify-center gap-5'>
               {tags.map((tag: String[]) => (
-                <div className='bg-violet-600 text-xl lg:text-2xl text-white px-2 lg:px-3 rounded-md'>
+                <div className='bg-violet-600 text-sm lg:text-lg text-white p-2 lg:py-0  rounded-md'>
                   <span>{tag}</span>
                 </div>
               ))}
             </div>
-            <div className='w-full flex flex-row justify-evenly items-center px-6 text-base sm:text-xl'>
+            <div className='w-full flex flex-row justify-evenly items-center px-6 m-0 lg:m-3   text-base sm:text-xl'>
               <div className='flex gap-1 items-center'>
                 <div>
-                  <FaCalendarAlt color='#a855f7' />
+                  <FaCalendarAlt color='#7c3aed' />
                 </div>
-                <div className='text-xl'>
+                <div className='text-sm'>
                   {formatDate(expandedEvent.start_date)}
                 </div>
               </div>
               <div className='flex gap-1 items-center'>
                 <div>
-                  <IoIosTime color='#a855f7' />
+                  <IoIosTime color='#7c3aed' />
                 </div>
-                <div className='text-xl'>
+                <div className='text-sm '>
                   {formatTime(expandedEvent.start_date)}
                 </div>
               </div>
