@@ -24,8 +24,8 @@ const EventCard = ({
         className='object-fill lg:w-1/2 md:w-1/2  lg:h-[35vh]    w-full  lg:rounded-none'
         alt='Event Image'
       />
-      <div className='p-1 lg:p-4  lg:w-full md:w-full    flex flex-col justify-between'>
-        <div className='flex flex-col lg:justify-around lg:w-full lg:h-full'>
+      <div className='p-1  lg:p-4  lg:w-full md:w-full    flex flex-col justify-between'>
+        <div className='flex mb-4 lg:m-0 flex-col lg:justify-around lg:w-full lg:h-full'>
           <h1
             className='lg:text-3xl text-xl font-game1 m-4 lg:m-2'
             style={{ lineHeight: "0.8em" }}

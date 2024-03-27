@@ -1,8 +1,6 @@
-import { IoMdCloseCircle } from "react-icons/io";
 import { FaCalendarAlt } from "react-icons/fa";
 import { IoIosTime } from "react-icons/io";
 import { Speaker } from "../../models/Event";
-
 function EventModal(props: any) {
   const { expandedEvent, formatDate, formatTime } = props;
 
@@ -16,28 +14,39 @@ function EventModal(props: any) {
   return (
     <>
       {expandedEvent && (
-        <dialog id='my_modal_5' className='modal modal-bottom lg:modal-middle'>
-          <form method='dialog' className='top-0  right-0 absolute z-50 '>
-            <button className='text-violet-600 m-2 drop-shadow-md shadow-black'>
-              <IoMdCloseCircle size={40} />
-            </button>
+        <dialog id='my_modal_3' className='modal modal-bottom  lg:modal-middle'>
+          <form
+            method='dialog'
+            className='modal-backdrop w-screen absolute h-screen z-0'
+          >
+            <button>dwadad</button>
           </form>
           <div
-            className=' flex flex-col   text-slate-900 font-game1  bg-white backdrop-blur-xl  lg:w-[50%] overflow-scroll overflow-x-hidden lg:rounded-xl rounded-t-xl'
+            className=' flex flex-col    text-slate-900   bg-white backdrop-blur-xl  lg:w-[50%] overflow-scroll overflow-x-hidden lg:rounded-xl rounded-t-xl'
             style={{
               scrollbarWidth: "none",
             }}
           >
-            <div className='w-full text-center text-white  bg-violet-600 lg:p-2 p-3 rounded-t-xl'>
-              <span className='text-xl lg:text-3xl'>{expandedEvent.title}</span>
+            <div className='w-full text-center text-white flex justify-between bg-violet-600 lg:p-2 p-3 rounded-t-xl'>
+              <div className='w-full'>
+                <span className='text-xl text-center lg:text-3xl'>
+                  {expandedEvent.title}
+                </span>
+              </div>
+              <form method='dialog' className='justify-end'>
+                <button
+                  id='close-btn'
+                  className='btn btn-sm btn-circle btn-ghost  text-white '
+                >
+                  ✕
+                </button>
+              </form>
             </div>
-
             <div className='w-full text-justify p-2 px-4'>
               <p className='text-lg lg:text-xl leading-5'>
                 {expandedEvent.description_short}
               </p>
             </div>
-
             <div
               className='w-full h-min flex lg:flex-row flex-col justify-center items-center px-4'
               style={{
@@ -55,7 +64,7 @@ function EventModal(props: any) {
                   style={{
                     textOverflow: "ellipsis",
                     overflow: "hidden",
-                    lineHeight: "1em",
+                    lineHeight: "1.4em",
                   }}
                 >
                   {stripHtml(expandedEvent.description)}
@@ -102,34 +111,31 @@ function EventModal(props: any) {
                 </div>
               )}
             </div>
-
             <div className='my-2 flex flex-row justify-center gap-5'>
               {tags.map((tag: String[]) => (
-                <div className='bg-violet-600 text-xl lg:text-2xl text-white px-2 lg:px-3 rounded-md'>
+                <div className='bg-violet-600 text-sm lg:text-lg text-white p-2 lg:py-0  rounded-md'>
                   <span>{tag}</span>
                 </div>
               ))}
             </div>
-
-            <div className='w-full flex flex-row justify-evenly items-center px-6 text-base sm:text-xl'>
+            <div className='w-full flex flex-row justify-evenly items-center px-6 m-0 lg:m-3   text-base sm:text-xl'>
               <div className='flex gap-1 items-center'>
                 <div>
-                  <FaCalendarAlt color='#a855f7' />
+                  <FaCalendarAlt color='#7c3aed' />
                 </div>
-                <div className='text-xl'>
+                <div className='text-sm'>
                   {formatDate(expandedEvent.start_date)}
                 </div>
               </div>
               <div className='flex gap-1 items-center'>
                 <div>
-                  <IoIosTime color='#a855f7' />
+                  <IoIosTime color='#7c3aed' />
                 </div>
-                <div className='text-xl'>
+                <div className='text-sm '>
                   {formatTime(expandedEvent.start_date)}
                 </div>
               </div>
             </div>
-
             <div className='w-full flex justify-end px-6 m-2'>
               <a
                 href={expandedEvent.url}

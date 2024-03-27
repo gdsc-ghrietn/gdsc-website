@@ -38,7 +38,9 @@ const Events = () => {
 
   const handleReadMoreClick = (event: Event) => {
     setExpandedEvent(event);
-    const modalElement = document.getElementById("my_modal_5") as HTMLDialogElement;
+    const modalElement = document.getElementById(
+      "my_modal_3"
+    ) as HTMLDialogElement;
     modalElement?.showModal();
   };
 
@@ -125,7 +127,7 @@ const Events = () => {
   };
 
   return (
-    <div className='w-screen h-screen flex flex-col items-center'>
+    <div className='w-screen h-screen flex flex-col items-center '>
       {expandedEvent && (
         <EventModal
           expandedEvent={expandedEvent}
