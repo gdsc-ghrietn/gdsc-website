@@ -51,13 +51,13 @@
     "id": 9,
     "name": "Vidit Singh",
     "role": "TECH TEAM",
-    "image_url": ""
+    "image_url": "https://ohmylens.com/wp-content/uploads/2017/06/dummy-profile-pic.png"
   },
   {
     "id": 10,
     "name": "Khushboo Ninawe",
     "role": "TECH TEAM",
-    "image_url": ""
+    "image_url": "https://ohmylens.com/wp-content/uploads/2017/06/dummy-profile-pic.png"
   },
   {
     "id": 11,
@@ -69,13 +69,13 @@
     "id": 12,
     "name": "Punarv Patidar",
     "role": "DESIGN TEAM",
-    "image_url": ""
+    "image_url": "https://ohmylens.com/wp-content/uploads/2017/06/dummy-profile-pic.png"
   },
   {
     "id": 13,
     "name": "Anushka Khurge",
     "role": "DESIGN TEAM",
-    "image_url": ""
+    "image_url": "https://ohmylens.com/wp-content/uploads/2017/06/dummy-profile-pic.png"
   },
   {
     "id": 14,
@@ -93,48 +93,48 @@
     "id": 16,
     "name": "Ayush Sonawane",
     "role": "PR TEAM",
-    "image_url": ""
+    "image_url": "https://ohmylens.com/wp-content/uploads/2017/06/dummy-profile-pic.png"
   },
   {
     "id": 18,
     "name": "Dev Haladkar",
     "role": "PR TEAM",
-    "image_url": ""
+    "image_url": "https://ohmylens.com/wp-content/uploads/2017/06/dummy-profile-pic.png"
   },
   {
     "id": 19,
     "name": "Himanshi Pantawane",
     "role": "PR TEAM",
-    "image_url": ""
+    "image_url": "https://ohmylens.com/wp-content/uploads/2017/06/dummy-profile-pic.png"
   },
   {
     "id": 20,
     "name": "Ayush Kamble",
     "role": "PR TEAM",
-    "image_url": ""
+    "image_url": "https://ohmylens.com/wp-content/uploads/2017/06/dummy-profile-pic.png"
   },
   {
     "id": 21,
     "name": "Angad Sonare",
     "role": "MGMT TEAM",
-    "image_url": ""
+    "image_url": "https://ohmylens.com/wp-content/uploads/2017/06/dummy-profile-pic.png"
   },
   {
     "id": 22,
     "name": "Palak Jaiswal",
     "role": "MGMT TEAM",
-    "image_url": ""
+    "image_url": "https://ohmylens.com/wp-content/uploads/2017/06/dummy-profile-pic.png"
   },
   {
     "id": 23,
     "name": "Atharva Nikhare",
     "role": "MGMT TEAM",
-    "image_url": ""
+    "image_url": "https://ohmylens.com/wp-content/uploads/2017/06/dummy-profile-pic.png"
   },
   {
     "id": 24,
     "name": "Shahanawaz Ansari",
     "role": "MGMT TEAM",
-    "image_url": "https://media.licdn.com/dms/image/D4D03AQFZp93abbmPPw/profile-displayphoto-shrink_800_800/0/1703534577860?e=1711584000&v=beta&t=IcGg80O4W9XV7Bg0QoqEHSouh5dK1w1XEb5LuU9vz2Y"
+    "image_url": "https://ohmylens.com/wp-content/uploads/2017/06/dummy-profile-pic.png"
   }
 ]
