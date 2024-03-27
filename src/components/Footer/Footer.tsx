@@ -1,5 +1,5 @@
+import logo from "../../assets/gdsc_logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./Footer.styles.css";
 import {
   faInstagram,
   faXTwitter,
@@ -7,76 +7,55 @@ import {
   faFacebook,
   faDiscord,
 } from "@fortawesome/free-brands-svg-icons";
-import GdscLogo from "../../assets/google-developers-seeklogo.com.svg";
 
-const Footer: React.FC = () => {
+const Footer = () => {
   return (
-    <div id="footer-section">
-      <div className="Google-Map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.466243279665!2d79.00171792141964!3d21.12491990991707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4eab12bd10cef%3A0xf6e67c2f0a066c27!2sG.%20H.%20Raisoni%20Institute%20of%20Engineering%20and%20Technology%20(Autonomous)!5e0!3m2!1sen!2sin!4v1705843369091!5m2!1sen!2sin"
-          width="350"
-          height="180"
-          loading="lazy"
-        ></iframe>
+    <div className="flex flex-row justify-around bg-black h-full w-full  font-game1 tracking-wide text-[10px] sm:text-sm sm:mx-auto md:text-lg gap-1">
+      <div className="flex flex-col sm:flex-row justify-center items-center mx-auto sm:gap-4 gap-2 m-2 sm:m-2 w-[45%]">
+        <img src={logo} alt="" className="sm:h-8 h-4" />
+        <h1 className=" text-white sm:text-left text-center sm:ml-0 ml-2">
+          GOOGLE DEVELOPER STUDENTS CLUB <br /> GHRIET NAGPUR
+        </h1>
       </div>
-      <div className="information">
-        <div className="GdscLabel">
-          <img src={GdscLogo} alt="GDSC_LOGO" />
-          Google Developer Student Clubs
-          <br />
-          GHRIET NAGPUR
-          <br />
-        </div>
-        <p className="address">
-          Shradha Park, B-37/39, Hingna Rd, Midc, Nagpur, Maharashtra 440028
-        </p>
+      <div className="flex flex-col m-2 mx-auto justify-center text-center sm:m-2 w-[40%]">
+        <h1 className="text-white text-center leading-tight">
+          SHRADHA PARK, B-37/39, HINGNA RD, MIDC, <br /> NAGPUR, MAHARASHTRA
+          440028
+        </h1>
       </div>
-      <div className="social-media">
-        <h2>Follow Us On</h2>
-        <div className="social-media-icons">
-          <span className="social-media-icon">
-            <a
-              href="https://www.instagram.com/gdsc_ghrietn"
-              target="_blank"
-              className="instagram"
-            >
-              <FontAwesomeIcon icon={faInstagram} />
-            </a>
-          </span>
-          <span className="social-media-icon">
-            <a
-              href="https://www.linkedin.com/company/gdsc-ghrietn/"
-              target="_blank"
-              className="linkedin"
-            >
-              <FontAwesomeIcon icon={faLinkedin} />
-            </a>
-          </span>
-
-          <span className="social-media-icon">
-            <a href="https://twitter.com/gdsc_ghrietn" target="_blank">
-              <FontAwesomeIcon icon={faXTwitter} className="x-twitter" />
-            </a>
-          </span>
-          <span className="social-media-icon">
-            <a
-              href="https://discord.gg/JVFr59kPkg"
-              target="_blank"
-              className="discord"
-            >
-              <FontAwesomeIcon icon={faDiscord} />
-            </a>
-          </span>
-          <span className="social-media-icon">
-            <a
-              className="facebook"
-              href="https://www.facebook.com/people/Gdsc-Ghrietn/pfbid017qz8rYcNsf33adManeJPgBY4uF7TApJw4Uw7UQGgLUgp5nDrRC2ZHmSJjaCcRhol/"
-              target="_blank"
-            >
-              <FontAwesomeIcon icon={faFacebook} />
-            </a>
-          </span>
+      <div className="flex flex-col m-2 mx-auto text-white justify-center text-center sm:m-2 leading-normal w-[40%]">
+        <h1>FOLLOW US ON</h1>
+        <div className="flex mx-auto justify-between items-center sm:w-1/2 w-3/4 mt-2 ">
+          <a
+            href="https://www.instagram.com/gdsc_ghrietn"
+            target="_blank"
+            className=""
+          >
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+          <a
+            href="https://www.linkedin.com/company/gdsc-ghrietn/"
+            target="_blank"
+            className=""
+          >
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+          <a
+            href="https://twitter.com/gdsc_ghrietn"
+            target="_blank"
+            className=""
+          >
+            <FontAwesomeIcon icon={faXTwitter} />
+          </a>
+          <a href="https://discord.gg/JVFr59kPkg" target="_blank" className="">
+            <FontAwesomeIcon icon={faDiscord} />
+          </a>
+          <a
+            href="https://www.facebook.com/people/Gdsc-Ghrietn/pfbid017qz8rYcNsf33adManeJPgBY4uF7TApJw4Uw7UQGgLUgp5nDrRC2ZHmSJjaCcRhol/"
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={faFacebook} />
+          </a>
         </div>
       </div>
     </div>
