@@ -35,34 +35,34 @@ const TeamPage = () => {
 
   return (
     <div className="h-full flex flex-col items-center justify-center gap-5 overflow-x-hidden ">
-        <div className="w-full flex flex-row pl-5 mt-5 items-start ">
-           <button type="button" onClick={() => navigate("/")} 
-              className="flex justify-center items-center px-5 py-3 text-sm text-gray-700 transition-colors duration-200 bg-white border rounded-lg gap-x-2 sm:w-auto dark:hover:bg-gray-800 dark:bg-gray-900 hover:bg-gray-100 dark:text-gray-200 dark:border-gray-700">
-              <FontAwesomeIcon icon={faArrowLeftLong} style={{color:"white"}} />
-              <span>Go back</span>
-          </button>    
-        </div>
-        <div className="w-full h-full flex flex-col items-center justify-center">
+      <div className="w-full flex flex-row pl-5 mt-5 items-start ">
+        <button type="button" onClick={() => navigate("/")}
+          className="flex justify-center items-center px-5 py-3 text-sm text-gray-700 transition-colors duration-200 bg-white border rounded-lg gap-x-2 sm:w-auto dark:hover:bg-gray-800 dark:bg-gray-900 hover:bg-gray-100 dark:text-gray-200 dark:border-gray-700">
+          <FontAwesomeIcon icon={faArrowLeftLong} style={{ color: "white" }} />
+          <span>Go back</span>
+        </button>
+      </div>
+      <div className="w-full h-full flex flex-col items-center justify-center">
 
-          <TeamBanner />
-        </div>
+        <TeamBanner />
+      </div>
       <div className="flex flex-col p-0 sm:mr-10 justify-center items-center">
         <div className="w-full flex flex-row  items-start">
           <h1 className="text-white text-2xl font-game2 shadow-red-500 pl-5">Faculty Advisors ....</h1>
         </div>
         <div className="h-full font-game2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 content-center">
           {facultyMembers.map((member: FacultyMemberProps) => {
-              return (
-                <div className="w-[17rem]" key={member.id}>
-                  <FacultyMemberCard
-                    image_url={member.image_url}
-                    name={member.name}
-                    role={member.role}
-                    linkedin={member.linkedin}
-                  />
-                </div>
-              );
-            })}   
+            return (
+              <div className="w-[17rem]" key={member.id}>
+                <FacultyMemberCard
+                  image_url={member.image_url}
+                  name={member.name}
+                  role={member.role}
+                  linkedin={member.linkedin}
+                />
+              </div>
+            );
+          })}
         </div>
       </div>
       <div className="flex flex-col p-0 sm:mr-10  justify-center items-center">
@@ -70,7 +70,7 @@ const TeamPage = () => {
           <h1 className="text-white text-2xl font-game2 shadow-red-500 pl-5">Our Team ....</h1>
         </div>
         <div className="h-full font-game2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 content-center">
-            {teamMembers.map((member: TeamMember) => {
+          {teamMembers.map((member: TeamMember) => {
             handleImageImport(member);
             return (
               <div className="w-[17rem]" key={member.id}>
@@ -86,7 +86,7 @@ const TeamPage = () => {
           })}
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
