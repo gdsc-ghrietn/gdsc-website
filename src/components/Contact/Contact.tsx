@@ -28,12 +28,12 @@ const Contact = () => {
       );
   };
   return (
-    <div className="w-full h-screen flex justify-between pt-24 flex-col items-center">
+    <div className="w-full h-screen flex justify-between pt-16 flex-col items-center">
       <ToastContainer />
-      <div className="text-6xl font-bold text-white font-game1 mb-5 ">
+      <div className="text-6xl font-bold text-white font-game1 mb-2 ">
         Contact Us
       </div>
-      <div className="w-full h-screen flex justify-between sm:pt-12 flex-col items-center">
+      <div className="w-full h-screen flex justify-between sm:pt-6 flex-col items-center">
         <div className="flex-col-reverse  flex sm:flex-row justify-around items-center h-full w-full px-6  mb-3 max-w-[1920px]">
           <div className="flex  justify-center items-center sm:w-[50%] w-[100%] h-[30%] sm:h-[50%] ">
             <div className="flex justify-center items-center bg-black  h-full border-none sm:rounded-3xl w-[100%] sm:w-[80%] p-0 text-white">
@@ -46,15 +46,15 @@ const Contact = () => {
           </div>
           <div className="flex flex-col  sm:m-0 sm:justify-start items-center sm:w-[60%] w-full">
             <form
-              className="flex flex-col justify-center items-center bg-violet-600 opacity-2 w-full h-full  rounded-xl px-4 sm:py-4 py-2"
+              className="flex flex-col justify-center items-center bg-violet-600 opacity-2 w-3/4 h-full  rounded-xl px-4 sm:py-4 py-2"
               ref={form}
               onSubmit={sendEmail}
             >
-              <div className="sm:text-4xl text-2xl font-bold text-white font-game1 mb-3 text-center">
+              <div className="sm:text-4xl text-2xl font-bold text-white font-game1 text-center">
                 Feel free to ask us for any queries
               </div>
               <div className="sm:flex-col flex justify-between items-center w-full">
-                <label className="sm:text-3xl text-xl font-bold text-white font-game1 mb-2 mt-2 sm:mr-0 mr-3">
+                <label className="sm:text-3xl text-xl font-bold text-white font-game1 mb-1 mt-2 sm:mr-0 mr-3">
                   Name
                 </label>
                 <input
@@ -66,7 +66,7 @@ const Contact = () => {
                 />
               </div>
               <div className="sm:flex-col flex justify-between items-center w-full ">
-                <label className="sm:text-3xl text-xl font-bold text-white font-game1 mb-2 mt-2 sm:mr-0 mr-3 ">
+                <label className="sm:text-3xl text-xl font-bold text-white font-game1 mb-1 mt-1.5 sm:mr-0 mr-3 ">
                   Email
                 </label>
                 <input
@@ -76,7 +76,7 @@ const Contact = () => {
                 />
               </div>
               <div className="sm:flex-col flex justify-between items-center w-full ">
-                <label className="sm:text-3xl text-xl font-bold text-white font-game1 mb-2 mt-2 sm:mr-0 mr-3 ">
+                <label className="sm:text-3xl text-xl font-bold text-white font-game1 mb-1 mt-1.5 sm:mr-0 mr-3 ">
                   Subject
                 </label>
                 <input
@@ -88,7 +88,7 @@ const Contact = () => {
                 />
               </div>
               <div className="sm:flex-col flex justify-between items-center w-full ">
-                <label className="sm:text-3xl text-xl font-bold text-white font-game1 mb-2 mt-2 sm:mr-0 mr-3 ">
+                <label className="sm:text-3xl text-xl font-bold text-white font-game1 mb-1 mt-1.5 sm:mr-0 mr-3 ">
                   Message
                 </label>
                 <input
@@ -102,17 +102,17 @@ const Contact = () => {
               <button
                 type="submit"
                 value="Send"
-                className="w-[60%] sm:w-[50%] h-8 sm:h-12 sm:text-lg text-sm sm:p-0.5  rounded-3xl border-2 border-black bg-white text-black font-bold sm:mt-6 mt-4 font-game2 hover:scale-105 transition-all duration-300 ease-in-out hover:bg-black hover:text-white"
+                className="w-[50%] sm:w-[45%] h-8 sm:h-11 sm:text-lg text-sm sm:p-0.5  rounded-3xl border-2 border-black bg-white text-black font-bold sm:mt-6 mt-4 font-game2 hover:scale-105 transition-all duration-300 ease-in-out hover:bg-black hover:text-white"
               >
                 SUBMIT
               </button>
             </form>
           </div>
+          
         </div>
-        <div className="flex flex-col justify-center w-full items-center bg-black sm:h-[5rem]">
-          <Footer />
-        </div>
+        <Footer/>
       </div>
+      
     </div>
   );
 };

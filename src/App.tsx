@@ -6,7 +6,9 @@ import About from "./components/About/About";
 import Events from "./components/Events/Events";
 import Team from "./components/Team/Team";
 import Contact from "./components/Contact/Contact";
+import TeamPage from "./Pages/TeamPage";
 import { useRef, useState, useEffect } from "react";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   const [currentSection, setCurrentSection] = useState("");
@@ -43,11 +45,14 @@ function App() {
 
   return (
     <>
+      <Routes>
+        <Route path="/team" element={<TeamPage />} />
+      </Routes>
       <div
-        className='App overflow-x-hidden
-      '
+        className="App overflow-x-hidden
+      "
       >
-        <nav className='fixed w-full flex justify-center lg:p-4 p-2   items-center top-0 z-50'>
+        <nav className="fixed w-full flex justify-center lg:p-4 p-2   items-center top-0 z-50">
           <Navbar
             HomeRef={HomeRef}
             AboutRef={AboutRef}
@@ -58,37 +63,37 @@ function App() {
           />
         </nav>
         <section
-          id='sectionHome'
+          id="sectionHome"
           ref={HomeRef}
-          className=' h-screen min-h-screen overflow-y-hidden'
+          className=" h-screen min-h-screen overflow-y-hidden"
         >
           <Home />
         </section>
         <section
           ref={AboutRef}
-          id='sectionAbout'
-          className=' w-screen  h-screen min-h-screen overflow-y-hidden'
+          id="sectionAbout"
+          className=" w-screen  h-screen min-h-screen overflow-y-hidden"
         >
           <About />
         </section>
         <section
           ref={EventsRef}
-          className=' w-screen  h-screen min-h-screen overflow-y-hidden'
-          id='sectionEvents'
+          className=" w-screen  h-screen min-h-screen overflow-y-hidden"
+          id="sectionEvents"
         >
           <Events />
         </section>
         <section
           ref={TeamRef}
-          className='w-screen  h-screen min-h-screen overflow-y-hidden'
-          id='sectionTeam'
+          className="w-screen  h-screen min-h-screen overflow-y-hidden"
+          id="sectionTeam"
         >
           <Team />
         </section>
         <section
           ref={ContactRef}
-          className='w-screen  h-screen min-h-screen max-h-screen overflow-y-hidden'
-          id='sectionContact'
+          className="w-screen  h-screen min-h-screen max-h-screen overflow-y-hidden"
+          id="sectionContact"
         >
           <Contact />
         </section>

@@ -10,7 +10,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className="flex flex-row justify-around bg-black h-full w-full  font-game1 tracking-wide text-[10px] sm:text-sm sm:mx-auto md:text-lg gap-1">
+    <div className="flex flex-row justify-around bg-black h-[full] w-full  font-game1 tracking-wide text-[10px] sm:text-sm sm:mx-auto md:text-lg gap-1">
       <div className="flex flex-col sm:flex-row justify-center items-center mx-auto sm:gap-4 gap-2 m-2 sm:m-2 w-[45%]">
         <img src={logo} alt="" className="sm:h-8 h-4" />
         <h1 className=" text-white sm:text-left text-center sm:ml-0 ml-2">
