@@ -100,7 +100,7 @@ function App() {
         </section>
         <section
           ref={ContactRef}
-          className="w-screen  h-[5rem] min-h-[5rem] max-h-[5rem] overflow-y-hidden"
+          className="w-screen  h-full min-h-full max-h-full overflow-y-hidden"
           id="sectionContact"
         >
           <Footer />

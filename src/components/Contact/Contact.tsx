@@ -27,7 +27,7 @@ const Contact = () => {
       );
   };
   return (
-    <div className="w-full h-full flex justify-between pt-16 flex-col items-center">
+    <div className="w-full h-screen flex justify-between pt-16 flex-col items-center">
       <ToastContainer />
       <div className="text-6xl font-bold text-white font-game1 mb-5 ">
         Contact Us
