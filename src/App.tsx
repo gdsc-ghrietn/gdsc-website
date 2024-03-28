@@ -6,7 +6,6 @@ import About from "./components/About/About";
 import Events from "./components/Events/Events";
 import Team from "./components/Team/Team";
 import Contact from "./components/Contact/Contact";
-import Footer from "./components/Footer/Footer";
 import TeamPage from "./Pages/TeamPage";
 import { useRef, useState, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
@@ -97,13 +96,6 @@ function App() {
           id="sectionContact"
         >
           <Contact />
-        </section>
-        <section
-          ref={ContactRef}
-          className="w-screen  h-full min-h-full max-h-full overflow-y-hidden"
-          id="sectionContact"
-        >
-          <Footer />
         </section>
       </div>
       <Analytics />
