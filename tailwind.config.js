@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+import daisyui from 'daisyui';
 export default {
+
   content: [
     './index.html',
     './pages/**/*.{ts,tsx}',
@@ -18,9 +20,13 @@ export default {
       'extraextrabold': '900',
     },
     fontFamily: {
-        'game1': ['VT323', 'monospace'],
-        'game2': ['"Press Start 2P"', 'monospace'],
+      'game1': ['VT323', 'monospace'],
+      'game2': ['"Press Start 2P"', 'monospace'],
+      'retro': ['"Vast Shadow"', 'serif']
     }
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), daisyui],
+  daisyui: {
+    themes: [],
+  }, 
 };
