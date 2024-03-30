@@ -1,6 +1,7 @@
 import { FaCalendarAlt } from "react-icons/fa";
 import { IoIosTime } from "react-icons/io";
 import { Speaker } from "../../models/Event";
+import { number } from "prop-types";
 function EventModal(props: any) {
   const { expandedEvent, formatDate, formatTime } = props;
 
@@ -112,8 +113,11 @@ function EventModal(props: any) {
               )}
             </div>
             <div className='my-2 flex flex-row justify-center gap-5'>
-              {tags.map((tag: String[]) => (
-                <div className='bg-violet-600 text-sm lg:text-lg text-white p-2 lg:py-0  rounded-md'>
+              {tags.map((tag: string , index:number) => (
+                <div
+                  key={index}
+                  className='bg-violet-600 text-sm lg:text-lg text-white p-2 lg:py-0  rounded-md'
+                >
                   <span>{tag}</span>
                 </div>
               ))}
