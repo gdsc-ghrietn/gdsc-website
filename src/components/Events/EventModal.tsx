@@ -1,7 +1,6 @@
 import { FaCalendarAlt } from "react-icons/fa";
 import { IoIosTime } from "react-icons/io";
 import { Speaker } from "../../models/Event";
-import { number } from "prop-types";
 function EventModal(props: any) {
   const { expandedEvent, formatDate, formatTime } = props;
 
