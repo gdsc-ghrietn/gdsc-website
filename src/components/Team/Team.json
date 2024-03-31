@@ -86,73 +86,73 @@
     "image_url": "./src/assets/team-images/umesh.jpg"
   },
   {
-    "id": 12,
+    "id": 15,
     "name": "Punarv Patidar",
     "role": "DESIGN TEAM",
     "image_url": "./src/assets/team-images/punarv.jpg"
   },
   {
-    "id": 13,
+    "id": 16,
     "name": "Anushka Khurge",
     "role": "DESIGN TEAM",
     "image_url": "./src/assets/team-images/anushka.jpg"
   },
   {
-    "id": 14,
+    "id": 17,
     "name": "Gunjan Gawande",
     "role": "CONTENT TEAM",
     "image_url": "./src/assets/team-images/gunjan.jpg"
   },
   {
-    "id": 15,
+    "id": 18,
     "name": "Bhagyashree Titarmare",
     "role": "PR TEAM",
     "image_url": "./src/assets/team-images/bhagyashree.jpg"
   },
   {
-    "id": 16,
+    "id": 19,
     "name": "Ayush Sonawane",
     "role": "PR TEAM",
     "image_url": "./src/assets/team-images/dummy-image.png"
   },
   {
-    "id": 18,
+    "id": 20,
     "name": "Dev Haladkar",
     "role": "PR TEAM",
     "image_url": "./src/assets/team-images/dev.jpg"
   },
   {
-    "id": 19,
+    "id": 21,
     "name": "Himanshi Pantawane",
     "role": "PR TEAM",
     "image_url": "./src/assets/team-images/dummy-image.png"
   },
   {
-    "id": 20,
+    "id": 22,
     "name": "Ayush Kamble",
     "role": "PR TEAM",
     "image_url": "./src/assets/team-images/dummy-image.png"
   },
   {
-    "id": 21,
+    "id": 23,
     "name": "Angad Sonare",
     "role": "MGMT TEAM",
     "image_url": "./src/assets/team-images/angad.jpg"
   },
   {
-    "id": 22,
+    "id": 24,
     "name": "Palak Jaiswal",
     "role": "MGMT TEAM",
     "image_url": "./src/assets/team-images/dummy-image.png"
   },
   {
-    "id": 23,
+    "id": 25,
     "name": "Atharva Nikhare",
     "role": "MGMT TEAM",
     "image_url": "./src/assets/team-images/dummy-image.png"
   },
   {
-    "id": 24,
+    "id": 26,
     "name": "Shahanawaz Ansari",
     "role": "MGMT TEAM",
     "image_url": "./src/assets/team-images/shahnawaz.jpg"
