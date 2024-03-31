@@ -108,7 +108,7 @@ const TeamCarousel: React.FC = () => {
                 <div className="h-[20%] text-6xl font-bold block text-white font-game1">
                     Meet Our Team
                 </div>
-                <Slider {...settings} className={`w-[65%] max-w-[60rem] max-h-[50%] sm:h-[60%] flex items-center ${isMobileWidth && "mt-12"}`}>
+                <Slider {...settings} className={`w-[65%] max-w-[60rem] h-[50%] sm:h-[60%] flex items-center ${isMobileWidth && "mt-12"}`}>
                     {teamMembers.slice(0, 8).map((member) => {
                         handleImageImport(member);
                         return (
