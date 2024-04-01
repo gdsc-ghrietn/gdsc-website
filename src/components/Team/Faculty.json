@@ -4,25 +4,25 @@
         "id": 1,
         "name": "Dr. Praveen Kumar Mannepalli",
         "role": "HOD CSE(Cyber Security)",
-        "image_url": "https://rgicdn.s3.ap-south-1.amazonaws.com/ghrietn/assets/images/faculty/Dr-Praveen-Kumar.avif"
+        "image_url": "./src/assets/faculty-images/Dr-Praveen-Kumar.avif"
       },
       {
         "id": 2,
         "name": "Saurabh Vyas",
         "role": "Assistant Professor",
-        "image_url": "https://media.licdn.com/dms/image/C5103AQEHQXJpZnNSWA/profile-displayphoto-shrink_800_800/0/1580107773862?e=1711584000&v=beta&t=xYS78565BEshiouljwOlyZGIFVzYoDYDel1al4ZeUaY"
+        "image_url": "./src/assets/faculty-images/saurabh-vyas.jpg"
       },
       {
         "id": 3,
         "name": "Sarvesh Warjurkar",
         "role": "Professor",
-        "image_url": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2,f_auto,g_face,h_200,q_auto:good,w_200/v1/gcs/platform-data-dsc/events/WhatsApp%2520Image%25202023-10-07%2520at%25204.39.40%2520PM_9IPfQXU.jpeg"
+        "image_url": "./src/assets/faculty-images/SarveshWarjurkar.jpg"
       },
 
       {
         "id": 4,
         "name": "Reena Chauhan",
         "role": "Assistant Professor",
-        "image_url": "https://media.licdn.com/dms/image/D5603AQEF2WCEIUj4Kw/profile-displayphoto-shrink_800_800/0/1700243902197?e=1711584000&v=beta&t=cYjFq4rcqiYiGfq6S797S4VVjLNYP_DZ0NQw9u9TZt4"
+        "image_url": "./src/assets/faculty-images/reena-chauhan.jpg"
       }
 ]

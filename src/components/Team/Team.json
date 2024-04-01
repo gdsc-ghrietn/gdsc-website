@@ -51,90 +51,110 @@
     "id": 9,
     "name": "Vidit Singh",
     "role": "TECH TEAM",
-    "image_url": ""
+    "image_url": "./src/assets/team-images/vidit.jpg"
   },
   {
     "id": 10,
     "name": "Khushboo Ninawe",
     "role": "TECH TEAM",
-    "image_url": ""
+    "image_url": "./src/assets/team-images/khushboo.jpg"
   },
   {
     "id": 11,
     "name": "Vaibhav Talkhande",
-    "role": "WEB DEV LEAD",
-    "image_url": "https://media.licdn.com/dms/image/D4D03AQGu9wdd2GpL6w/profile-displayphoto-shrink_800_800/0/1697809493670?e=1711584000&v=beta&t=uGcw95bxaqg0nBnWwMPSwWBBOCQrL1KUlmCa9PTA9MM"
+    "role": "WEB DEV TEAM",
+    "image_url": "./src/assets/team-images/vaibhav.jpg",
+    "github": "https://github.com/VaibhavTalkhande",
+    "linkedin": "https://www.linkedin.com/in/vaibhav-talkhande-82601b16b/"
   },
   {
     "id": 12,
-    "name": "Punarv Patidar",
-    "role": "DESIGN TEAM",
-    "image_url": ""
+    "name": "Mayank Saharkar",
+    "role": "WEB DEV TEAM",
+    "image_url": "./src/assets/team-images/mayank.png"
   },
   {
     "id": 13,
-    "name": "Anushka Khurge",
-    "role": "DESIGN TEAM",
-    "image_url": ""
+    "name": "Ayush Sarodey",
+    "role": "WEB DEV CONTRIBUTOR",
+    "image_url": "./src/assets/team-images/ayushsarodey.jpg"
   },
   {
     "id": 14,
-    "name": "Gunjan Gawande",
-    "role": "CONTENT TEAM",
-    "image_url": "https://media.licdn.com/dms/image/D5603AQFV8pExLSl6aQ/profile-displayphoto-shrink_800_800/0/1704992753926?e=1711584000&v=beta&t=JG97xy739KR_gSpY3qmeCRpoADABQfjw97sSRXUoTbE"
+    "name": "Umesh Mate",
+    "role": "DESIGN TEAM",
+    "image_url": "./src/assets/team-images/umesh.jpg"
   },
   {
     "id": 15,
-    "name": "Bhagyashree Titarmare",
-    "role": "PR TEAM",
-    "image_url": "https://media.licdn.com/dms/image/D5603AQHVQa_HnlxG0g/profile-displayphoto-shrink_800_800/0/1699922808682?e=1711584000&v=beta&t=LpMBHF56OBzOKoVDn4FBNXW-n5SL5vbtx2eMn1F4sxM"
+    "name": "Punarv Patidar",
+    "role": "DESIGN TEAM",
+    "image_url": "./src/assets/team-images/punarv.jpg"
   },
   {
     "id": 16,
-    "name": "Ayush Sonawane",
-    "role": "PR TEAM",
-    "image_url": ""
+    "name": "Anushka Khurge",
+    "role": "DESIGN TEAM",
+    "image_url": "./src/assets/team-images/anushka.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Gunjan Gawande",
+    "role": "CONTENT TEAM",
+    "image_url": "./src/assets/team-images/gunjan.jpg"
   },
   {
     "id": 18,
-    "name": "Dev Haladkar",
+    "name": "Bhagyashree Titarmare",
     "role": "PR TEAM",
-    "image_url": ""
+    "image_url": "./src/assets/team-images/bhagyashree.jpg"
   },
   {
     "id": 19,
-    "name": "Himanshi Pantawane",
+    "name": "Ayush Sonawane",
     "role": "PR TEAM",
-    "image_url": ""
+    "image_url": "./src/assets/team-images/dummy-image.png"
   },
   {
     "id": 20,
-    "name": "Ayush Kamble",
+    "name": "Dev Haladkar",
     "role": "PR TEAM",
-    "image_url": ""
+    "image_url": "./src/assets/team-images/dev.jpg"
   },
   {
     "id": 21,
-    "name": "Angad Sonare",
-    "role": "MGMT TEAM",
-    "image_url": ""
+    "name": "Himanshi Pantawane",
+    "role": "PR TEAM",
+    "image_url": "./src/assets/team-images/dummy-image.png"
   },
   {
     "id": 22,
-    "name": "Palak Jaiswal",
-    "role": "MGMT TEAM",
-    "image_url": ""
+    "name": "Ayush Kamble",
+    "role": "PR TEAM",
+    "image_url": "./src/assets/team-images/dummy-image.png"
   },
   {
     "id": 23,
-    "name": "Atharva Nikhare",
+    "name": "Angad Sonare",
     "role": "MGMT TEAM",
-    "image_url": ""
+    "image_url": "./src/assets/team-images/angad.jpg"
   },
   {
     "id": 24,
+    "name": "Palak Jaiswal",
+    "role": "MGMT TEAM",
+    "image_url": "./src/assets/team-images/dummy-image.png"
+  },
+  {
+    "id": 25,
+    "name": "Atharva Nikhare",
+    "role": "MGMT TEAM",
+    "image_url": "./src/assets/team-images/dummy-image.png"
+  },
+  {
+    "id": 26,
     "name": "Shahanawaz Ansari",
     "role": "MGMT TEAM",
-    "image_url": "https://media.licdn.com/dms/image/D4D03AQFZp93abbmPPw/profile-displayphoto-shrink_800_800/0/1703534577860?e=1711584000&v=beta&t=IcGg80O4W9XV7Bg0QoqEHSouh5dK1w1XEb5LuU9vz2Y"
+    "image_url": "./src/assets/team-images/shahnawaz.jpg"
   }
 ]

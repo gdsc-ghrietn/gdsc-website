@@ -12,7 +12,7 @@ interface TeamMemberProps {
 const TeamMemberCard: React.FC<TeamMemberProps> = ({ image_url, fullName, position, github, linkedin }) => {
   return (
     <div className="w-25 pb-2 bg-white flex flex-col items-center rounded-sm  shadow-[4px__3px_0px] shadow-red-600 m-6 ">
-      <img src={image_url} alt="team member" className="w-[90%] h-[50%] mt-2 rounded-lg" />
+      <img src={image_url} alt="team member" className="w-[90%] min-h-[40%] max-h-[12.5rem] mt-2 rounded-lg" />
       <div className="flex flex-col items-center h-[60%] w-full justify-center">
         <h2 className="text-2xl font-game1 w-full  ml-8 items-center flex word-wrap  text-black">{fullName}</h2>
         <h2 className="text-lg font-game1 ml-8 word-wrap w-full text-gray-500">{position}</h2>
