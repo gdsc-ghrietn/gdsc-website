@@ -17,7 +17,7 @@ const Home = () => {
               WebkitTextStroke: isMobileWidth ? "1.5px white" : "2px white"
             }}
           >
-            Google Developer Students Club
+            Google Developer Student Clubs
           </div>
           <div
             className="text-center font-sans font-extraextrabold text text-[1.3rem] sm:text-2xl md:text-[1.7rem] lg:text-[1.7rem] xl:text-[1.7rem] text-white mb-[50px] tracking-tight mt-[2rem]"
